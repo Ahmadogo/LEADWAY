@@ -1,0 +1,407 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --background-color:#2f2f2f;
+    --font-color:#34475e;
+    --secondary-font-color:#c3c4c6;
+    --primary-orange:#ff7a00;
+    --secondary-orange:#ffdebf;
+    --primary-green:#ecfdf3;
+    --primary-grey:#f2f4f7;
+    --primary-pink:#fef3f2;
+    --new-background:#eeeeee;
+}
+body{
+    overflow-x: hidden;
+    width: 100%;
+    height: 100vh;
+    color: var(--font-color);
+    font-family: "Mulish", sans-serif;
+}
+.top{
+    width: 70%;
+    float: right;
+    display:flex;
+    justify-content: end;
+    padding-inline-end: 15px;
+    gap: 1.5em;
+    font-size: 12px;
+    align-items: center;
+    padding-top: 15px;
+   
+}
+.A{
+    display: flex;
+    gap: 1em;
+}
+.first-column{
+    width: 15%;
+    height: 100vh;
+    padding-top: 130px;
+    text-align: center;
+    background: var(--background-color);
+    justify-content: space-between;
+
+    .calender{
+        background: white;
+        height: 45px;
+        margin: auto;
+        padding-top: 8px;
+       
+    }
+}
+
+.second-column{
+    border-right: 1px solid var(--secondary-font-color);
+    height: 100vh;
+    width: 45%;
+    font-size: 15px;
+    font-weight: 600;
+    padding-top: 40px;
+
+
+    .overview {
+        display: flex;
+        font-weight: 500;
+        font-size: 12px;
+        gap: 2em;
+    }
+    .request{
+        display: flex;
+        gap: 2em;
+        font-weight: 500;
+        font-size: 12px;
+        color: var(--primary-orange);
+
+    }
+}
+
+
+.B{
+    width: 100%;
+    position: absolute;
+    bottom: 70%;
+    padding-top: 135px;
+    padding-left: 20px;
+    left: 19.2%;
+    border-top: 1px solid var(--secondary-font-color);
+
+    h1{
+        font-weight: 55 0;
+        font-size: 20px;
+        padding-left: 10px; 
+    }
+    p{
+        font-size: 12px;
+    }
+}
+
+.content{
+    display: flex;
+    gap: 50em;
+    margin-top: -8.5%;
+
+    h1{
+        padding-bottom: 10px;
+    }
+
+    img{
+        width: 65%;
+    }
+
+}
+
+.main-contents{
+    width: 60%;
+    position: absolute;
+    padding: 12px;
+    bottom: 25px;
+    left: 40%;
+
+    .inspections img {
+        width: 30%;
+        padding: 10px;
+        cursor: pointer;
+        }
+    label{
+        bottom: 10px;
+    }
+    .circle-2{
+        border: 1px solid var(--primary-orange);
+        border-radius: 10px;
+    }
+    
+
+    .property{
+        border: 1px solid;
+        display: flex;
+        gap: 75%;
+        padding: 10px ;
+        font-size: 13px;
+        width: 60%;
+        left: 12%;
+        font-size: 15px;
+        cursor: pointer;
+
+        img{
+            padding-right: 8px;
+        }
+    }
+    .create-btn{
+       padding: 10px 50px;
+       border-radius: 5px; 
+       background: var(--primary-orange);
+       border: none;
+       margin-top: 5em;
+       height: 50px;
+       color: white;
+       font-weight: 700;
+       cursor: pointer;
+       margin-left: 15%;
+
+       img{
+        padding-right: 8px;
+       }
+    }
+}
+
+
+@media screen and (max-width:767px) {
+    .A{
+        display: flex;
+        gap: 1em;
+    }
+    .first-column{
+        width: 35%;
+        height: 100vh;
+        padding-top: 130px;
+        text-align: center;
+        background: var(--background-color);
+        justify-content: space-between;
+        border: none;
+    
+        .calender{
+            background: white;
+            height: 45px;
+            margin: auto;
+            padding-top: 8px;
+           
+        }
+    }
+    
+    .second-column{
+        width: 40%;
+        font-weight: 600;
+        padding-top: 75px;
+
+        .logo{
+            display: none;
+        }
+    
+    
+        .overview {
+            display: block;
+            font-weight: 500;
+            font-size: 10px;
+            /* gap: 2em; */
+           
+        }
+        .request{
+            display: block;
+            /* gap: 2em; */
+            font-weight: 500;
+            font-size: 10px;
+            color: var(--primary-orange);
+          
+    
+        }
+    }
+    
+    
+    .B{
+        width: 70%;
+        bottom: 70%;
+        padding-top: 150px;
+        padding-left: 10px;
+        left: 27%;
+        
+    
+        h1{
+            font-weight: 500;
+            font-size: 15px;
+        
+        }
+        p{
+            font-size: 8px;
+        }
+    }
+    
+    .content{
+        display: flex;
+        gap: 5em;
+        margin-top:-120px;
+
+        img{
+            width: 60%;
+        }
+        h1{
+            font-size: 18px;
+        }
+        p{
+            font-size: 12px;
+        }
+    
+    }
+    
+    .main-contents{
+        width: 70%;
+        bottom: 8%; 
+        left: 30%;
+    
+        .inspections img {
+            width: 40%;
+            
+        }
+        
+        label{
+            bottom: 10px;
+        }
+        
+        .property{
+            border: 1px solid;
+            display: flex;
+            gap: 55%;
+            padding: 10px ;
+            width: 90%;
+            font-size: 12px;
+
+            
+        }
+        .create-btn{
+           padding: 5px 10px;
+           margin-top: 4em;
+           margin-left: 16%;
+
+        }
+    }
+    
+    
+}
+@media screen and (min-width:768px) and (max-width:1100px){
+    .A{
+        display: flex;
+        gap: 1em;
+    }
+    .first-column{
+        padding-top: 150px;
+        width: 20%;
+
+    }
+    
+    .second-column{
+        width: 50%;
+        font-weight: 600;
+        padding-top: 80px;
+
+        .logo{
+            display: block;
+        }
+        .leadway-logo{
+            width: 80%;
+
+        }
+        p{
+            font-size: 22px;
+        }
+        .overview {
+            display: block;
+            font-weight: 500;
+            font-size: 18px;
+            
+           
+        }
+        .request{
+            display: block;
+            font-weight: 500;
+            font-size: 18px;
+            color: var(--primary-orange);
+          
+    
+        }
+    }
+    
+    
+    .B{
+        width: 100%;
+        bottom: 84%;
+        padding-top: -160px;
+        padding-left: 10px;
+        left: 23%;
+        
+    
+        h1{
+            font-weight: 500;
+            font-size: 25px;
+            padding-top: 10px;
+
+        
+        }
+        p{
+            font-size: 20px;
+            padding-top: 10px;
+        }
+    }
+    
+    .content{
+        display: flex;
+        gap: 18em;
+        margin-top:-120px;
+
+        img{
+            width: 80%;
+        }
+    
+    }
+    
+    .main-contents{
+        width: 80%;
+        bottom: 25%; 
+        left: 30%;
+    
+        .inspections img {
+            width: 40%;
+            }
+
+            label{
+                font-size: 20px;
+            }
+       
+        
+    
+        .property{
+            border: 1px solid;
+            display: flex;
+            gap: 80%;
+            padding: 20px ;
+            width: 78%;
+            font-size: 19px;
+            top: 20px;
+        }
+        .create-btn{
+           padding: 30px 80px;
+           margin-top: 4em;
+           margin-left: 16%;
+           font-size: 25px;
+
+           img{
+            padding-right: 25px;
+            width: 18%;
+           }
+        }
+    }
+    
+    
+}

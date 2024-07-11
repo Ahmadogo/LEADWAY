@@ -1,0 +1,274 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    width: 100%;
+    height: 100vh;
+    margin: auto;
+    background: gray;
+    overflow-x: hidden;
+  }
+  /* this is the bedrock of the left-container and the right-container  */
+  main {
+    width: 100%;
+    height: 100vh;
+    margin-left: 14%;
+    display: flex;
+    margin-top: 3%;
+  }
+/* this container comprises of all the works in the left container  */
+  .left-container {
+    width: 40%;
+    height: 90%;
+    padding: 10px 30px;
+    color: #585858;
+    font-family: "Mulish", sans-serif;
+    background: rgb(255, 251, 246);
+  }
+  /* this is the styles of the form in the left  container   */
+  form{
+    /* padding: 20px; */
+  
+    h1 {
+      font-size: 30px;
+      font-weight: 600;
+    }
+    p {
+      margin-bottom: 30px; 
+      font-size: 15px;
+      font-weight: 500;
+      color: #585858;
+      padding-top:5px;
+      font-family: "Mulish", sans-serif;
+    
+    }
+    /* this styles the divs that contains my inputs  */
+  } 
+  .login-div, .password-div{
+      background: white;
+      width: 100%;
+      margin-top: 20px;
+      padding: 5px;
+    } 
+     /* this styles the icons used inside the input fields  */
+  .fa-user, .fa-lock{
+    font-size: 14px;
+  } 
+    /* this styles my login input header  */
+    .login-div{
+      h6{
+        top: 25px;
+        font-size: 15px;
+        padding-bottom: 20px;
+      }
+    }
+  
+    /* this styles  the input fields of both login ID and Password  */
+    .input {
+      border: none;
+      outline: 0px;
+      font-size: 12px;
+      font-weight: 300;
+      width: 90%;
+    }
+    /* this styles the headers of my password input field  */
+    .show-div{
+      display: flex;
+      justify-content: space-between;
+      font-size: 15px;
+      padding-bottom: 20px;
+      .lock{
+        top: 25px;
+        font-size: 15px;
+      }
+      a{
+        text-decoration: none;
+        color:  rgb(255, 122, 0);
+      }
+    }
+   /* keep me paragraph style   */
+    .keep-me{
+      display: flex;
+      padding-top: 15px;
+      gap: 55%;
+        p{
+            font-size: 12px;
+            /* width: 40%; */  
+          }
+          a{
+            text-decoration: none;
+            color:  #585858;
+          }
+    }
+    /* this styles the login button  */
+    button {
+      width: 100%;
+      padding: 14px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      color: white;
+      font-family: "Mulish", sans-serif;
+      font-weight: 600;
+      background: rgb(255, 122, 0);
+    }
+ /* This styles the right container  */
+  .right-container {
+    width: 35%;
+    height: 90%;
+    position: relative;
+  }
+  /* style the image in the right container  */
+  .right-image {
+    width: 100%;
+    height: 100%;
+  }
+  /* this syles the help icon on the top right side of the container  */
+  .help{
+    width: 50px;
+    position: relative;
+    top: -97%;
+    right: -84%;
+
+  }
+  /* This styles the bottom container (customer management)  */
+  .bottom-container{
+    width: 25%;
+    height: 11%;
+    padding: 0 5px ;
+    display: flex;
+    gap: 1em;
+    position: absolute;
+    color: #585858;
+    background:white;
+    border-radius:5px;
+    margin-left: 59%;
+    margin-top:-12% ;
+    font-family: "Mulish", sans-serif;
+  }
+/* this styles the image on the bottom-container  */
+  .bottom_img{
+    height: 100%;
+    padding: 10px;
+    background: #f3f5f6;
+    margin-inline-start: -5px;
+    border-radius:5px 0px 0px 5px;
+  }
+  /* this styles the content in the bottom container  */
+  .management{
+    h5{
+        font-size: 8px;
+        padding-top: 10px;
+        color: #585858;
+        font-weight: 700;
+        
+    }
+    p{
+        padding-top: 10px;
+        font-size: 5px;
+        color: #585858;
+       
+    }
+  }
+/* This  styles the responsive of a mobile phone size  */
+@media only screen and (max-width:767px)  {
+  main{
+    margin: auto;
+  }
+  .left-container {
+    width: 100%;
+    height: 100vh;
+    margin: auto;
+    position: relative;  
+  }
+  form{
+    padding: 5px;
+  h1 {
+      font-size: 25px;
+      font-weight: 600;
+    }
+    p {
+      margin-bottom: 30px; 
+      font-size: 15px;
+    }
+  }
+    .right-container{
+      display: none;
+    }
+   
+    .keep-me{
+      gap: 55px;  
+        p{
+        font-size: 10px;
+        display: flex ;
+        color: black;
+        font-weight: 600;
+     }
+   }
+.bottom-container{
+      position: absolute;
+      background: rgb(225, 219, 213);
+      width: 90%;
+      height: 10%; 
+      color: white;
+      right: 6%;
+      bottom: 5%;
+    }
+    
+  
+.management{
+  h5{
+      font-size: 15px;
+  }
+  p{
+      font-size: 10px;  
+  }
+}
+}
+/* this styles the responsive of a tablet size  */
+@media screen and (min-width:768px) and (max-width:1023px) {
+  body{
+    background-image: url(/LEADWAY_01/IMAGES/Mask\ Group.png);
+  }
+  main{
+    margin: auto;
+    margin-top: 10%;
+    margin-left: 10%;  
+  }
+  form{
+    padding-top:15% ;
+  }
+  .left-container{
+    width: 80%;
+    height: 90vh;
+    left: -80px;
+    position: relative;
+  }
+  .keep-me{
+    p{
+      font-size: 15px;
+    }
+  }
+  
+  .right-container{
+      /* display: none; */
+  }
+  .bottom-container{
+      background: rgb(231, 227, 222);
+      width: 70%;
+      height: 10%;
+      color:black;
+      right: 15%;
+      bottom: 15%;
+    }
+    .management{
+      h5{
+          font-size: 20px;
+      }
+      p{
+          font-size: 15px;
+      }
+    }
+  }
