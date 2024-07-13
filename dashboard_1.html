@@ -4,197 +4,189 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dashboard</title>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap"
-      rel="stylesheet"/>
+<!-- Google fonts library  -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+
+
+ <!-- Font awesome library    -->
     <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.2/css/all.css"/>
     <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-thin.css" />
     <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-solid.css"/>
     <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-regular.css"/>
     <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-light.css"/>
-    <link rel="stylesheet" href="css/dashboard_1.css"/>
+
+<!-- Css link sheet     -->
+    <link rel="stylesheet" href="css/dashboard_1.css">
   </head>
   <body>
-    <main>
-        <nav class="top">
-            <div>
-                <a href="#"><img src="images/bell.png" alt="bell_image"></a>
-            </div>
-            <div>
-                <a href="#"><img src="images/am-circle.png" alt="am_circle"></a>
-            </div>
-            <div>
-                Ahmad
-            </div>
-            <div>
-                <a href="#"><img src="images/down-arrow.png" alt="downArrow_image"></a>
-            </div>
-           
-        </nav>
-        <section class="A">
-          <div class="first-column">
-            <div>
-                <a href="#"><img src="images/group-1.png" alt="group1_image" /></a> 
-            </div>
-            <br>
-            <div class="calender">
-                <a href="#"><img src="images/vector.png" alt="vector_image"/></a>
-            </div> <br>
-             
-            <div>
-                 <a href="#"><img src="images/case.png" alt="case_image" /></a> 
-             </div> <br>
-             
-             <div>
-                 <a href="#"><img src="images/dribble-light.png" alt="dribbleLight_Img "/></a> <br>
-             </div> <br>
-             
-             <div>
-                 <a href="#"><img src="images/layer-5.png" alt="layer5_image" /></a> 
-             </div> <br>
-             
-             <div>
-                 <a href="#"><img src="images/layer-2.png" alt="layes2_image" /></a> 
-             </div> <br>
-          </div>
-          <div class="second-column">
-            <div>
-                <img src="images/leadway-logo-2.png" alt="leadway_logo" />
-            </div> <br>
+    <nav class="nav-icons">
+        <!-- left side icon section  -->
+        <div class="first-column">
+            <ul nav-links-1>
+                <li><a href="/profile.html"><i class="fa-regular fa-objects-column"></i></a></li> 
+                <li><a href="#"><i class="fa-duotone fa-calendar-days"></i></a></li>
+                <li><a href="#"><i class="fa-duotone fa-briefcase"></i></a></li> 
+                <li><a href="#"><i class="fa-regular fa-objects-column"></i></a></li>
+                <li><a href="#"><i class="fa-duotone fa-chart-pie"></i></a></li>
+                <li><a href="#"><i class="fa-duotone fa-gear"></i></a></li>
+            </ul>
+       </div> 
+    
+<!-- Logo, overview and request section  -->
+       <div class="second-column">
+            <div class="logo">
+                <img src="images/leadway-logo-2.png" alt="leadway_logo"  class="leadway-logo"/>
+            </div> 
             <p class="TRM">TRM</p>
-            <br>
-            <div class="overview">
-              <a href="#"><img src="images/overview.png" alt="overview_image" /></a>
-              <p>Overview</p>
-            </div>
-             <br>
-            <div class="request">
-              <a href="#"><img src="images/request.png" alt="request_image" /></a>
-              <p>Requests</p>
-            </div>
-          </div>
-        </section>
-        <div class="container">
-            <section class="B">
-                <div class="content">
-                        <h1>Welcome, <b>Ahmad</b></h1>
-                    <div class="child-content">
-                        <p>Take a look at your dashboard and see all pending tasks</p>
-                        <button type="submit"> <a href="newInspection_1.html"><img src="images/plus.png" alt="add_img">Create New Inspection</a></button>
-                    </div>
-                </div>
-            </section>
-            <section class="C">
-                <div class="cards">
-                    <a href="inspectionList_1.html"><img src="images/frame-1.png" alt="frame1_img"></a>
-                    <a href="#"><img src="/images/frame-3.png" alt="frame3_img"></a>
-                    <br>
-                    <a href="#"><img src="images/frame-2.png" alt="frame2_img"></a>
-                    <a href="#"><img src="images/frame-4.png" alt="frame4_img"></a>
-                </div>
-                <div class="activity">
-                    <div class="row1">
-                        <span class="left">
-                            Activity
-                        </span> 
-                        <a href="#"><span class="right"> View all <img src="images/greater-than.png" alt="right-icon"></span></a>
-                    </div> 
-                    
-                    <div class="row2">
-                        <span class="left"> You have a property inspection coming up in three days </span> 
-                        <a href="#"><span class="right">Set reminder</span></a> 
-                    </div> 
-                    
-                    <div class="row3">
-                        <span class="left">Mustapha Onasanya sent a new property inspection for Rovenheight homes </span>
-                        <a href="#"><span class="right"> See inspection</span></a> 
-                    </div>
-                    
-                    <div class="row4">
-                        <span class="left"> Your schedule inspection  for Gig Logistics is three days overdue</span> 
-                        <a href="#"><span class="right">Re-schedule now</span></a> 
-                    </div> 
-                    <br>
-                    <div class="row5">
-                        <span class="left">Mustapha Onasanya sent a new property inspection for Rovenheight homes </span>
-                        <a href="#"><span class="right"> See inspection</span></a>
-                    </div> 
-                    
-                </div>
-            </section>
-            <section class="D">
-                <div class="c-inspection">
-                    <p>Created Inspections</p>
-                    <a href="#"><p>View all <img src="images/greater-than.png" alt="right-icon"></p></a>
-                </div>
-            </section>
-            <table>
-            
-                    <th>ID <img src="images/two-arrows.png" alt="arrows_img"></th>
-                    <th>Name <img src="images/two-arrows.png" alt="arrows_img"></th>
-                    <th>Class <img src="images/two-arrows.png" alt="arrows_img"></th>
-                    <th>Inspection method <img src="images/two-arrows.png" alt="arrows_img"></th>
-                    <th>Officer <img src="images/two-arrows.png" alt="arrows_img"></th>
-                    <th>Status <img src="images/two-arrows.png" alt="arrows_img"></th>
-        
-                <tr>
-                    <td>10321</td>
-                    <td>GIG Logistics</td>
-                    <td> <img src="images/purple-dot.png" alt="dot_img"> Marine</td>
-                    <td>Digital</td>
-                    <td>Ahmad Abdulkareem</td>
-                    <td>QOUTE REQUEST</td>
-                </tr>
-                <tr>
-                    <td>10321</td>
-                    <td>Shoprite Stores</td>
-                    <td> <img src="images/blue-dot.png" alt="dot_img"> Property</td>
-                    <td>Manual</td>
-                    <td>Ahmad Abdulkareem</td>
-                    <td> <button  class="green">Completed</button></td>
-                </tr>
-                <tr>
-                    <td>10321</td>
-                    <td>Abiodun Abayomi</td>
-                    <td> <img src="images/orange-dot.png" alt="dot_img"> Motors</td>
-                    <td>Digital</td>
-                    <td>Ahmad Abdulkareem</td>
-                    <td> <button class="orange">Ongoing</button></td>
-                </tr>
-                <tr>
-                    <td>10321</td>
-                    <td>Ben's Agro Allied</td>
-                    <td><img src="images/green-dot.png" alt="dot__img"> Agric</td>
-                    <td>Manual</td>
-                    <td>Ahmad Abdulkareem</td>
-                    <td>SENT TO ENGINEER</td>
-                </tr>
-                <tr>
-                    <td>10321</td>
-                    <td>Abiodun Abayomi</td>
-                    <td> <img src="images/yellow-dot.png" alt="dot_img"> Bond</td>
-                    <td>Digital</td>
-                    <td>Ahmad Abdulkareem</td>
-                    <td> <button  class="light-orange"><img src="images/red-cancel.png" alt="cross_img"> Link Expired</button></td>
-                </tr>
-                <tr>
-                    <td>10321</td>
-                    <td>Juluis Berger</td>
-                    <td> <img src="images/red-dot.png" alt="dot_img"> Engineering</td>
-                    <td>Digital</td>
-                    <td>Ahmad Abdulkareem</td>
-                    <td> <button class="light-grey"><img src="images/corner-up-left.png" alt="corner_img"> Inspection link</button></td>
-                </tr>
-                <tr>
-                    <td>10321</td>
-                    <td>Abiodun Abayomi</td>
-                    <td> <img src="images/green-dot.png" alt="dot__img">  Agric</td>
-                    <td>Digital</td>
-                    <td>Ahmad Abdulkareem</td>
-                    <td> <button class="green">Completed</button></td>
-                </tr>
-            </table>
+
+              <a href="#"><i class="fa-duotone fa-chart-simple"></i> Overview</a>
+              <a href="#" class="requests"><i class="fa-thin fa-table"></i>Requests</a>
+       </div>
+
+       <!-- top nav-bar section  -->
+       <div class="top-nav">
+           <ul class="nav-links-2">
+               <li><a href="#"><i class="fa-duotone fa-bell"></i></a></li>
+               <li><a href="#"><img src="images/am-circle.png" alt="am_circle"></a></li>
+               <li><a href="#">Ahmad<i class="fa-duotone fa-angle-down"></i></a></li>
+            </ul>
+            <i class="fa-duotone fa-bars"></i>
         </div>
-    </main>
+    </nav>
+<!-- End of nav-bars section  -->
+
+<!-- header section  -->
+    <header class="head-section">
+        <div class="header">
+            <span class="greetings">Welcome, <strong>Ahmad Abdulkareem</strong></span>
+            <p>Take a look at your dashboard and see all pending tasks</p>
+        </div>
+        <div>
+            <button type="button" class="create-button"> <a href="newInspection_1.html"><i class="fa-duotone fa-plus"></i> Create New Inspection</a> </button>
+        </div>
+    </header>
+
+    <!-- end of header section  -->
+
+
+<!-- middle body contents (cards, and activity table)  -->
+    <div class="middle-contents">
+
+<!-- Cards section   -->
+        <div class="cards">
+            <div>
+                <a href="inspectionList_1.html  "><img src="/images/frame-1.png" alt="frame-1"></a>
+                <a href="#"><img src="/images/frame-3.png" alt="frame-3"></a>
+            </div>
+            <div>
+                <a href="#"><img src="/images/frame-2.png" alt="frame-2"></a>
+                <a href="#"><img src="/images/frame-4.png" alt="frame-4"></a>
+            </div>
+        </div>
+
+<!-- Activity section  -->
+        <div class="activity">
+            <div class="activity-head">
+                <span class="left">Activity</span>
+                <span class="right"> <a href="#">View all<i class="fa-duotone fa-chevron-right"></i></a> </span>
+            </div>
+
+            <div class="activity-data">
+                <span class="left">You have a property inspection coming up in three days</span>
+                <span class="right"> <a href="#">Set reminder</a></span>
+            </div>
+
+            <div class="activity-data">
+                <span class="left">Nafiu ishaq sent you a new property inspection for Rovenheight homes</span>
+                <span class="right"><a href="#">See inspection</a></span>
+            </div>
+
+            <div class="activity-data">
+                <span class="left">Your scheduled inspection for Gig Logistics is three days overdue  </span>
+                <span class="right"> <a href="#">Re-schedule now</a></span>
+            </div>
+
+            <div class="activity-data">
+                <span class="left">Nafiu ishaq sent you a new property inspection for Rovenheight homes</span>
+                <span class="right"><a href="#">See inspection</a></span>
+            </div>
+        </div>
+    </div>
+ <!-- end of middle contents  -->
+  <main>
+    <div class="table-header">
+        <h4>Created Inspection</h4>
+        <span> <a href="#">View all<i class="fa-duotone fa-chevron-right"></i></a> </span>
+    </div>
+    <table>
+        <tr>
+            <th><a href="#">ID <i class="fa-solid fa-caret-down"></i></a></th>
+            <th><a href="#">Name <i class="fa-solid fa-caret-down"></i></a></th>
+            <th><a href="#">Class<i class="fa-solid fa-caret-down"></i></a></th>
+            <th><a href="#">Inspection method <i class="fa-solid fa-caret-down"></i></a></th>
+            <th><a href="#">Officer<i class="fa-solid fa-caret-down"></i></a></th>
+            <th><a href="#">Status<i class="fa-solid fa-caret-down"></i></a></th>
+        </tr>
+        <tr>
+            <td>1032</td>
+            <td>Gig Logistics</td>
+            <td><i class="fa-solid fa-circle purple"></i>Marine</td>
+            <td>Digital</td>
+            <td>Nafiu Ishaq</td>
+            <td><span class="change-me">QUOTE REQUESTS</span> </td>
+        </tr>
+        <tr>
+            <td>1032</td>
+            <td>Shoprite Stores</td>
+            <td><i class="fa-solid fa-circle blue"></i>Property</td>
+            <td>Manual</td>
+            <td>Nafiu Ishaq</td>
+            <td><button class="change-me-green">Completed</button></td>
+        </tr>
+        <tr>
+            <td>1032</td>
+            <td>Ahmad Mahmud</td>
+            <td><i class="fa-solid fa-circle orange"></i>Motors</td>
+            <td>Digital</td>
+            <td>Nafiu Ishaq</td>
+            <td><button class="change-me-orange">Ongoing</button></td>
+        </tr>
+        <tr>
+            <td>1032</td>
+            <td>Fati's Agro Allied</td>
+            <td><i class="fa-solid fa-circle green"></i>Agric</td>
+            <td>Manual</td>
+            <td>Nafiu Ishaq</td>
+            <td> <span class="change-me">SENT TO ENGINEER</span></td>
+        </tr>
+        <tr>
+            <td>1032</td>
+            <td>Ahmad Mahmud</td>
+            <td><i class="fa-solid fa-circle yellow"></i>Bond</td>
+            <td>Digital</td>
+            <td>Nafiu Ishaq</td>
+            <td><button class="change-me-red"><i class="fa-solid fa-xmark red"></i>Link Expired</button></td>
+        </tr>
+        <tr>
+            <td>1032</td>
+            <td>Abdulmalik Abdulmalik</td>
+            <td><i class="fa-solid fa-circle red"></i>Engineering</td>
+            <td>Digital</td>
+            <td>Nafiu Ishaq</td>
+            <td><button class="change-me-grey"><i class="fa-regular fa-arrow-turn-left"></i>Inspection Link</i></button></td>
+        </tr>
+        <tr>
+            <td>1032</td>
+            <td>Ahmad Mahmud</td>
+            <td><i class="fa-solid fa-circle green"></i>Agric</td>
+            <td>Digital</td>
+            <td>Nafiu Ishaq</td>
+            <td><button  class="change-me-green">Completed</button></td>
+        </tr>
+
+    </table>
+</main>
   </body>
 </html>

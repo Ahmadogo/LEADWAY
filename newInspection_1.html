@@ -3,19 +3,23 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>TRM Portal</title>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap"
-      rel="stylesheet"/>
+    <title>New Inspection 1</title>
+<!-- Google fonts library  -->
+    <linkhref="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap"rel="stylesheet"/>
+
+ <!-- Font awesome library    -->
     <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.2/css/all.css"/>
     <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-thin.css" />
     <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-solid.css"/>
     <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-regular.css"/>
     <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-light.css"/>
+
+<!-- Css link sheet     -->
     <link rel="stylesheet" href="css/newInspection_1.css">
   </head>
   <body>
     <main>
+ <!-- this is my nav bar section  -->
         <nav class="top">
             <div>
                 <a href="#"><i class="fa-duotone fa-bell"></i></a>
@@ -30,7 +34,10 @@
                 <a href="#"><i class="fa-duotone fa-angle-down"></i></a>
             </div>   
         </nav>
+  <!-- End of nav bar section  -->
 
+
+<!-- This is my left side icons section (first column) -->
         <section class="A">
           <div class="first-column">
                 <a href="#"><i class="fa-regular fa-objects-column"></i></a> 
@@ -40,6 +47,10 @@
                  <a href="#"><i class="fa-duotone fa-chart-pie"></i></a> 
                  <a href="#"><i class="fa-duotone fa-gear"></i></a> 
           </div>
+<!-- End of left side icons section           -->
+
+
+<!-- This is the Logo,overview and request section (second column ) -->
           <div class="second-column">
             <div class="logo">
                 <img src="images/leadway-logo-2.png" alt="leadway_logo"  class="leadway-logo"/>
@@ -57,54 +68,68 @@
             </div>
           </div>
         </section>
+<!-- End of second column  -->
+
+
+<!-- This is the header section including the cancel icon  -->
             <div class="container">
+
                 <section class="B">
                     <div class="content">
                       <i class="fa-regular fa-bars hamburger"></i>
-                        <div class="child-content">
+                        
+                       <div class="child-content">
                             <h1>Create New Inspection</h1>
                             <p>See inspections across all business classes</p>
                         </div>
-                        <div class="close">
-                                <a href="#"><i class="fa-duotone fa-xmark "></i></a> <br>
+
+                        <div class="close"> 
+                                <a href="dashboard_1.html"><i class="fa-duotone fa-xmark "></i></a> <br>
                                <p> close </p>
                         </div>
                     </div>
                 </section>
-                <div class="main-contents">
+    <!-- End of header section-->
 
+
+<!-- This is the inspection section   -->
+                <div class="main-contents">
+                  
                   <div class="inspections">
+
                     <div class="left-frame">
                       <div class="child-left-frame">
                         <img src="/images/frame-content.png" alt="">
                       </div>
                       Pre-loss Inspection
                     </div>
-                    <!-- <img src="images/frame-circle-1.png" alt="ins_img" > -->
+
                     <div class="right-frame">
                       <div class="child-left-frame">
                         <img src="/images/frame-content.png" alt="">
                       </div>
                       Post-loss Inspection
                     </div>
+
                     <i class="fa-thin fa-arrow-right-long right-arrow"></i>
-                    <!-- <img src="images/frame-circle-2.png" alt="ins_img" > -->
-                  
                   </div> <br>
 
+                  
+            <!-- dropdown input  -->
                   <div class="property">
                     <label>Choose a class</label>
-                    <!-- <br> -->
                      <select name="select" id="dropdown" class="dropdown">
                         <option value="option"> Property</option>
                      </select>
                   </div>
-
+             <!-- create button  -->
                     <button  type="button" class="create-btn">
                       <i class="fa-duotone fa-arrow-right-from-bracket"></i>
                         Create Request.
                     </button>
+
                 </div>
+    <!-- End of inspection section  -->
             </div>
     </main>
   </body>

@@ -1,8 +1,12 @@
+
+/* Default style sheet setting  */
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
+/* Every color to be used throughout the project  */
 :root{
     --background-color:#2f2f2f;
     --font-color:#34475e;
@@ -14,6 +18,8 @@
     --primary-pink:#fef3f2;
     --new-background:#eeeeee;
 }
+
+/* body styling  */
 body{
     overflow-x: hidden;
     width: 100%;
@@ -21,6 +27,8 @@ body{
     color: var(--font-color);
     font-family: "Mulish", sans-serif;
 }
+
+/* nav bar section styling  */
 .top{
     width: 70%;
     float: right;
@@ -31,55 +39,87 @@ body{
     font-size: 12px;
     align-items: center;
     padding-top: 15px;
-   
+
+    a{
+        font-size: 25px;
+    }  
 }
+
+/* This styles tthe container holding first and second colummn  */
 .A{
     display: flex;
     gap: 1em;
 }
+
+/* Left side icons section styling  */
 .first-column{
     width: 15%;
+    display: flex;
+    flex-flow: column;
+    gap: 1em;
     height: 100vh;
     padding-top: 130px;
     text-align: center;
     background: var(--background-color);
-    justify-content: space-between;
+    
+    a{
+        color: var(--primary-orange);
+        font-size: 25px;   
+    }
 
-    .calender{
+    a:hover{
         background: white;
-        height: 45px;
-        margin: auto;
-        padding-top: 8px;
-       
     }
 }
 
+/* Logo, overview and request section  */
+
+/* this styles the whole second-column (container) */
 .second-column{
     border-right: 1px solid var(--secondary-font-color);
     height: 100vh;
     width: 45%;
     font-size: 15px;
     font-weight: 600;
-    padding-top: 40px;
+    padding-top: 30px;
 
 
+/* this styles the overview part      */
     .overview {
         display: flex;
         font-weight: 500;
         font-size: 12px;
         gap: 2em;
+
+        a{
+            color: var(--secondary-font-color);
+            font-size: 25px;
+        }
+        
     }
+
+
+/* This styles the request part  */
     .request{
+        color: var(--primary-orange);
         display: flex;
         gap: 2em;
         font-weight: 500;
         font-size: 12px;
-        color: var(--primary-orange);
 
+        a{
+            color: var(--primary-orange);
+            font-size: 25px;
+        }
     }
 }
+/* End of second column styling  */
 
+     /* ...... ....... */
 
+/* Header section styling  */
+
+/* this styles the  whole container  */
 .B{
     width: 100%;
     position: absolute;
@@ -99,208 +139,288 @@ body{
     }
 }
 
+
+/* this styles the h1, p, and tthe hamburger and the close icons  */
 .content{
     display: flex;
     gap: 50em;
     margin-top: -8.5%;
 
+    .hamburger{
+        display: none;
+    }
     h1{
         padding-bottom: 10px;
     }
-
-    img{
-        width: 65%;
+    a{
+        font-size: 20px;
     }
-
 }
+/* End of Header styling section  */
 
+        /* ......... .......... */
+
+ /*The body-contents styling*/
+
+/* this styles the whole container of the body contents  */
 .main-contents{
     width: 60%;
     position: absolute;
     padding: 12px;
-    bottom: 25px;
+    bottom: 55px;
     left: 40%;
 
-    .inspections img {
-        width: 30%;
-        padding: 10px;
-        cursor: pointer;
-        }
-    label{
-        bottom: 10px;
-    }
-    .circle-2{
-        border: 1px solid var(--primary-orange);
-        border-radius: 10px;
-    }
-    
-
-    .property{
-        border: 1px solid;
+/* this styles the two frames in the content  */
+    .inspections{
         display: flex;
-        gap: 75%;
-        padding: 10px ;
-        font-size: 13px;
-        width: 60%;
-        left: 12%;
-        font-size: 15px;
-        cursor: pointer;
+        gap: 20px;
+        .left-frame , .right-frame{
+            height: 200px;
+            width: 200px;
+            border: 1px solid var(--secondary-font-color);
+            padding: 20px;
 
-        img{
-            padding-right: 8px;
+            &:hover{
+                border: 1px solid var(--primary-orange);
+            }
+            
+            .child-left-frame, .child-right-frame{
+                height: 150px;
+                width: 150px;
+                margin: auto;
+                border-radius: 50%;
+                border: 1px solid var(--secondary-font-color);
+                padding: 20%;
+            }
+         }
+         
+         /* this styles the arrow icon pointing the right-frame */
+         .right-arrow{
+             font-size: 50px;
+             font-weight: 400;
+             color: #7F8B94;
+             top: 25%;
+             left: 29%;
+             position: absolute;
+            }
+            
         }
+        
+        .motors{
+            display: flex;
+            flex-flow: column;
+            gap: 10px;
+            font-weight: 700;
+
+            label{
+                bottom: 10px;
+            }
+
+            .dropdown{
+                width: 50%;
+                padding: 11px;
+                border-color: var(--secondary-font-color);
+            }
     }
+   
+/* This styles the  create button  */
     .create-btn{
-       padding: 10px 50px;
+       padding: 0px 40px;
        border-radius: 5px; 
-       background: var(--secondary-font-color);
+       background: #c3c4c6;
        border: none;
-       margin-top: 5em;
-       height: 50px;
-       color: white;
+       justify-content: center;
+       margin-top: 5%;
+       height: 35px;
+       color: var(--font-color);
        font-weight: 700;
        cursor: pointer;
        margin-left: 15%;
 
-       img{
-        padding-right: 8px;
+       .fa-duotone{
+            font-size: 15px;
+            padding-right: 5px;  
+            color: #2f2f2f;
        }
     }
 }
+/* End of the body-contents styling  */
+
+    /* .............. ................ */
 
 
+    
+    
+/* This styles the responsive of a phone size screen  */
 @media screen and (max-width:767px) {
-    .A{
-        display: flex;
-        gap: 1em;
+    /* nav-bar styling   */
+    .top{
+        width: 100%;
+        border-bottom: 1px solid var(--secondary-font-color);
     }
-    .first-column{
-        width: 35%;
-        height: 100vh;
-        padding-top: 130px;
-        text-align: center;
-        background: var(--background-color);
-        justify-content: space-between;
-        border: none;
-    
-        .calender{
-            background: white;
-            height: 45px;
-            margin: auto;
-            padding-top: 8px;
-           
-        }
+/* columns styling  */
+    .first-column , .second-column{
+        display: none;
     }
     
-    .second-column{
-        width: 40%;
-        font-weight: 600;
-        padding-top: 75px;
-
-        .logo{
-            display: none;
-        }
-    
-    
-        .overview {
-            display: block;
-            font-weight: 500;
-            font-size: 10px;
-            /* gap: 2em; */
-           
-        }
-        .request{
-            display: block;
-            /* gap: 2em; */
-            font-weight: 500;
-            font-size: 10px;
-            color: var(--primary-orange);
-          
-    
-        }
-    }
-    
-    
+/* header section styling (container) */
     .B{
-        width: 70%;
+        width: 100%;
         bottom: 70%;
         padding-top: 150px;
-        padding-left: 10px;
-        left: 27%;
+        padding-left: 0px;
+        left: 0;
+        border-top: none;
         
-    
+/* child-content styling      */
         h1{
-            font-weight: 500;
-            font-size: 15px;
+            font-weight: 600;
+            font-size: 20px;
         
         }
         p{
-            font-size: 8px;
+            font-size: 15px;
         }
     }
     
+/* header content styling     */
     .content{
         display: flex;
-        gap: 5em;
-        margin-top:-120px;
+        gap: 15%;
+        margin-top:-150px;
+        padding: 20px;
 
         img{
             width: 60%;
         }
-        h1{
-            font-size: 18px;
+        .hamburger{
+            display: block;
+            position: absolute;
+            top: -40%;
+            padding-left: 5px;
         }
-        p{
-            font-size: 12px;
-        }
-    
-    }
-    
-    .main-contents{
-        width: 70%;
-        bottom: 8%; 
-        left: 30%;
-    
-        .inspections img {
-            width: 40%;
-            
-        }
-        
-        label{
-            bottom: 10px;
-        }
-        
-        .property{
-            border: 1px solid;
+        .close{
             display: flex;
-            gap: 55%;
-            padding: 10px ;
-            width: 90%;
-            font-size: 12px;
+            flex-flow: column;
+            padding: 0;
 
-            
+            p{
+                display: none;
+            }
         }
-        .create-btn{
-           padding: 5px 10px;
-           margin-top: 4em;
-           margin-left: 16%;
-
-        }
+    
     }
     
+/* inspection section styling (container)     */
+    .main-contents{
+        width: 100%;
+        bottom: 17%; 
+        left: 10%;
+    
+  /* inspection section body styling (two frames)       */
+        .inspections{
+            display: flex;
+            gap: 20px;
+
+            .left-frame , .right-frame{
+                height: 150px;
+                width: 150px;
+                border: 1px solid var(--secondary-font-color);
+                padding: 10px;
+                font-size: 12px;
+    
+                &:hover{
+                    border: 1px solid var(--primary-orange);
+                }
+                
+            .child-left-frame, .child-right-frame{
+                    height: 100px;
+                    width: 100px;
+                    margin: auto;
+                    border-radius: 50%;
+                    border: 1px solid var(--secondary-font-color);
+                    padding: 10%;
+                
+                }
+            .right-arrow{
+                    font-size: 25px;
+                    font-weight: 300;
+                    color: #7F8B94;
+                    top: 22%;
+                    left: 60%;
+                    position: absolute;
+                }
+                    
+                    img{
+                        border: none;
+                    }
+                }
+        }
+
+
+        
+        .motors{
+            display: flex;
+            flex-flow: column;
+            gap: 10px;
+            left: 0;
+            font-weight: 700;
+
+            label{
+                bottom: 10px;
+            }
+    
+            .dropdown{
+                width: 80%;
+                padding: 11px;
+                border-color: var(--secondary-font-color);
+            }
+        }
+       
+/* create button styling         */
+        .create-btn{
+           padding: 0px 40px;
+           border-radius: 5px; 
+           background: #c3c4c6;
+           border: none;
+           justify-content: center;
+           margin-top: 10%;
+           height: 35px;
+           color: var(--font-color);
+           font-weight: 700;
+           cursor: pointer;
+           margin-left: 15%;
+    
+    /* button arrow styling            */
+           .fa-duotone{
+                font-size: 15px;
+                padding-right: 5px;  
+                color: #2f2f2f;
+           }
+        }
+    }
     
 }
+
+
+
+/* This styles the responsive of a tablet screen size  */
+
 @media screen and (min-width:768px) and (max-width:1100px){
+  /* nav-bar styling    */
     .A{
         display: flex;
         gap: 1em;
     }
+
+/* left-side icons section styling  */
     .first-column{
         padding-top: 150px;
         width: 20%;
 
     }
-    
+
+ /* logo, overview and request section     */
     .second-column{
         width: 50%;
         font-weight: 600;
@@ -333,7 +453,8 @@ body{
         }
     }
     
-    
+/* header section styling      */
+        /* container */
     .B{
         width: 100%;
         bottom: 84%;
@@ -342,66 +463,116 @@ body{
         left: 23%;
         
     
-        h1{
-            font-weight: 500;
-            font-size: 25px;
-            padding-top: 10px;
-
-        
-        }
-        p{
-            font-size: 20px;
-            padding-top: 10px;
-        }
-    }
-    
-    .content{
-        display: flex;
-        gap: 18em;
-        margin-top:-120px;
-
-        img{
-            width: 80%;
-        }
-    
-    }
-    
-    .main-contents{
-        width: 80%;
-        bottom: 25%; 
-        left: 30%;
-    
-        .inspections img {
-            width: 40%;
-            }
-
-            label{
-                font-size: 20px;
-            }
-       
-        
-    
-        .property{
-            border: 1px solid;
+    /* contents of the header      */
+        .content{
             display: flex;
-            gap: 80%;
-            padding: 20px ;
-            width: 78%;
-            font-size: 19px;
-            top: 20px;
-        }
-        .create-btn{
-           padding: 30px 80px;
-           margin-top: 4em;
-           margin-left: 16%;
-           font-size: 25px;
+            gap: 34%;
+            margin-top:-90px;
+            
+            img{
+                width: 80%;
+            }
 
-           img{
-            padding-right: 25px;
-            width: 18%;
+            h1{
+                font-weight: 500;
+                font-size: 25px;
+                padding-top: 10px; 
+            }
+
+            p{
+                font-size: 20px;
+                padding-top: 10px;
+            }
+            
+        }
+    }
+    
+    /* inspection section  */
+        /* container  */
+    .main-contents{
+        width: 100%;
+        bottom: 50%; 
+        left: 35%;
+    
+    /* contents of inspection section  */
+        .inspections{
+            display: flex;
+            gap: 20px;
+            .left-frame , .right-frame{
+                height: 150px;
+                width: 150px;
+                border: 1px solid var(--secondary-font-color);
+                padding: 10px;
+                font-size: 12px;
+    
+                &:hover{
+                    border: 1px solid var(--primary-orange);
+                    }
+                
+                .child-left-frame, .child-right-frame{
+                    height: 100px;
+                    width: 100px;
+                    margin: auto;
+                    border-radius: 50%;
+                    border: 1px solid var(--secondary-font-color);
+                    padding: 10%;
+
+                    img{
+                        border: none;
+                        }
+                    }
+                }
+                .right-arrow{
+                    font-size: 45px;
+                    font-weight: 300;
+                    color: #7F8B94;
+                    top: 20%;
+                    left: 18%;
+                    position: absolute;
+                }
+            }
+        
+            
+            .motors{
+                display: flex;
+                flex-flow: column;
+                gap: 10px;
+                left: 0;
+                font-weight: 700;
+
+                label{
+                    bottom: 10px;
+                }
+    
+                .dropdown{
+                    width: 30.5%;
+                    padding: 11px;
+                    border-color: var(--secondary-font-color);
+                }
+        }
+       
+       
+        .create-btn{
+           padding: 0px 40px;
+           border-radius: 5px; 
+           background: #c3c4c6;
+           border: none;
+           justify-content: center;
+           margin-top: 5%;
+           height: 35px;
+           color: var(--font-color);
+           font-weight: 700;
+           cursor: pointer;
+           margin-left: 6%;
+    
+           .fa-duotone{
+            font-size: 15px;
+            padding-right: 5px;  
+            color: #2f2f2f;
            }
         }
     }
+    
     
     
 }

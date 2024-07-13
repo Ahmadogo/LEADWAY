@@ -3,22 +3,26 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>TRM Portal</title>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap"
-      rel="stylesheet"/>
+    <title>New Inspection 2</title>
+<!-- Google fonts library  -->
+    <linkhref="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap"rel="stylesheet"/>
+
+ <!-- Font awesome library    -->
     <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.2/css/all.css"/>
     <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-thin.css" />
     <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-solid.css"/>
     <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-regular.css"/>
     <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-light.css"/>
+
+<!-- Css link sheet     -->
     <link rel="stylesheet" href="css/newInspection_2.css">
   </head>
   <body>
     <main>
+ <!-- this is my nav bar section  -->
         <nav class="top">
             <div>
-                <a href="#"><img src="images/bell.png" alt="bell_image"></a>
+                <a href="#"><i class="fa-duotone fa-bell"></i></a>
             </div>
             <div>
                 <a href="#"><img src="images/am-circle.png" alt="am_circle"></a>
@@ -27,32 +31,26 @@
                 Ahmad
             </div>
             <div>
-                <a href="#"><img src="images/down-arrow.png" alt="downArrow_image"></a>
+                <a href="#"><i class="fa-duotone fa-angle-down"></i></a>
             </div>   
         </nav>
+  <!-- End of nav bar section  -->
 
+
+<!-- This is my left side icons section (first column) -->
         <section class="A">
           <div class="first-column">
-            <div>
-                <a href="#"><img src="images/group-1.png" alt="group1_image" /></a> 
-            </div>
-            <br>
-            <div class="calender">
-                <a href="#"><img src="images/vector.png" alt="vector_image"/></a>
-            </div> <br>
-            <div>
-                 <a href="#"><img src="images/case.png" alt="case_image" /></a> 
-            </div> <br>
-            <div>
-                 <a href="#"><img src="images/dribble-light.png" alt="dribbleLight_Img "/></a> <br>
-            </div> <br>
-            <div>
-                 <a href="#"><img src="images/layer-5.png" alt="layer5_image" /></a> 
-            </div> <br> 
-            <div>
-                 <a href="#"><img src="images/layer-2.png" alt="layes2_image" /></a> 
-            </div> <br>
+                <a href="#"><i class="fa-regular fa-objects-column"></i></a> 
+                <a href="#"><i class="fa-duotone fa-calendar-days"></i></a>
+                 <a href="#"><i class="fa-duotone fa-briefcase"></i></a> 
+                 <a href="#"><i class="fa-regular fa-objects-column"></i></a> 
+                 <a href="#"><i class="fa-duotone fa-chart-pie"></i></a> 
+                 <a href="#"><i class="fa-duotone fa-gear"></i></a> 
           </div>
+<!-- End of left side icons section           -->
+
+
+<!-- This is the Logo,overview and request section (second column ) -->
           <div class="second-column">
             <div class="logo">
                 <img src="images/leadway-logo-2.png" alt="leadway_logo"  class="leadway-logo"/>
@@ -60,54 +58,78 @@
             <p class="TRM">TRM</p>
             <br>
             <div class="overview">
-              <a href="#"><img src="images/overview-2.png" alt="overview_image" /></a>
+              <a href="#"><i class="fa-duotone fa-chart-simple"></i></a>
               <p>Overview</p>
             </div>
              <br>
             <div class="request">
-              <a href="#"><img src="images/requests-2.png" alt="request_image" /></a>
+              <a href="#"><i class="fa-thin fa-table"></i></a>
               <p>Requests</p>
             </div>
           </div>
         </section>
+<!-- End of second column  -->
+
+
+<!-- This is the header section including the cancel icon  -->
             <div class="container">
+
                 <section class="B">
                     <div class="content">
-                        <div class="child-content">
+                      <i class="fa-regular fa-bars hamburger"></i>
+                        
+                       <div class="child-content">
                             <h1>Create New Inspection</h1>
                             <p>See inspections across all business classes</p>
                         </div>
-                        <div class="close">
-                                <a href="#"><img src="/images/big-cancel.png" alt="close_img"></a> 
+
+                        <div class="close"> 
+                                <a href="#"><i class="fa-duotone fa-xmark "></i></a> <br>
+                               <p> close </p>
                         </div>
                     </div>
                 </section>
-                <div class="main-contents">
+    <!-- End of header section-->
 
-                  <div class="inspections">
-                    <img src="images/frame-circle-1.png" alt="ins_img" >
-                    <img src="images/frame-circle-2.png" alt="ins_img" >
+
+<!-- This is the inspection section   -->
+                <div class="main-contents">
                   
+                  <div class="inspections">
+
+                    <div class="left-frame">
+                      <div class="child-left-frame">
+                        <img src="/images/frame-content.png" alt="">
+                      </div>
+                      Pre-loss Inspection
+                    </div>
+
+                    <div class="right-frame">
+                      <div class="child-left-frame">
+                        <img src="/images/frame-content.png" alt="">
+                      </div>
+                      Post-loss Inspection
+                    </div>
+
+                    <i class="fa-thin fa-arrow-right-long right-arrow"></i>
                   </div> <br>
 
-                    <label>Choose a class</label>
-
+                  
+            <!-- dropdown input  -->
                   <div class="property">
-                    <div>
-                      <img src="images/blue-dot.png" alt="dot_img">
-                      Property
-                    </div>
-                      
-                      <div>
-                        <img src="images/down-arrow.png" alt="arow_img">
-                      </div>
+                    <label>Choose a class</label>
+                     <select name="select" id="dropdown" class="dropdown">
+                        <option value="option"> Property</option>
+                     </select>
                   </div>
-
-                    <button class="create-btn">
-                        <!-- <img src="images/arr" alt="right-arrow"> -->
+             <!-- create button  -->
+                    <button  type="button" class="create-btn">
+                      <i class="fa-duotone fa-arrow-right-from-bracket"></i>
                         Create Request.
                     </button>
+
                 </div>
+    <!-- End of inspection section  -->
             </div>
     </main>
   </body>

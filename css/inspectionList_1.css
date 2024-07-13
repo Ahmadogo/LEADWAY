@@ -1,147 +1,191 @@
 *{
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
     box-sizing: border-box;
 }
+
 :root{
-    --background-color:#2f2f2f;
-    --font-color:#34475e;
-    --secondary-font-color:#c3c4c6;
-    --primary-orange:#ff7a00;
-    --secondary-orange:#ffdebf;
-    --primary-green:#ecfdf3;
-    --primary-grey:#f2f4f7;
-    --primary-pink:#fef3f2;
-    --new-background:#eeeeee;
+    --orange:#FF7A00;
+    --black-background:#2F2F2F;
+    ---green:#00B388;
+    ---red:#EE5331;
+    ---grey:#D4D4D4;
+    ---grey-border:#737373;
+    ---font-color-1:#34475E;
+    ---font-color-2:#7A7C87;
 }
+
 body{
-    overflow-x: hidden;
     width: 100%;
     height: 100vh;
-    color: var(--font-color);
+    overflow-x: hidden;
     font-family: "Mulish", sans-serif;
 }
-.top{
-    width: 70%;
-    float: right;
-    display:flex;
-    justify-content: end;
-    gap: 1.5em;
-    padding: 10px;
-    font-size: 12px;
-   
-}
-.A{
-    display: flex;
-    gap: 1em;
-}
-.first-column{
-    width: 15%;
-    height: 100vh;
-    padding-top: 130px;
-    text-align: center;
-    background: var(--background-color);
-    justify-content: space-between;
 
-    .calender{
-        background: white;
-        height: 45px;
-        margin: auto;
-        padding-top: 8px;
-       
+.nav-icons{
+    display: flex;
+}
+
+
+/* left-side icons styling  */
+.first-column{
+    background: #2F2F2F;
+    width: 4%;
+    height: 100vh;
+    padding-top: 120px;
+
+    li{
+        list-style: none;
+    }
+    
+    a{
+        display: flex;
+        text-decoration: none;
+        color: #FF7A00;
+        font-size: 25px;
+        padding: 15px 10px;
+    }
+    a:hover{
+        background: #ffff;
     }
 }
+
+/* logo, overview and requests section  */
 
 .second-column{
-    border-right: 1px solid var(--secondary-font-color);
+    width: 15%;
     height: 100vh;
-    width: 45%;
-    font-size: 15px;
-    font-weight: 600;
-    padding-top: 40px;
-
-
-    .overview {
-        display: flex;
-        font-weight: 500;
-        font-size: 12px;
-        gap: 2em;
-    }
-    .request{
-        display: flex;
-        gap: 2em;
-        font-weight: 500;
-        font-size: 12px;
-        color: var(--primary-orange);
-
-    }
-}
-
-
-.B{
-    width: 100%;
     display: flex;
-    gap: 31em;
-    position: absolute;
-    bottom: 72%;
-    padding-top: 20px;
-    padding-left: 20px;
-    left: 19.2%;
-    border-top: 1px solid var(--secondary-font-color);
-
-    h1{
-        font-weight: 600;
-        /* top: 55px; */
-        padding-left: 10px; 
-    }
-    p{
-        font-size: 15px;
-    }
-   
-}
-.child-content{
-    display: flex;
-    gap: 45em;
+    flex-flow: column;
+    gap: 10px;
     padding: 10px;
-    font-size: 12px;
-     
-    button{
-        padding: 12px 25px;
-        background: var(--primary-orange);
-        color: white;
-        border: none;
-        cursor: pointer;
-        border-radius: 3px;
-         
-        p{
-        font-weight: 800;
-        }
+    padding-top: 40px;
+    border-right: 1px solid #D4D4D4;
+    background: #ffff;
 
-        img{
-            padding-right: 5px;
+    p{
+        color: #34475E;
+        font-weight: 700;
+        letter-spacing: 1px;
+    }
+
+    a{
+        text-decoration: none;
+        color: #737373;
+        padding: 5px;
+        font-size: 12px;
+    }
+
+    .fa-chart-simple{
+        font-size: 20px; 
+        padding: 8px;
+        color: #737373;
+    }
+    .fa-table{
+        font-size: 20px; 
+        padding: 8px;
+        
+    }
+    .requests{
+        color: #FF7A00;
+    }
+}
+
+        /* top nav style  */
+.top-nav{
+    width: 82%;
+    height: 8vh;
+    padding: 10px;
+    max-width: 100%;
+    border-bottom: 1px solid #D4D4D4;
+    
+    .nav-links-2{
+        display: flex;
+        gap: 20px;
+        justify-content: end;
+    }
+    a, li{
+        text-decoration: none;
+        list-style: none;
+        color: #7A7C87;
+        font-size: 12px;
+
+        .fa-bell{
+            font-size: 25px;
+        }
+        .fa-angle-down{
+            font-size: 15px;
+            padding:0px 10px;
+        }
+    }
+    .fa-bars{
+        display: none;
+    }
+}
+/* end of nav-bars styling  */
+
+
+/* this styles the contents-heading  */
+main{
+    width: 80%;
+}
+
+.content-heading{
+    height: 10vh;
+    width: max-content;
+    position: absolute;
+    top: 12%;
+    left: 20%;
+    display: flex;
+    gap: 450px;
+    padding: 10px;
+
+    .child-content{  
+        button{
+            padding: 12px 25px;
+            background: #ff7a00;
+            border: none;
+            cursor: pointer;
+            border-radius: 3px;
+            
+            a{
+                font-weight: 600;
+                text-decoration: none;
+                color: #ffff;
+
+            }
+            
+            .fa-plus{
+                padding-right: 5px;
+                color: #34475E;
+                font-size: 15px;
+                font-weight: 800;
+
+            }
         }
     }
 }
 
 
 
+/* option bars (above the table) styling */
 
-.heads{
+.option-bars{
     display: flex;
     gap:18em;
-    width: 80%;
+    width: max-content;
     padding: 5px;
     position: absolute;
     bottom: 60%;
     left: 19.5%;
 
-    .options{
+    .status{
         display: flex;
         gap: 1em;
         padding: 5px;
         border-radius: 7px;
         font-size: 12px;
-        background: var(--new-background);
+        background: #D4D4D4;
         
         a{
             text-decoration: none;
@@ -150,9 +194,9 @@ body{
             
         }
 
-        .white-background{
+        .white-background, a:hover{
             background: white;
-            padding: 8px 10px;
+            padding: 5px 5px;
             border-radius: 5px;
              
         }
@@ -165,7 +209,7 @@ body{
     gap: 1.5em;
 
     .search{
-        border: 1px solid var(--secondary-font-color);
+        border: 1px solid #D4D4D4;
         height: 30px;
         padding: 5px;
         margin: auto;
@@ -175,6 +219,7 @@ body{
         input{
             border: none;
         }
+
     }
 
     .marine{
@@ -183,12 +228,21 @@ body{
         font-size: 12px;
         margin: auto;
         border-radius: 5px;
-        background: var(--new-background);
-        border: 1px solid var(--secondary-font-color);
+        background: #D4D4D4;
         
         a{
             text-decoration: none;
             color: var(--font-color);
+        }
+
+        .fa-circle{
+            color: purple;
+            padding: 2px;
+            font-size: 7px;
+        }
+        .fa-xmark{
+            font-size: 15px;
+            padding: 2px;
         }
     }
 
@@ -198,8 +252,8 @@ body{
         padding: 5px 10px;
         margin: auto;
         border-radius: 5px;
-        color: var(--secondary-font-color);
-        border: 1px solid var(--secondary-font-color);
+        color: #7A7C87;
+        border: 1px solid #D4D4D4;
         
         select{
             cursor: pointer;
@@ -209,29 +263,31 @@ body{
 }
 
 
-
+/* Table section styling  */
 table{
     position: relative;
-    left: 20%;
-    width: 75%;
+    left: 25%;
+    width: max-content;
     bottom: 375px;
     font-size: 13px;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
-    border: 1px solid var(--secondary-font-color);
+    border: 1px solid #D4D4D4;
+    border-collapse: collapse;
 }
 td{
-    padding:10px ;
-    padding-left: 35px;
-    border-top: 1px solid var(--secondary-font-color);
+    padding:15px ;
+    padding-left: 50px;
+    border-top: 1px solid #D4D4D4;
 }
 th{
-    padding:10px;
+    padding:15px;
+    padding-left: 50px;
     cursor: pointer;
-    color: var(--font-color);
+    color: #7A7C87;
     
-    img{
-        width: 6px;
+    .fa-caret-down{
+        padding: 2px;
     }
 }
 .orange{
@@ -241,7 +297,7 @@ th{
     cursor: pointer;
     font-weight: 500;
     color: #ff7a00;
-    background: var(--secondary-orange);
+    background: #FFDEBF;
 }
 
 .green{
@@ -250,253 +306,169 @@ th{
     border-radius: 5px;
     font-weight: 500;
     cursor: pointer;
-    color: green;
-    background: var(--primary-green);
+    color: #027A48;
+    background: #ECFDF3;
 }
 
 
-@media screen  and (max-width:767px) {
-    .top{
-        display: block;
-        top: 8%;
-        left: 86%;
-        position: absolute;
-        width: 10%;
+@media screen and (max-width:767px) {
+    .first-column, .second-column{
+        display: none;
+    }
 
-        a{
-            text-decoration: none;
-            color: black;
-        }
-    }
-    .A{
-        display: flex;
-        gap: 1em;
-    }
-    .first-column{
-        display: flex;
+    .top-nav{
         width: 100%;
-        height: 45px;
-        gap: 20px;
-        padding: 10px;
-        position: absolute;
-       
-        .calender{
-            height:50px;
-            padding: 5px 8px;   
-        }
-    
-    }
-    
-    .second-column{
-        height: 45px;
-        width: 100%;
-        display: flex;
-        font-size: 10px;
-        position: absolute;
-        padding: 10px;
-        top: 7%;
-        left: 0px;
 
-        .TRM{
-            padding-right: 20px;
-            font-size: 15px;
-        }
-    
-        .leadway-logo{
-            display: none;
-        }
-        .overview, .request {
+        .fa-bars{
             display: block;
-        }
-    }
-    
-    
-    .B{
-        gap: 0px;
-        border: none;
-        bottom: 65%; 
-        padding-top: 0px;
-        padding-left: 0px;
-        left: 12px;
-
-    
-        h1{
+            position: absolute;
+            left: 10px;
+            top: 20px;
             font-size: 15px;
-            /* padding-bottom: 10px;  */
-        }
-        p{
-            font-size: 11px;
-            padding-top: 20px;
-        }
-       
-    }
-    .child-content{
-        display: flex;
-        gap: 7px;
-        padding: 0px;
-        font-size: 2px;
-         
-        button{
-            padding:5px;
-           height: 30px;
         }
     }
-    
-    
-    
-    
-    .heads{
-        display: block;
-        gap:0;
+    .content-heading{
+        height: 0vh;
         width: 100%;
-        padding:0px;
-        position: absolute;
-        bottom: 48%;
+        left: 0%;
+        display: flex;
+        justify-content: space-between;
+
+        .content{
+            h1{
+                font-size: 20px;
+            }
+            p{
+                font-size: 12px;
+            }
+        }
+
+        .child-content{    
+            button{
+                padding: 5px 4px;
+                font-size: 10px;
+                
+                .fa-plus{
+                    padding-right: 2px;
+                    color: black;
+                    font-size: 13px;
+    
+                }
+            }
+        }
+    }
+
+    .option-bars{
+        display: block;
+        width: 100%;
+        bottom: 55%;
         left: 0;
     
-        .options{
+        .status{
             gap: 5px;
             padding: 5px;
+            font-size: 10px;
+    
+            .white-background, a:hover{
+                padding:  4px;                 
+            }
         }
     }
     
     
     .right-side{
-        width: 100%;
-        gap: 0px;
-    
+        padding-top: 20px;
+
         .search{
-            border: 1px solid var(--secondary-font-color);
-            height: 20px;
             padding: 5px;
-            padding-bottom: 20px;
-            margin-top:15px;
-            width: 35%;
-            border-radius: 5px;
-        
+            width: 30%;
+            font-size: 10px;
+            margin: auto;
+            display: flex;
+            gap: 10px;
     
     
             input{
-                border: none;
-                width: 50%;
-            
+                font-size: 10px;
             }
+    
         }
     
         .marine{
-            height: 20px;
-            padding: 5px ;
-            padding-bottom: 20px;
-            margin-top:15px;
-            font-size: 12px;
-        }
+            padding: 3px 5px;
+            font-size: 10px;
     
-        .sort-by{
-            height: 30px;
-            font-size: 12px;
-            padding: 5px;
-            margin-top:15px;
-        }
-    }
-    
-    
-    
-    table{
-        position: absolute;
-        bottom: 18%;
-        left: 0%;
-        width: min-content;
-        font-size: 10px;
-    }
-
-    td{
-        padding: 10px;
-        padding-left: 0px;
-
-    }
-    th{
-        padding:10px;
-        img{
-            width: 5px;  
-        }
-    }
-
-    .orange{
-        padding:10px;
-        font-size: 12px;
-    }
-    
-    .green{
-        font-size: 12px;
-        padding: 10px;
-    }
-    
-}
-
-@media screen and (min-width:768px) and (max-width:1200px){
-    .top{
-        gap: 1.5em;
-        padding: 20px;
-        padding-top: 30px;
-        font-size: 15px;
-       
-    }
-    .second-column{
-        width: 35%;
-    }
-    .B{
-        bottom: 85%;
-        gap: 3em;
-        padding-top: 30px;
-        left: 19%;
-        
-        h1{
-            font-size: 40px; 
-        }
-        p{
-            font-size: 22px;
-        }
-       
-    }
-    .child-content{
-       
-        button{
-            padding: 15px 30px;
-            font-size: 15px;
-
-            img{
-                padding-right: 7px;
+            .fa-xmark{
+                font-size: 10px;
+                padding: 2px;
             }
         }
-    }
-    
-    
-    
-    
-    .heads{
-        display: flex;
-        gap:10px;
-        padding: 2px;
-        bottom: 75%;
-        left: 19.5%;
-    
-        .options{
-            display: flex;
-            gap: 10px;
-            font-size: 15px;
-             }
+        .sort-by{
+            font-size: 10px;
+            padding: 3px 5px;
+            
+            select{
+                cursor: pointer;
+                border: none;
+                color: #34475E;
+                font-size: 10px;
+            }
+        }
     
     }
 
     table{
         position: absolute;
-        bottom: 50%;
-        left: 17%;
-        width: max-content;
-        font-size: 14px;
+        left: 0%;
+        width: 100%;
+        bottom: 30%;
+        font-size: 10px;
     }
-
 }
+
+
+@media screen and (min-width:768px) and (max-width:1200px){
+
+    .first-column{
+        width: 5%;
+    }
+    .second-column{
+        width: 20%;
+    }
     
-    
-   
+    main{
+        width: 80%;
+
+        .content-heading{
+            width: max-content;
+            left: 25%;
+            gap: 155px;
+        }
+        
+        .option-bars{
+            gap: 30px;
+            width: max-content;
+            padding: 5px;
+            position: absolute;
+            bottom: 75%;
+            left: 25%;
+        }
+        
+        table{
+            width: max-content;
+            position: absolute;
+            left: 25%;
+            bottom: 60%;
+        }
+        td{
+            padding:10px ;
+            padding-left: 10px;
+            border-top: 1px solid #D4D4D4;
+        }
+        th{
+            padding:10px;
+            cursor: pointer;
+            color: #7A7C87;
+        }
+    }
+}
