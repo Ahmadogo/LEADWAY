@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>New Inspectio 1</title>
+    <title>New Inspection Form</title>
     <!-- Google fonts library  -->
     <link
     href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap"
@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-light.css"/>
 
 <!-- Css link sheet     -->
-    <link rel="stylesheet" href="/css/inspectionList_1.css">
+ <link rel="stylesheet" href="/css/form_1.css">
 </head>
 <body>
     <nav class="nav-icons">
@@ -55,75 +55,58 @@
             </ul>
         </div>
     </nav>
-
-
-        <!-- header section of the body content  -->
-    <main>
-        <div class="content-heading">
-            <div class="content">
-                <h1>Inspection List</h1>
-                <p>See inspections across all business classes</p>
-            </div>
-            <div class="child-content">
-                <button type="button"> <a href="#"><i class="fa-duotone fa-plus"></i> Create New Inspection</a></button>
-            </div>
-        </div>
-
-
-        <div class="option-bars">
-                <div class="status">
-                    <a href="inspectionList_1.html" class="white-background">All Requests</a> <br>
-                    <a href="inspectionList_2.html">Ongoing</a> <br>
-                    <a href="inspectionList_3.html">Completed</a> <br>
-                </div>
-
-            <div class="right-side">
-                <div class="search">
-                    <a href="#"><i class="fa-duotone fa-magnifying-glass"></i></a>
-                    <input type="search" name="search" placeholder="Search">
-                </div>
-
-                <div class="marine">
-                    <a href="#"><i class="fa-solid fa-circle"></i> Marine<i class="fa-duotone fa-xmark"></i></a>
-                </div>
-
-                <div class="sort-by">
-                    <label>Sort by:</label>
-                    <select name="dropdown">
-                        <option>Class</option> 
-                    </select>
-                </div>
-            </div>   
-        </div>
-
-
-        <table>
-            
-            <th>ID <i class="fa-duotone fa-caret-down"></i></th>
-            <th>Date <i class="fa-duotone fa-caret-down"></i></th>
-            <th>Name<i class="fa-duotone fa-caret-down"></i></th>
-            <th>Inspection method <i class="fa-duotone fa-caret-down"></i></th>
-            <th>Officer <i class="fa-duotone fa-caret-down"></i></th>
-            <th>Status <i class="fa-duotone fa-caret-down"></i></th>
     
-            <tr>
-                <td>10321</td>
-                <td>15/06/2023</td>
-                <td>Rovenheights properties</td>
-                <td>Digital</td>
-                <td>Ahmaad Abdulkareem</td>
-                <td><button  class="orange">Ongoing</button></td>
-            </tr>
+    <!-- Header section of the body-content  -->
+    <div class="body-content-heading">
+            <div>
+                <h3>Create new Inspection </h3>
+                <p>See Inspections across all business classes</p>
+            </div>
+            <div class="back">
+                <i class="fa-duotone fa-chevron-left"></i>
+                Back to create request 
+            </div>
+        </div>
+    <main>
+        <div class="form-head">
+            <p>Post-Loss Inspection-Property</p>
+        </div>
 
-            <tr>
-                <td>10321</td>
-                <td>12/06/2023</td>
-                <td>Shoprite Stores</td>
-                <td>Manual</td>
-                <td>Ahmad Abdulkareem</td>
-                <td> <button  class="green">Completed</button></td>
-            </tr>
-        </table>
+        <div class="top-section">
+            <div class="pad">
+                <label for="policy" class="policy">Policy Number (optional)</label>
+                    <!-- <br> -->
+                <div class="box">
+                    <i class="fa-duotone fa-magnifying-glass"></i>
+                    <input type="text">
+                </div>
+
+                <label for="policy" class="policy">Policy Number (optional)</label>
+                    <br>
+                <div class="box">
+                    <i class="fa-duotone fa-magnifying-glass"></i>
+                    <input type="text">
+                </div>
+            </div>
+
+            <div>
+                <label for="policy" class="policy">Policy Number (optional)</label>
+                <!-- <br> -->
+                <div class="box">
+                    <i class="fa-duotone fa-magnifying-glass"></i>
+                    <input type="text">
+                </div>
+
+                <label for="policy" class="policy">Policy Number (optional)</label>
+                    <br>
+                <div class="box">
+                    <i class="fa-duotone fa-magnifying-glass"></i>
+                    <input type="text">
+                </div>
+            </div>
+        </div>
+
+
     </main>
 </body>
-</html>            
+</html>    

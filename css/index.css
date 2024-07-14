@@ -29,7 +29,6 @@
   }
   /* this is the styles of the form in the left  container   */
   form{
-    /* padding: 20px; */
   
     h1 {
       font-size: 30px;
@@ -76,7 +75,8 @@
     /* this styles the headers of my password input field  */
     .show-div{
       display: flex;
-      justify-content: space-between;
+      gap: 350px;
+      /* justify-content: space-between; */
       font-size: 15px;
       padding-bottom: 20px;
       .lock{
@@ -91,12 +91,10 @@
    /* keep me paragraph style   */
     .keep-me{
       display: flex;
+      gap: 240px;
       padding-top: 15px;
-      gap: 55%;
-        p{
-            font-size: 12px;
-            /* width: 40%; */  
-          }
+      padding-bottom: 15px;
+      font-size: 12px;
           a{
             text-decoration: none;
             color:  #585858;
@@ -106,6 +104,7 @@
     button {
       width: 100%;
       padding: 14px;
+      margin-top: 50px;
       border: none;
       border-radius: 5px;
       cursor: pointer;
@@ -113,7 +112,14 @@
       font-family: "Mulish", sans-serif;
       font-weight: 600;
       background: rgb(255, 122, 0);
+
+      a{
+        text-decoration: none;
+        color: #f3f5f6;
+      }
     }
+
+
  /* This styles the right container  */
   .right-container {
     width: 35%;
@@ -197,16 +203,17 @@
     .right-container{
       display: none;
     }
+    .show-div{
+      gap: 300px;
+    }
    
     .keep-me{
-      gap: 55px;  
-        p{
-        font-size: 10px;
-        display: flex ;
-        color: black;
-        font-weight: 600;
-     }
+      gap: 210px;  
    }
+button{
+  margin-top: 20px;
+}
+
 .bottom-container{
       position: absolute;
       background: rgb(225, 219, 213);
@@ -214,7 +221,7 @@
       height: 10%; 
       color: white;
       right: 6%;
-      bottom: 5%;
+      bottom: 5px;
     }
     
   
@@ -228,9 +235,11 @@
 }
 }
 /* this styles the responsive of a tablet size  */
-@media screen and (min-width:768px) and (max-width:1023px) {
+@media screen and (min-width:768px) and (max-width:1200px) {
   body{
-    background-image: url(/LEADWAY_01/IMAGES/Mask\ Group.png);
+    background-image: url(/images/mask-group.png);
+    background-size: cover;
+    background-repeat: no-repeat;
   }
   main{
     margin: auto;
@@ -244,7 +253,7 @@
     width: 80%;
     height: 90vh;
     left: -80px;
-    position: relative;
+    /* position: relative; */
   }
   .keep-me{
     p{
@@ -253,7 +262,7 @@
   }
   
   .right-container{
-      /* display: none; */
+      display: none;
   }
   .bottom-container{
       background: rgb(231, 227, 222);

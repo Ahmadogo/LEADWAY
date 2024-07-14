@@ -393,6 +393,7 @@ main{
         width: 100%;
         left: 0;
         padding: 10px;
+        gap: 20px;
 
         button{
             font-size: 10px;
@@ -404,7 +405,7 @@ main{
     display: block;
     width: 100%;
     left: 0;
-    top: 18%;
+    top: 20%;
     padding: 10px;
    }
    
@@ -420,7 +421,7 @@ main{
 
    main{
     width: 100%;
-    top: 80%;
+    top: 650px;
     left: 0;
    }
 }
@@ -444,5 +445,9 @@ main{
             width: 100%;
             height: fit-content;
         }
+    }
+
+    main{
+        top: 650px;
     }
 }
