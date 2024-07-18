@@ -31,6 +31,7 @@ body{
 .first-column{
     background: #2F2F2F;
     width: 4%;
+    position: fixed;
     height: 100vh;
     padding-top: 120px;
 
@@ -55,6 +56,8 @@ body{
 
 .second-column{
     width: 15%;
+    position: fixed;
+    left: 50px;
     height: 100vh;
     display: flex;
     flex-flow: column;
@@ -100,9 +103,13 @@ body{
         /* top nav style  */
 .top-nav{
     width: 82%;
+    position: fixed;
+    left: 18.9%;
+    z-index: 10;
     height: 8vh;
     padding: 10px;
     max-width: 100%;
+    background-color: #ffff;
     border-bottom: 1px solid #D4D4D4;
     
     .nav-links-2{
@@ -163,9 +170,15 @@ main{
 /* this is the profile container  */
 .body-content{
     display: flex;
-    gap: 10%;
+    gap: 50px;
     
 
+}
+
+.line{
+    border: 1px solid #D4D4D4;
+    height: 350px;
+    margin-top: 30px;
 }
 
 
@@ -237,7 +250,7 @@ main{
     .top-slide{
         border: 1px solid #D4D4D4;
         border-radius: 6px;
-        border-left: 15px solid #FF7A00;
+        border-left: 16px solid #FF7A00;
         padding: 15px 0px;
         margin-left: 7%;
         margin-top: 3%;
@@ -392,6 +405,7 @@ main{
     }
     .top-nav{
         width: 100%;
+        left: 0;
         .fa-bars{
             display: block;
             position: absolute;
@@ -402,7 +416,7 @@ main{
    .body-content-heading{
     height: 0;
     width: 100%;
-    left: 0;
+    left: 10%;
     top: 10%;
     padding: 10px;
    }
@@ -419,8 +433,9 @@ main{
     }
 
     .profile-section{
-        width: fit-content  ;
-        margin: auto;
+        width: 100%  ;
+        margin-left: 13%;
+        
     }
 
     .slides-contents{
@@ -489,9 +504,95 @@ main{
         
 
     }
+.line{
+    display: none;
+}
 
    }
 
+}
+
+@media screen and (min-width:768px) and (max-width:1150px) {
+    .top-nav{
+        left:25%;
+        /* padding-top: 10px; */
+        width: 75%;
+    }
+    .first-column{
+        width: 8%;
+    }
+    .second-column{
+        width: 20%;
+    }
+
+    .body-content-heading{
+        left: 30%;
+        h3{
+            font-size: 25px;
+        }
+        p{
+            font-size: 20px;
+        }
+    }
+    .body-content{
+        display: block;
+
+        .profile-image{
+            img{
+                width: 50%;
+            }
+            p{
+                font-size: 25px;
+            }
+        }
+
+        .profile-section{
+            width: 80%;
+            margin-left: 10%;
+            
+            
+            .small-texts{
+                font-size: 18px;
+            }
+            .big-texts, .status{
+                font-size: 25px;
+            }
+        }
+
+        .slides-contents{
+            width: 80%;
+            margin-left: 10%;
+            margin-bottom: 25%;
+            font-size: 20px;
+
+            .file-icon{
+                font-size: 50px;
+            }
+            .fa-circle{
+                font-size: 30px;
+            }
+
+            .circle-1, .circle-2{
+                display: none;
+            }
+
+            .top-slide-second-child, .bottom-slide-second-child{
+                font-size: 20px;
+
+                h3{
+                    font-size: 20px;
+                }
+                p{
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+    .line{
+        display: none;
+    }
+
+    
 }
 
 

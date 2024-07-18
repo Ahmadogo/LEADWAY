@@ -1,0 +1,348 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+:root{
+    --orange:#FF7A00;
+    --black-background:#2F2F2F;
+    ---green:#00B388;
+    ---red:#EE5331;
+    ---grey:#D4D4D4;
+    ---grey-border:#737373;
+    ---font-color-1:#34475E;
+    ---font-color-2:#7A7C87;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    overflow-x: hidden;
+    font-family: "Mulish", sans-serif;
+    grid-template-areas: 
+    "As hh hh"
+    "As main main"
+    "As main main";
+    grid-template-columns: 235px 1fr 1fr;
+    grid-template-rows: 8% 22% 70%;
+}
+
+.side-navs{
+    grid-area: As;
+    display: flex;
+}
+
+.first-column{
+    background: #2F2F2F;
+    height: 100vh;
+    padding-top: 120px;
+    position: fixed;
+    width: 50px;
+
+    li{
+        list-style: none;
+    }
+    
+    a{
+        display: flex;
+        text-decoration: none;
+        color: #FF7A00;
+        font-size: 25px;
+        padding: 15px 10px;
+    }
+    a:hover{
+        background: #ffff;
+        transition: 0.7s;
+    }
+}
+
+.second-column{
+    left: 50px;
+    height: 100vh;
+    display: flex;
+    flex-flow: column;
+    gap: 10px;
+    padding: 10px;
+    padding-top: 40px;
+    border-right: 1px solid #D4D4D4;
+    background: #ffff;
+    position: fixed;
+
+    p{
+        color: #34475E;
+        font-weight: 700;
+        letter-spacing: 1px;
+    }
+
+    a{
+        text-decoration: none;
+        color: #737373;
+        padding: 5px;
+        font-size: 12px;
+        &:hover{
+            color: #FF7A00;
+        }
+    }
+
+    .fa-chart-simple{
+        font-size: 20px; 
+        padding: 8px;
+        color: #737373;
+        &:hover{
+            color: #FF7A00;
+        }
+    }
+    .fa-table{
+        font-size: 20px; 
+        padding: 8px;
+        
+    }
+    .requests{
+        color: #FF7A00;
+    }
+}
+
+.top-nav{
+    grid-area: hh;
+    padding: 15px;
+    position: fixed;
+    z-index: 10;
+    width: 83.5%;
+    left: 17.6%;
+    background: #ffff;
+    border-bottom: 1px solid #D4D4D4;
+}
+    .nav-links-2{
+        display: flex;
+        gap: 20px;
+        justify-content: end;
+    }
+
+    a, li{
+        text-decoration: none;
+        list-style: none;
+        color: #7A7C87;
+        font-size: 12px;
+
+        .fa-bell{
+            font-size: 25px;
+        }
+        .fa-angle-down{
+            font-size: 15px;
+            padding:0px 10px;
+        }
+    }
+    .fa-bars{
+        display: none;
+    }
+
+main{
+    width: 100%;
+    grid-area: main;
+    padding: 10px;
+
+ .content-heading{
+    display: flex;
+    justify-content: space-between;
+
+    .content-child h2{
+        font-size: 20px;
+    }
+    .content-child p{
+        font-size: 12px;
+    }
+
+    .close{
+        font-size: 10px;
+        .fa-xmark{
+            font-size: 40px;
+        }
+    }
+}
+
+.main-contents{
+    padding-top: 50px;
+    margin-left: 20%;
+    justify-content: center;
+}
+
+.inspections{
+    display: flex;
+    gap: 30px;
+    /* width: 50%; */
+    
+    .left-frame{
+        border: 1px solid #D4D4D4;
+        padding: 40px;
+        background: #fff9f9;
+        border-color: #FF7A00;
+        border-radius: 5px;
+         
+        a{
+            font-size: 18px;
+        }
+
+        .left-frame-child{
+            border: 1px solid #b9b4b4;
+            padding: 40px;
+            border-radius: 150px;
+
+        }
+    }    
+    .right-frame{
+        border: 1px solid #D4D4D4;
+        padding: 40px;
+        background: #fff9f9;
+        border-radius: 5px;
+        &:hover{
+            border-color: #FF7A00;
+        } 
+
+        a{
+            font-size:18px ;
+            color: #b9b4b4;
+        }
+
+        .right-frame-child{
+            border: 1px solid #b9b4b4;
+            padding: 40px;
+            font-size: 15px;
+            border-radius: 150px;
+        }
+    }
+
+    .right-arrow{
+        display: none;
+    }
+
+}
+    .property{
+        display: flex;
+        flex-flow: column;
+       
+
+        label{
+            /* bottom: 30px; */
+            padding-bottom: 15px;
+        }
+
+        .prop-dropdown{
+            width: 60%;
+            outline: none;
+            padding: 11px;
+            border-color: #D4D4D4;
+            font-family: "Mulish", sans-serif;
+            /* option{
+
+                .blue-div{
+                    width: 50px;
+                    height: 50px;
+                    border-radius: 50%;
+                    background: blue;
+                }
+            } */
+        }
+    }
+    
+    .create-btn{
+        padding: 12px 40px;
+        border-radius: 5px; 
+        background:#FF7A00;
+        border: none;
+        justify-content: center;
+        margin-top: 5%;
+        color:#D4D4D4;
+        font-weight: 700;
+        cursor: pointer;
+        margin-left: 20%;
+ 
+        .fa-duotone{
+             font-size: 15px;
+             padding-right: 5px;  
+             color: #2f2f2f;
+        }
+     }
+
+}
+
+@media screen and (max-width:767px) {
+
+    body{
+        grid-template-areas: 
+        "hh hh hh"
+        "main main main"
+        "main main main";
+    }
+    .side-navs{
+        display: none;
+    }
+
+    .top-nav{
+        width: 100%;
+        left: 0;
+
+        .fa-bars{
+            display: block;
+            font-size: 20px;
+            top: 2px;
+        }
+    }
+    main{
+        padding-top: 80px;
+        
+        .content-heading{
+            gap: 10px;
+        }
+        
+        .main-contents{
+            padding-top: 20px;
+            padding-bottom: 50px;
+            margin-left: 0;
+            width: fit-content;
+
+            .inspections{
+                flex-flow: column;
+                padding:0px 30px;
+            }
+        }
+
+        .prop-dropdown, label{
+            margin: auto;
+        }
+
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:1200px){
+    .top-nav{
+        width: 71%;
+        left: 29%;
+    }
+
+    main{
+        padding: 0px;
+
+        .content-heading{
+            padding: 10px;
+        }
+        .main-contents{
+            margin-left: 30px;
+            padding: 0;
+            margin-top: 20%;
+        }
+
+        .right-arrow{
+            display: none;
+        }
+
+        .prop-dropdown, label{
+            margin: auto;
+        }
+
+        .create-btn{
+            margin-left: 35%;
+        }
+    }   
+}

@@ -1,578 +1,347 @@
-
-/* Default style sheet setting  */
 *{
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
     box-sizing: border-box;
 }
 
-/* Every color to be used throughout the project  */
 :root{
-    --background-color:#2f2f2f;
-    --font-color:#34475e;
-    --secondary-font-color:#c3c4c6;
-    --primary-orange:#ff7a00;
-    --secondary-orange:#ffdebf;
-    --primary-green:#ecfdf3;
-    --primary-grey:#f2f4f7;
-    --primary-pink:#fef3f2;
-    --new-background:#eeeeee;
+    --orange:#FF7A00;
+    --black-background:#2F2F2F;
+    ---green:#00B388;
+    ---red:#EE5331;
+    ---grey:#D4D4D4;
+    ---grey-border:#737373;
+    ---font-color-1:#34475E;
+    ---font-color-2:#7A7C87;
 }
 
-/* body styling  */
 body{
-    overflow-x: hidden;
     width: 100%;
     height: 100vh;
-    color: var(--font-color);
+    display: grid;
+    overflow-x: hidden;
     font-family: "Mulish", sans-serif;
+    grid-template-areas: 
+    "As hh hh"
+    "As main main"
+    "As main main";
+    grid-template-columns: 235px 1fr 1fr;
+    grid-template-rows: 8% 22% 70%;
 }
 
-/* nav bar section styling  */
-.top{
-    width: 70%;
-    float: right;
-    display:flex;
-    justify-content: end;
-    padding-inline-end: 15px;
-    gap: 1.5em;
-    font-size: 12px;
-    align-items: center;
-    padding-top: 15px;
-
-    a{
-        font-size: 25px;
-    }  
-}
-
-/* This styles tthe container holding first and second colummn  */
-.A{
+.side-navs{
+    grid-area: As;
     display: flex;
-    gap: 1em;
 }
 
-/* Left side icons section styling  */
 .first-column{
-    width: 15%;
+    background: #2F2F2F;
+    height: 100vh;
+    padding-top: 120px;
+    position: fixed;
+    width: 50px;
+
+    li{
+        list-style: none;
+    }
+    
+    a{
+        display: flex;
+        text-decoration: none;
+        color: #FF7A00;
+        font-size: 25px;
+        padding: 15px 10px;
+    }
+    a:hover{
+        background: #ffff;
+        transition: 0.7s;
+    }
+}
+
+.second-column{
+    left: 50px;
+    height: 100vh;
     display: flex;
     flex-flow: column;
-    gap: 1em;
-    height: 100vh;
-    padding-top: 130px;
-    text-align: center;
-    background: var(--background-color);
-    
+    gap: 10px;
+    padding: 10px;
+    padding-top: 40px;
+    border-right: 1px solid #D4D4D4;
+    background: #ffff;
+    position: fixed;
+
+    p{
+        color: #34475E;
+        font-weight: 700;
+        letter-spacing: 1px;
+    }
+
     a{
-        color: var(--primary-orange);
-        font-size: 25px;   
-    }
-
-    a:hover{
-        background: white;
-    }
-}
-
-/* Logo, overview and request section  */
-
-/* this styles the whole second-column (container) */
-.second-column{
-    border-right: 1px solid var(--secondary-font-color);
-    height: 100vh;
-    width: 45%;
-    font-size: 15px;
-    font-weight: 600;
-    padding-top: 30px;
-
-
-/* this styles the overview part      */
-    .overview {
-        display: flex;
-        font-weight: 500;
+        text-decoration: none;
+        color: #737373;
+        padding: 5px;
         font-size: 12px;
-        gap: 2em;
-
-        a{
-            color: var(--secondary-font-color);
-            font-size: 25px;
+        &:hover{
+            color: #FF7A00;
         }
+    }
+
+    .fa-chart-simple{
+        font-size: 20px; 
+        padding: 8px;
+        color: #737373;
+        &:hover{
+            color: #FF7A00;
+        }
+    }
+    .fa-table{
+        font-size: 20px; 
+        padding: 8px;
         
     }
-
-
-/* This styles the request part  */
-    .request{
-        color: var(--primary-orange);
-        display: flex;
-        gap: 2em;
-        font-weight: 500;
-        font-size: 12px;
-
-        a{
-            color: var(--primary-orange);
-            font-size: 25px;
-        }
-    }
-}
-/* End of second column styling  */
-
-     /* ...... ....... */
-
-/* Header section styling  */
-
-/* this styles the  whole container  */
-.B{
-    width: 100%;
-    position: absolute;
-    bottom: 70%;
-    padding-top: 135px;
-    padding-left: 20px;
-    left: 19.2%;
-    border-top: 1px solid var(--secondary-font-color);
-
-    h1{
-        font-weight: 55 0;
-        font-size: 20px;
-        padding-left: 10px; 
-    }
-    p{
-        font-size: 12px;
+    .requests{
+        color: #FF7A00;
     }
 }
 
-
-/* this styles the h1, p, and tthe hamburger and the close icons  */
-.content{
-    display: flex;
-    gap: 50em;
-    margin-top: -8.5%;
-
-    .hamburger{
-        display: none;
-    }
-    h1{
-        padding-bottom: 10px;
-    }
-    a{
-        font-size: 20px;
-    }
+.top-nav{
+    grid-area: hh;
+    padding: 15px;
+    position: fixed;
+    z-index: 10;
+    width: 83.5%;
+    left: 17.6%;
+    background: #ffff;
+    border-bottom: 1px solid #D4D4D4;
 }
-/* End of Header styling section  */
-
-        /* ......... .......... */
-
- /*The body-contents styling*/
-
-/* this styles the whole container of the body contents  */
-.main-contents{
-    width: 60%;
-    position: absolute;
-    padding: 12px;
-    bottom: 55px;
-    left: 40%;
-
-/* this styles the two frames in the content  */
-    .inspections{
+    .nav-links-2{
         display: flex;
         gap: 20px;
-        .left-frame , .right-frame{
-            height: 200px;
-            width: 200px;
-            border: 1px solid var(--secondary-font-color);
-            padding: 20px;
+        justify-content: end;
+    }
 
-            &:hover{
-                border: 1px solid var(--primary-orange);
-            }
-            
-            .child-left-frame, .child-right-frame{
-                height: 150px;
-                width: 150px;
-                margin: auto;
-                border-radius: 50%;
-                border: 1px solid var(--secondary-font-color);
-                padding: 20%;
-            }
-         }
-         
-         /* this styles the arrow icon pointing the right-frame */
-         .right-arrow{
-             font-size: 50px;
-             font-weight: 400;
-             color: #7F8B94;
-             top: 25%;
-             left: 29%;
-             position: absolute;
-            }
-            
+    a, li{
+        text-decoration: none;
+        list-style: none;
+        color: #7A7C87;
+        font-size: 12px;
+
+        .fa-bell{
+            font-size: 25px;
         }
-        
-        .motors{
-            display: flex;
-            flex-flow: column;
-            gap: 10px;
-            font-weight: 700;
-
-            label{
-                bottom: 10px;
-            }
-
-            .dropdown{
-                width: 50%;
-                padding: 11px;
-                border-color: var(--secondary-font-color);
-            }
-    }
-   
-/* This styles the  create button  */
-    .create-btn{
-       padding: 0px 40px;
-       border-radius: 5px; 
-       background: #c3c4c6;
-       border: none;
-       justify-content: center;
-       margin-top: 5%;
-       height: 35px;
-       color: var(--font-color);
-       font-weight: 700;
-       cursor: pointer;
-       margin-left: 15%;
-
-       .fa-duotone{
+        .fa-angle-down{
             font-size: 15px;
-            padding-right: 5px;  
-            color: #2f2f2f;
-       }
+            padding:0px 10px;
+        }
     }
-}
-/* End of the body-contents styling  */
-
-    /* .............. ................ */
-
-
-    
-    
-/* This styles the responsive of a phone size screen  */
-@media screen and (max-width:767px) {
-    /* nav-bar styling   */
-    .top{
-        width: 100%;
-        border-bottom: 1px solid var(--secondary-font-color);
-    }
-/* columns styling  */
-    .first-column , .second-column{
+    .fa-bars{
         display: none;
     }
-    
-/* header section styling (container) */
-    .B{
-        width: 100%;
-        bottom: 70%;
-        padding-top: 150px;
-        padding-left: 0px;
-        left: 0;
-        border-top: none;
-        
-/* child-content styling      */
-        h1{
-            font-weight: 600;
-            font-size: 20px;
-        
-        }
-        p{
-            font-size: 15px;
+
+main{
+    width: 100%;
+    grid-area: main;
+    padding: 10px;
+
+ .content-heading{
+    display: flex;
+    justify-content: space-between;
+
+    .content-child h2{
+        font-size: 20px;
+    }
+    .content-child p{
+        font-size: 12px;
+    }
+
+    .close{
+        font-size: 10px;
+        .fa-xmark{
+            font-size: 40px;
         }
     }
-    
-/* header content styling     */
-    .content{
-        display: flex;
-        gap: 15%;
-        margin-top:-150px;
-        padding: 20px;
-
-        img{
-            width: 60%;
-        }
-        .hamburger{
-            display: block;
-            position: absolute;
-            top: -40%;
-            padding-left: 5px;
-        }
-        .close{
-            display: flex;
-            flex-flow: column;
-            padding: 0;
-
-            p{
-                display: none;
-            }
-        }
-    
-    }
-    
-/* inspection section styling (container)     */
-    .main-contents{
-        width: 100%;
-        bottom: 17%; 
-        left: 10%;
-    
-  /* inspection section body styling (two frames)       */
-        .inspections{
-            display: flex;
-            gap: 20px;
-
-            .left-frame , .right-frame{
-                height: 150px;
-                width: 150px;
-                border: 1px solid var(--secondary-font-color);
-                padding: 10px;
-                font-size: 12px;
-    
-                &:hover{
-                    border: 1px solid var(--primary-orange);
-                }
-                
-            .child-left-frame, .child-right-frame{
-                    height: 100px;
-                    width: 100px;
-                    margin: auto;
-                    border-radius: 50%;
-                    border: 1px solid var(--secondary-font-color);
-                    padding: 10%;
-                
-                }
-            .right-arrow{
-                    font-size: 25px;
-                    font-weight: 300;
-                    color: #7F8B94;
-                    top: 22%;
-                    left: 60%;
-                    position: absolute;
-                }
-                    
-                    img{
-                        border: none;
-                    }
-                }
-        }
-
-
-        
-        .motors{
-            display: flex;
-            flex-flow: column;
-            gap: 10px;
-            left: 0;
-            font-weight: 700;
-
-            label{
-                bottom: 10px;
-            }
-    
-            .dropdown{
-                width: 80%;
-                padding: 11px;
-                border-color: var(--secondary-font-color);
-            }
-        }
-       
-/* create button styling         */
-        .create-btn{
-           padding: 0px 40px;
-           border-radius: 5px; 
-           background: #c3c4c6;
-           border: none;
-           justify-content: center;
-           margin-top: 10%;
-           height: 35px;
-           color: var(--font-color);
-           font-weight: 700;
-           cursor: pointer;
-           margin-left: 15%;
-    
-    /* button arrow styling            */
-           .fa-duotone{
-                font-size: 15px;
-                padding-right: 5px;  
-                color: #2f2f2f;
-           }
-        }
-    }
-    
 }
 
+.main-contents{
+    padding-top: 50px;
+    margin-left: 20%;
+    justify-content: center;
+}
 
-
-/* This styles the responsive of a tablet screen size  */
-
-@media screen and (min-width:768px) and (max-width:1100px){
-  /* nav-bar styling    */
-    .A{
-        display: flex;
-        gap: 1em;
-    }
-
-/* left-side icons section styling  */
-    .first-column{
-        padding-top: 150px;
-        width: 20%;
-
-    }
-
- /* logo, overview and request section     */
-    .second-column{
-        width: 50%;
-        font-weight: 600;
-        padding-top: 80px;
-
-        .logo{
-            display: block;
-        }
-        .leadway-logo{
-            width: 80%;
-
-        }
-        p{
-            font-size: 22px;
-        }
-        .overview {
-            display: block;
-            font-weight: 500;
+.inspections{
+    display: flex;
+    gap: 30px;
+    /* width: 50%; */
+    
+    .left-frame{
+        border: 1px solid #D4D4D4;
+        padding: 40px;
+        background: #fff9f9;
+        &:hover{
+            border-color: #FF7A00;
+        } 
+        a{
             font-size: 18px;
-            
-           
         }
-        .request{
-            display: block;
-            font-weight: 500;
-            font-size: 18px;
-            color: var(--primary-orange);
-          
-    
+
+        .left-frame-child{
+            border: 1px solid #b9b4b4;
+            padding: 40px;
+            border-radius: 150px;
+
         }
-    }
-    
-/* header section styling      */
-        /* container */
-    .B{
-        width: 100%;
-        bottom: 84%;
-        padding-top: -160px;
-        padding-left: 10px;
-        left: 23%;
-        
-    
-    /* contents of the header      */
-        .content{
-            display: flex;
-            gap: 34%;
-            margin-top:-90px;
-            
-            img{
-                width: 80%;
-            }
+    }    
+    .right-frame{
+        border: 1px solid #D4D4D4;
+        padding: 40px;
+        background: #fff9f9;
+        &:hover{
+            border-color: #FF7A00;
+        } 
 
-            h1{
-                font-weight: 500;
-                font-size: 25px;
-                padding-top: 10px; 
-            }
-
-            p{
-                font-size: 20px;
-                padding-top: 10px;
-            }
-            
+        a{
+            font-size:18px ;
+            color: #b9b4b4;
         }
-    }
-    
-    /* inspection section  */
-        /* container  */
-    .main-contents{
-        width: 100%;
-        bottom: 50%; 
-        left: 35%;
-    
-    /* contents of inspection section  */
-        .inspections{
-            display: flex;
-            gap: 20px;
-            .left-frame , .right-frame{
-                height: 150px;
-                width: 150px;
-                border: 1px solid var(--secondary-font-color);
-                padding: 10px;
-                font-size: 12px;
-    
-                &:hover{
-                    border: 1px solid var(--primary-orange);
-                    }
-                
-                .child-left-frame, .child-right-frame{
-                    height: 100px;
-                    width: 100px;
-                    margin: auto;
-                    border-radius: 50%;
-                    border: 1px solid var(--secondary-font-color);
-                    padding: 10%;
 
-                    img{
-                        border: none;
-                        }
-                    }
-                }
-                .right-arrow{
-                    font-size: 45px;
-                    font-weight: 300;
-                    color: #7F8B94;
-                    top: 20%;
-                    left: 18%;
-                    position: absolute;
-                }
-            }
-        
-            
-            .motors{
-                display: flex;
-                flex-flow: column;
-                gap: 10px;
-                left: 0;
-                font-weight: 700;
-
-                label{
-                    bottom: 10px;
-                }
-    
-                .dropdown{
-                    width: 30.5%;
-                    padding: 11px;
-                    border-color: var(--secondary-font-color);
-                }
-        }
-       
-       
-        .create-btn{
-           padding: 0px 40px;
-           border-radius: 5px; 
-           background: #c3c4c6;
-           border: none;
-           justify-content: center;
-           margin-top: 5%;
-           height: 35px;
-           color: var(--font-color);
-           font-weight: 700;
-           cursor: pointer;
-           margin-left: 6%;
-    
-           .fa-duotone{
+        .right-frame-child{
+            border: 1px solid #b9b4b4;
+            padding: 40px;
             font-size: 15px;
-            padding-right: 5px;  
-            color: #2f2f2f;
-           }
+            border-radius: 150px;
+        }
+    }
+
+    .right-arrow{
+        display: none;
+    }
+
+}
+    .property{
+        display: flex;
+        flex-flow: column;
+       
+
+        label{
+            /* bottom: 30px; */
+            padding-bottom: 15px;
+        }
+
+        .prop-dropdown{
+            width: 60%;
+            outline: none;
+            padding: 11px;
+            border-color: #D4D4D4;
+            font-family: "Mulish", sans-serif;
+            /* option{
+
+                .blue-div{
+                    width: 50px;
+                    height: 50px;
+                    border-radius: 50%;
+                    background: blue;
+                }
+            } */
         }
     }
     
-    
-    
+    .create-btn{
+        padding: 12px 40px;
+        border-radius: 5px; 
+        background: #b9b4b4;
+        border: none;
+        justify-content: center;
+        margin-top: 5%;
+        color:#34475E;
+        font-weight: 700;
+        cursor: pointer;
+        margin-left: 20%;
+ 
+        .fa-duotone{
+             font-size: 15px;
+             padding-right: 5px;  
+             color: #2f2f2f;
+        }
+     }
+
+}
+
+@media screen and (max-width:767px) {
+
+    body{
+        grid-template-areas: 
+        "hh hh hh"
+        "main main main"
+        "main main main";
+    }
+    .side-navs{
+        display: none;
+    }
+
+    .top-nav{
+        width: 100%;
+        left: 0;
+
+        .fa-bars{
+            display: block;
+            font-size: 20px;
+            top: 2px;
+        }
+    }
+    main{
+        padding-top: 80px;
+        
+        .content-heading{
+            gap: 10px;
+        }
+        
+        .main-contents{
+            padding-top: 20px;
+            padding-bottom: 50px;
+            margin-left: 0;
+            width: fit-content;
+
+            .inspections{
+                flex-flow: column;
+                padding:0px 30px;
+            }
+        }
+
+        .prop-dropdown, label{
+            margin: auto;
+        }
+
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:1200px){
+    .top-nav{
+        width: 71%;
+        left: 29%;
+    }
+
+    main{
+        padding: 0px;
+
+        .content-heading{
+            padding: 10px;
+        }
+        .main-contents{
+            margin-left: 30px;
+            padding: 0;
+            margin-top: 20%;
+        }
+
+        .right-arrow{
+            display: none;
+        }
+
+        .prop-dropdown, label{
+            margin: auto;
+        }
+
+        .create-btn{
+            margin-left: 35%;
+        }
+    }   
 }

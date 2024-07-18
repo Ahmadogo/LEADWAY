@@ -108,6 +108,7 @@ body {
   padding: 10px;
   border-bottom: 1px solid #d4d4d4;
   position: fixed;
+  z-index: 10;
   background:  #ffffff;
   width: 83.5%;
   left: 17.6%;
@@ -185,7 +186,7 @@ main {
     .row-1,
     .row-2 {
       display: flex;
-      gap: 80px;
+      gap: 50px;
       padding: 10px;
 
       h5 {
@@ -199,6 +200,17 @@ main {
     }
   }
 
+  .policy-progress{
+    h4{
+      color: #ff7a00;
+      font-size: 15px;
+      padding-bottom: 20px;
+    }
+    p{
+      font-size: 12px;
+      padding-top: 20px;
+    }
+  }
   .progress-container {
     position: relative;
     width: 100px;
@@ -269,6 +281,13 @@ main {
                 color: #ff7a00;
                 border-bottom: 4px solid  #ff7a00;
             }
+            button{
+              padding: 5px 20px;
+              border: none;
+              background: #fff;
+              font-family: "Mulish", sans-serif;
+              cursor: pointer;
+            }
         }
 
         .details{
@@ -322,11 +341,15 @@ main {
     }
 
     .survey-div{
-        padding: 10px 15px;
+        padding: 0px 15px;
         display: block;
+        margin-top: 0;
+        padding-top: 0;
+
         
         .survey-container{
             padding: 5px;
+            border: none;
             gap: 10px;
             display: block;
             
@@ -341,17 +364,22 @@ main {
                     gap: 20px;
                 }
             }
+
+            .policy-progress{
+              margin-left: 40%;
+            }
         }
     }
     .insured-div{
         padding: 10px 15px;
         display: block;
+        margin-top: 80px;
 
        .details-container{
         height: 100vh;
 
-        .headers{
-            gap: 25px;
+        .tabs{
+            gap: 10px;
             
             a{
                 font-size: 12px;
@@ -379,4 +407,32 @@ main {
         } 
     } 
     }
+}
+
+@media screen and (min-width:768px)  and  (max-width:1150px) {
+    .top-nav{
+      width: 73%;
+      left: 25%;
+    }
+
+    .rovenheights{
+      /* gap: 10px; */
+    }
+      .row-1, .row-2{
+        gap: 10px;
+
+        padding: 0;
+      }
+
+      .details-container{
+        width: 100%;
+
+        .details{
+          .row-1,.row-2{
+            gap: 10px;
+            padding: 0;
+            display: block;
+          }
+        }
+      }
 }
