@@ -47,6 +47,7 @@ body{
     }
     a:hover{
         background: #ffff;
+        transition: 0.7s;
     }
 }
 
@@ -74,12 +75,17 @@ body{
         color: #737373;
         padding: 5px;
         font-size: 12px;
+        &:hover{
+            color: #ff7a00;
+          }
     }
 
     .fa-chart-simple{
         font-size: 20px; 
         padding: 8px;
-        color: #737373;
+        color: #737373; &:hover{
+            color: #ff7a00;
+          }
     }
     .fa-table{
         font-size: 20px; 
@@ -218,10 +224,14 @@ main{
     letter-spacing: 0.5px;
     color: #737373;
     font-size: 18px;
+    padding-left: 40px;
+    
 
     h6{
         padding-top: 25px;
     }
+
+    
     
 /* this styles the top slide  */
     .top-slide{
@@ -234,6 +244,7 @@ main{
         display: flex;
         gap: 30px;
         font-family: "Mulish", sans-serif;
+        border: 1px solid;
 
         .top-slide-child{
             display: flex;

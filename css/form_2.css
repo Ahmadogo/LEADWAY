@@ -107,7 +107,6 @@
   .top-nav {
     grid-area: hh;
     padding: 10px;
-    width: 100%;
     width: 83.5%;
     left: 17.6%;
     position: fixed;

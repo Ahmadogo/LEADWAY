@@ -504,6 +504,7 @@ body{
     
     /* contents of inspection section  */
         .inspections{
+            width: 100%;
             display: flex;
             gap: 20px;
 

@@ -21,14 +21,14 @@
     <link rel="stylesheet" href="/css/inspectionList_1.css">
 </head>
 <body>
-    <nav class="nav-icons">
+    <div class="side-navs">
         <!-- left side icon section  -->
         <div class="first-column">
             <ul nav-links-1>
-                <li><a href="#"><i class="fa-regular fa-objects-column"></i></a></li> 
+                <li><a href="#"><i class="fa-duotone fa-objects-column"></i></a></li> 
                 <li><a href="#"><i class="fa-duotone fa-calendar-days"></i></a></li>
                 <li><a href="#"><i class="fa-duotone fa-briefcase"></i></a></li> 
-                <li><a href="#"><i class="fa-regular fa-objects-column"></i></a></li>
+                <li><a href="#"><i class="fa-duotone fa-command"></i></a></li>
                 <li><a href="#"><i class="fa-duotone fa-chart-pie"></i></a></li>
                 <li><a href="#"><i class="fa-duotone fa-gear"></i></a></li>
             </ul>
@@ -41,31 +41,31 @@
             </div> 
             <p class="TRM">TRM</p>
 
-              <a href="#"><i class="fa-duotone fa-chart-simple"></i> Overview</a>
+              <a href="/dashboard_1.html"><i class="fa-duotone fa-chart-simple"></i> Overview</a>
               <a href="#" class="requests"><i class="fa-thin fa-table"></i>Requests</a>
        </div>
 
+    </div>
        <!-- top nav-bar section  -->
-       <div class="top-nav">
-           <ul class="nav-links-2">
-               <li><a href="#"><i class="fa-duotone fa-bell"></i></a></li>
-               <li><a href="#"><img src="images/am-circle.png" alt="am_circle"></a></li>
-               <li><a href="#">Ahmad<i class="fa-duotone fa-angle-down"></i></a></li>
-               <i class="fa-duotone fa-bars"></i>
-            </ul>
-        </div>
-    </nav>
+    <div class="top-nav">
+        <ul class="nav-links-2">
+           <li><a href="#"><i class="fa-duotone fa-bell"></i></a></li>
+           <li><a href="#"><img src="images/am-circle.png" alt="am_circle">
+           <a href="#">Ahmad<i class="fa-duotone fa-angle-down"></i></a></li>
+           <i class="fa-duotone fa-bars"></i>
+        </ul>
+    </div>
 
 
         <!-- header section of the body content  -->
     <main>
         <div class="content-heading">
             <div class="content">
-                <h1>Inspection List</h1>
+                <h2>Inspection List</h2>
                 <p>See inspections across all business classes</p>
             </div>
             <div class="child-content">
-                <button type="button"> <a href="#"><i class="fa-duotone fa-plus"></i> Create New Inspection</a></button>
+                <button type="button"> <a href="/newInspection_1.html"><i class="fa-duotone fa-plus"></i> Create New Inspection</a></button>
             </div>
         </div>
 
@@ -96,34 +96,35 @@
             </div>   
         </div>
 
-
-        <table>
-            
-            <th>ID <i class="fa-duotone fa-caret-down"></i></th>
-            <th>Date <i class="fa-duotone fa-caret-down"></i></th>
-            <th>Name<i class="fa-duotone fa-caret-down"></i></th>
-            <th>Inspection method <i class="fa-duotone fa-caret-down"></i></th>
-            <th>Officer <i class="fa-duotone fa-caret-down"></i></th>
-            <th>Status <i class="fa-duotone fa-caret-down"></i></th>
+        <div class="table-div">
+            <table>
+                <tr>
+                    <td>ID <i class="fa-duotone fa-caret-down"></i></td>
+                    <td>Date <i class="fa-duotone fa-caret-down"></i></td>
+                    <td>Name<i class="fa-duotone fa-caret-down"></i></td>
+                    <td>Inspection method <i class="fa-duotone fa-caret-down"></i></td>
+                    <td>Officer <i class="fa-duotone fa-caret-down"></i></td>
+                    <td>Status <i class="fa-duotone fa-caret-down"></i></td>
+                </tr>
+                <tr>
+                    <td>10321</td>
+                    <td>15/06/2023</td>
+                    <td>Rovenheights properties</td>
+                    <td>Digital</td>
+                    <td>Ahmaad Abdulkareem</td>
+                    <td><a href="/profile.html"><button  class="orange">Ongoing</button></a></td>
+                </tr>
     
-            <tr>
-                <td>10321</td>
-                <td>15/06/2023</td>
-                <td>Rovenheights properties</td>
-                <td>Digital</td>
-                <td>Ahmaad Abdulkareem</td>
-                <td><button  class="orange">Ongoing</button></td>
-            </tr>
-
-            <tr>
-                <td>10321</td>
-                <td>12/06/2023</td>
-                <td>Shoprite Stores</td>
-                <td>Manual</td>
-                <td>Ahmad Abdulkareem</td>
-                <td> <button  class="green">Completed</button></td>
-            </tr>
-        </table>
+                <tr>
+                    <td>10321</td>
+                    <td>12/06/2023</td>
+                    <td>Shoprite Stores</td>
+                    <td>Manual</td>
+                    <td>Ahmad Abdulkareem</td>
+                    <td> <button  class="green">Completed</button></td>
+                </tr>
+            </table>
+        </div>
     </main>
 </body>
 </html>            

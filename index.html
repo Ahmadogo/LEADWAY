@@ -26,12 +26,9 @@
         <form>
           <h1>Underwriter Dashboard</h1>
           <p>Welcome. Login to your portal account</p>
-          <p>
-            <!-- this is the loggin id input field -->
-          </p>
 
           <div class="login-div">
-            <h6>Login ID</h6>
+            <span><h6>Login ID</h6></span>
             <span class="profile">
                 <input
                 type="text"
@@ -50,14 +47,17 @@
             </span>
 
             <span class="psswrd">
-                <input type="text" name="ID" placeholder="Enter your Password" class="input"/>
+                <input type="password" id="password" placeholder="Enter your Password" class="input"/>
                 <i class="fa-thin fa-lock"></i>  
             </span>
           </div>
 
           <div class="keep-me">
             <span>
-              <a href="#"><input type="checkbox">Keep me logged in</a>
+              <label for="keep-me-check">
+                <input type="checkbox" name="" id="keep-me-check"> Keep me logged in
+              </label>
+              <!-- <a href="#"><input type="checkbox">Keep me logged in</a> -->
             </span>
 
             <span>
@@ -70,12 +70,12 @@
       </div>
       <!-- below  is the laptop image -->
       <div class="right-container">
-        <img src="images/mask-group.png" alt="mask_img" class="right-image">
-        <a href="#"><img
-          src="images/help-icon.png"
-          alt="help icon"
-          class="help">
-        </a> 
+        <span class="help">
+          <label for="help">
+            <a href="#"><i class="fa-regular fa-circle-question help"></i></a>
+          </label>
+          Help
+        </span>
       </div>
     </main>
     <!-- this is the customer management field below the right-container image  -->

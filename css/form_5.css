@@ -108,9 +108,9 @@
     grid-area: hh;
     padding: 10px;
     width: 100%;
+    position: fixed;
     width: 83.5%;
     left: 17.6%;
-    position: fixed;
     z-index: 10;
     background: #ffff;
     border-bottom: 1px solid #d4d4d4;
@@ -144,6 +144,7 @@
     height: fit-content;
     grid-area: main;
     padding: 40px;
+    border-top: 1px solid  #d4d4d4;
   }
 
   .body-heading{
@@ -199,8 +200,8 @@
       flex: 1;
     }
     .box {
-      padding: 5px;
       width: 100%;
+      padding: 10px;
     }
 
     .box-child {
@@ -222,8 +223,6 @@
       select {
         outline: none;
         border: none;
-        font-family: "Mulish", sans-serif;
-
       }
       .fa-magnifying-glass {
         margin: auto;
@@ -271,47 +270,46 @@
 
   @media screen and (max-width:767px) {
 
-        body{
-            grid-template-areas: 
-            "hh hh hh"
-            "main main main"
-            "main main main";
-        }
-        .side-navs{
-            display: none;
-        }
+    body{
+        grid-template-areas: 
+        "hh hh hh"
+        "main main main"
+        "main main main";
+    }
+    .side-navs{
+        display: none;
+    }
 
-        .top-nav{
-            grid-area: hh;
-            width: 100%;
-            left: 0;
+    .top-nav{
+        grid-area: hh;
+        width: 100%;
+        left: 0;
 
-            .fa-bars{
-                display: block;
-                position: absolute;
-                left: 20px;
-                font-size: 20px;
-            }
+        .fa-bars{
+            display: block;
+            position: absolute;
+            left: 20px;
+            font-size: 20px;
         }
+    }
 
-        main{
+    main{
+        padding: 20px;
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:1200px) {
+    .top-nav{
+        width: 75%;
+        left: 25%;
+    }
+
+    main{
+        padding: 10px;
+
+        .top-section, .middle-section, .bottom-section{
             padding: 20px;
         }
-  }
-
-  @media screen and (min-width:768px) and (max-width:1200px) {
-        .top-nav{
-            width: 75%;
-            left: 25%;
-        }
-
-        main{
-            padding: 10px;
-
-            .top-section, .middle-section, .bottom-section{
-                padding: 20px;
-            }
-        }
-  }
-
+    }
+}
  

@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form 05</title>
+    
+    <!-- Google fonts library  -->
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet"/>
+    
+    <!-- Font awesome library    -->
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.2/css/all.css"/>
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-thin.css" />
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-solid.css"/>
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-regular.css"/>
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-light.css"/>
+
+    <link rel="stylesheet" href="/css/form_5.css">
+
+</head>
+<body>
+  <div class="side-navs">
+    <div class="first-column">
+        <ul nav-links-1>
+            <li><a href="#"><i class="fa-duotone fa-objects-column"></i></a></li> 
+            <li><a href="#"><i class="fa-duotone fa-calendar-days"></i></a></li>
+            <li><a href="#"><i class="fa-duotone fa-briefcase"></i></a></li> 
+            <li><a href="#"><i class="fa-duotone fa-command"></i></a></li>
+            <li><a href="#"><i class="fa-duotone fa-chart-pie"></i></a></li>
+            <li><a href="#"><i class="fa-duotone fa-gear"></i></a></li>
+        </ul>
+   </div> 
+
+   <div class="second-column">
+        <div class="logo">
+            <img src="images/leadway-logo-2.png" alt="leadway_logo"  class="leadway-logo"/>
+        </div> 
+        <p class="TRM">TRM</p>
+
+        <a href="/dashboard_1.html"><i class="fa-duotone fa-chart-simple"></i> Overview</a>
+        <a href="/inspectionList_1.html" class="requests"><i class="fa-thin fa-table"></i>Requests</a>
+    </div>
+
+   </div>
+    <div class="top-nav">
+        <ul class="nav-links-2">
+            <li><a href="#"><i class="fa-duotone fa-bell"></i></a></li>
+            <li><a href="#"><img src="images/am-circle.png" alt="am_circle"></a></li>
+            <li><a href="#">Ahmad<i class="fa-duotone fa-angle-down"></i></a></li>
+            <i class="fa-duotone fa-bars"></i>
+        </ul>
+    </div>
+  
+  <main>
+    <div class="body-heading">
+        <div>
+            <h3>Create new Inspection</h3>
+            <p>See Inspection across all business classes</p>
+        </div>
+
+        <div class="back">
+            <a href="/newInspection_5.html">
+            <i class="fa-duotone fa-chevron-left"></i> Back to create request
+            </a>
+        </div>
+    </div>
+
+    <div class="body-content">
+        <div class="form-head">
+            <p>Post-Loss Link Generation (Optional)</p>
+        </div>
+
+        <div class="top-section">
+            <div class="box1">
+                <div class="box">
+                    <label for="policy">Policy Number (Optional)</label>
+                </div>
+                <div class="box-child">
+                    <i class="fa-duotone fa-magnifying-glass"></i>
+                    <input type="text" class="policy">
+                </div>
+            </div>
+            <div class="box1">
+                <div class="box">
+                    <label for="policy">Claim Number (Optional)</label>
+                </div>
+                <div class="box-child">
+                    <i class="fa-duotone fa-magnifying-glass"></i>
+                    <input type="text" class="policy">
+                </div>
+            </div>
+        </div>
+
+        <div class="middle-section">
+            <div class="box1">
+                <div class="box">
+                    <label for="first-name">Client First Name</label>
+                </div>
+                <div class="box-child">
+                    <input type="text" class="first-name">
+                </div>
+                <div class="box">
+                    <label for="phone-number">Client Phone Number</label>
+                </div>
+                <div class="box-child">
+                    <input type="number" class="phone-number">
+                </div>
+            </div>
+            <div class="box1">
+                <div class="box">
+                    <label for="first-name">Client Last Name</label>
+                </div>
+                <div class="box-child">
+                    <input type="text" class="last-name">
+                </div>
+
+                <div class="box">
+                    <label for="email-address">Client Email Address</label>
+                </div>
+                <div class="box-child">
+                    <input type="email" class="email-address">
+                </div>
+            </div>
+        </div>
+
+        <div class="bottom-section">
+            <div class="box1">
+                <div class="box">
+                    <label for="vehicle-make">Vehicle Make</label>
+                </div>
+                <div class="box-child">
+                    <input type="text" class="vehicle-make" placeholder="Select a make">
+                    <select name="vehhicles" id="vehicle-make">
+                        <option value="#"></option>
+                    </select>
+                </div>
+
+                <div class="box">
+                    <label for="registration number">Registration Number</label>
+                </div>
+                <div class="box-child">
+                    <input type="text" class="registration-number">
+                </div>
+            </div>
+
+            <div class="box1">
+                <div class="box">
+                    <label for="vehicle-model">Vehicle model</label>
+                </div>
+                <div class="box-child">
+                    <input type="text" class="vehicle-model">
+                </div>
+
+                <div class="box">
+                    <label for="year">Year</label>
+                </div>
+                <div class="box-child">
+                    <input type="year" class="year" placeholder="Select a year">
+                    <select name="year" id="year">
+                        <option value="year"></option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <div class="comment-section">
+            <p class="txt-areaHead">Comments</p>
+            <textarea name="comment" class="comment" rows="15"></textarea>
+            <br>
+            <a href="#">
+                <p>Attach document</p>
+            </a>
+
+            <a href="/form_6.html">
+                <button type="button" class="generate-btn">Send request</button>
+            </a>
+        </div>
+    </div>
+  </main>
+</body>
+</html>

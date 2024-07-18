@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dashboard</title>
-<!-- Google fonts library  -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Dashboard</title>
+    <!-- Google fonts library  -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
@@ -18,175 +18,202 @@
     <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-light.css"/>
 
 <!-- Css link sheet     -->
-    <link rel="stylesheet" href="css/dashboard_1.css">
-  </head>
-  <body>
-    <nav class="nav-icons">
-        <!-- left side icon section  -->
+    <link rel="stylesheet" href="/css/dashboard_1.css">
+</head>
+<body>
+    <div class="side-navs">
         <div class="first-column">
             <ul nav-links-1>
                 <li><a href="/profile.html"><i class="fa-regular fa-objects-column"></i></a></li> 
                 <li><a href="#"><i class="fa-duotone fa-calendar-days"></i></a></li>
                 <li><a href="#"><i class="fa-duotone fa-briefcase"></i></a></li> 
-                <li><a href="#"><i class="fa-regular fa-objects-column"></i></a></li>
+                <li><a href="#"><i class="fa-regular fa-command"></i></a></li>
                 <li><a href="#"><i class="fa-duotone fa-chart-pie"></i></a></li>
                 <li><a href="#"><i class="fa-duotone fa-gear"></i></a></li>
             </ul>
-       </div> 
-    
-<!-- Logo, overview and request section  -->
-       <div class="second-column">
+        </div> 
+       
+        <div class="second-column">
             <div class="logo">
                 <img src="images/leadway-logo-2.png" alt="leadway_logo"  class="leadway-logo"/>
             </div> 
             <p class="TRM">TRM</p>
 
-              <a href="#"><i class="fa-duotone fa-chart-simple"></i> Overview</a>
-              <a href="#" class="requests"><i class="fa-thin fa-table"></i>Requests</a>
-       </div>
-
-       <!-- top nav-bar section  -->
-       <div class="top-nav">
-           <ul class="nav-links-2">
-               <li><a href="#"><i class="fa-duotone fa-bell"></i></a></li>
-               <li><a href="#"><img src="images/am-circle.png" alt="am_circle"></a></li>
-               <li><a href="#">Ahmad<i class="fa-duotone fa-angle-down"></i></a></li>
-            </ul>
-            <i class="fa-duotone fa-bars"></i>
-        </div>
-    </nav>
-<!-- End of nav-bars section  -->
-
-<!-- header section  -->
-    <header class="head-section">
-        <div class="header">
-            <span class="greetings">Welcome, <strong>Ahmad Abdulkareem</strong></span>
-            <p>Take a look at your dashboard and see all pending tasks</p>
-        </div>
-        <div>
-            <button type="button" class="create-button"> <a href="newInspection_1.html"><i class="fa-duotone fa-plus"></i> Create New Inspection</a> </button>
-        </div>
-    </header>
-
-    <!-- end of header section  -->
-
-
-<!-- middle body contents (cards, and activity table)  -->
-    <div class="middle-contents">
-
-<!-- Cards section   -->
-        <div class="cards">
-            <div>
-                <a href="inspectionList_1.html  "><img src="/images/frame-1.png" alt="frame-1"></a>
-                <a href="/profile.html"><img src="/images/frame-3.png" alt="frame-3"></a>
-            </div>
-            <div>
-                <a href="#"><img src="/images/frame-2.png" alt="frame-2"></a>
-                <a href="#"><img src="/images/frame-4.png" alt="frame-4"></a>
-            </div>
-        </div>
-
-<!-- Activity section  -->
-        <div class="activity">
-            <div class="activity-head">
-                <span class="left">Activity</span>
-                <span class="right"> <a href="#">View all<i class="fa-duotone fa-chevron-right"></i></a> </span>
-            </div>
-
-            <div class="activity-data">
-                <span class="left">You have a property inspection coming up in three days</span>
-                <span class="right"> <a href="#">Set reminder</a></span>
-            </div>
-
-            <div class="activity-data">
-                <span class="left">Nafiu ishaq sent you a new property inspection for Rovenheight homes</span>
-                <span class="right"><a href="#">See inspection</a></span>
-            </div>
-
-            <div class="activity-data">
-                <span class="left">Your scheduled inspection for Gig Logistics is three days overdue  </span>
-                <span class="right"> <a href="#">Re-schedule now</a></span>
-            </div>
-
-            <div class="activity-data">
-                <span class="left">Nafiu ishaq sent you a new property inspection for Rovenheight homes</span>
-                <span class="right"><a href="#">See inspection</a></span>
-            </div>
-        </div>
+            <a href="/dashboard_1.html"><i class="fa-duotone fa-chart-simple"></i> Overview</a>
+            <a href="/inspectionList_1.html" class="requests"><i class="fa-thin fa-table"></i>Requests</a>
+        </div>   
     </div>
- <!-- end of middle contents  -->
-  <main>
-    <div class="table-header">
-        <h4>Created Inspection</h4>
-        <span> <a href="#">View all<i class="fa-duotone fa-chevron-right"></i></a> </span>
-    </div>
-    <table>
-        <tr>
-            <th><a href="#">ID <i class="fa-solid fa-caret-down"></i></a></th>
-            <th><a href="#">Name <i class="fa-solid fa-caret-down"></i></a></th>
-            <th><a href="#">Class<i class="fa-solid fa-caret-down"></i></a></th>
-            <th><a href="#">Inspection method <i class="fa-solid fa-caret-down"></i></a></th>
-            <th><a href="#">Officer<i class="fa-solid fa-caret-down"></i></a></th>
-            <th><a href="#">Status<i class="fa-solid fa-caret-down"></i></a></th>
-        </tr>
-        <tr>
-            <td>1032</td>
-            <td>Gig Logistics</td>
-            <td><i class="fa-solid fa-circle purple"></i>Marine</td>
-            <td>Digital</td>
-            <td>Nafiu Ishaq</td>
-            <td><span class="change-me">QUOTE REQUESTS</span> </td>
-        </tr>
-        <tr>
-            <td>1032</td>
-            <td>Shoprite Stores</td>
-            <td><i class="fa-solid fa-circle blue"></i>Property</td>
-            <td>Manual</td>
-            <td>Nafiu Ishaq</td>
-            <td><button class="change-me-green">Completed</button></td>
-        </tr>
-        <tr>
-            <td>1032</td>
-            <td>Ahmad Mahmud</td>
-            <td><i class="fa-solid fa-circle orange"></i>Motors</td>
-            <td>Digital</td>
-            <td>Nafiu Ishaq</td>
-            <td><button class="change-me-orange">Ongoing</button></td>
-        </tr>
-        <tr>
-            <td>1032</td>
-            <td>Fati's Agro Allied</td>
-            <td><i class="fa-solid fa-circle green"></i>Agric</td>
-            <td>Manual</td>
-            <td>Nafiu Ishaq</td>
-            <td> <span class="change-me">SENT TO ENGINEER</span></td>
-        </tr>
-        <tr>
-            <td>1032</td>
-            <td>Ahmad Mahmud</td>
-            <td><i class="fa-solid fa-circle yellow"></i>Bond</td>
-            <td>Digital</td>
-            <td>Nafiu Ishaq</td>
-            <td><button class="change-me-red"><i class="fa-solid fa-xmark red"></i>Link Expired</button></td>
-        </tr>
-        <tr>
-            <td>1032</td>
-            <td>Abdulmalik Abdulmalik</td>
-            <td><i class="fa-solid fa-circle red"></i>Engineering</td>
-            <td>Digital</td>
-            <td>Nafiu Ishaq</td>
-            <td><button class="change-me-grey"><i class="fa-regular fa-arrow-turn-left"></i>Inspection Link</i></button></td>
-        </tr>
-        <tr>
-            <td>1032</td>
-            <td>Ahmad Mahmud</td>
-            <td><i class="fa-solid fa-circle green"></i>Agric</td>
-            <td>Digital</td>
-            <td>Nafiu Ishaq</td>
-            <td><button  class="change-me-green">Completed</button></td>
-        </tr>
 
-    </table>
-</main>
-  </body>
+    <div class="top-nav">
+        <ul class="nav-links-2">
+            <li><a href="#"><i class="fa-duotone fa-bell"></i></a></li>
+            <li><a href="#"><img src="images/am-circle.png" alt="am_circle"></a></li>
+            <li><a href="#">Ahmad<i class="fa-duotone fa-angle-down"></i></a></li>
+         </ul>
+         <i class="fa-duotone fa-bars"></i>
+    </div>
+
+    <main>
+        <div class="head-section">
+            <div class="header">
+                <h4>Welcome, <strong>Ahmad Abdulkareem</strong></h4>
+                <p>Take a look at your dashboard and see all pending tasks</p>  
+            </div>
+
+            <div class="create-button">
+                <a href="newInspection_1.html">
+                    <button type="button" class="create-button"><i class="fa-duotone fa-plus"></i> Create New Inspection</button>
+                </a>
+            </div>
+        </div>
+
+        <div class="middle-section">
+            
+            <div class="cardsDiv">
+                <div class="childDiv" id="allRequests">
+
+                    <div class="circle right-circle "></div>
+                    <div class="circle left-circle"></div>
+                    <p>All Requests</p>
+                    <div class="finger-pointer">
+                        <img src="/images/finger-pointer.png" alt="pointer image">
+                        <span class="count">32</span>
+                    </div>
+                </div>
+                <div class="childDiv" id="completed">
+                    <div class="circle right-circle "></div>
+                    <div class="circle left-circle"></div>
+
+                    <p>Completed Requests</p>
+                    <div class="finger-pointer">
+                        <img src="/images/finger-pointer.png" alt="pointer image">
+                        <span class="count">114</span>
+                    </div>
+                </div>
+                <div class="childDiv" id="ongoing">
+                   <div class="circle right-circle "></div>
+                    <div class="circle left-circle"></div>
+
+                    <p>Ongoing Requests</p>
+                    <div class="finger-pointer">
+                        <img src="/images/finger-pointer.png" alt="pointer image">
+                        <span class="count">19</span>
+                    </div>
+                </div>
+                <div class="childDiv" id="delayed">
+                    <div class="circle right-circle "></div>
+                    <div class="circle left-circle"></div>
+
+                    <p>Delayed Requests</p>
+                    <div class="finger-pointer">
+                        <img src="/images/finger-pointer.png" alt="pointer image">
+                        <span class="count">19</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-div">
+                <div class="activity-head">
+                    <span class="left">Activity</span>
+                    <span class="right"> <a href="#">View all<i class="fa-duotone fa-chevron-right"></i></a> </span>
+                </div>
+    
+                <div class="activity-data">
+                    <span class="left">You have a property inspection coming up in three days</span>
+                    <span class="right"> <a href="#">Set reminder</a></span>
+                </div>
+    
+                <div class="activity-data">
+                    <span class="left">Nafiu ishaq sent you a new property inspection for Rovenheight homes</span>
+                    <span class="right"><a href="#">See inspection</a></span>
+                </div>
+    
+                <div class="activity-data">
+                    <span class="left">Your scheduled inspection for Gig Logistics is three days overdue  </span>
+                    <span class="right"> <a href="#">Re-schedule now</a></span>
+                </div>
+    
+                <div class="activity-data">
+                    <span class="left">Nafiu ishaq sent you a new property inspection for Rovenheight homes</span>
+                    <span class="right"><a href="#">See inspection</a></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="bottom-section">
+            <div class="table-header">
+                <h4>Created Inspection</h4>
+                <p> <a href="#">View all<i class="fa-duotone fa-chevron-right "></i></a> </p>
+            </div>
+
+            <table>
+                <tr class="table-headers">
+                    <td><a href="#">ID <i class="fa-solid fa-caret-down"></i></a></td>
+                    <td><a href="#">Name <i class="fa-solid fa-caret-down"></i></a></td>
+                    <td><a href="#">Class<i class="fa-solid fa-caret-down"></i></a></td>
+                    <td><a href="#">Inspection method <i class="fa-solid fa-caret-down"></i></a></td>
+                    <td><a href="#">Officer<i class="fa-solid fa-caret-down"></i></a></td>
+                    <td><a href="#">Status<i class="fa-solid fa-caret-down"></i></a></td>
+                </tr>
+                <tr>
+                    <td>1032</td>
+                    <td>Gig Logistics</td>
+                    <td><i class="fa-solid fa-circle purple"></i>Marine</td>
+                    <td>Digital</td>
+                    <td>Nafiu Ishaq</td>
+                    <td><span class="change-me">QUOTE REQUESTS</span> </td>
+                </tr>
+                <tr>
+                    <td>1032</td>
+                    <td>Shoprite Stores</td>
+                    <td><i class="fa-solid fa-circle blue"></i>Property</td>
+                    <td>Manual</td>
+                    <td>Nafiu Ishaq</td>
+                    <td><button class="change-me-green">Completed</button></td>
+                </tr>
+                <tr>
+                    <td>1032</td>
+                    <td>Ahmad Mahmud</td>
+                    <td><i class="fa-solid fa-circle orange"></i>Motors</td>
+                    <td>Digital</td>
+                    <td>Nafiu Ishaq</td>
+                    <td><button class="change-me-orange">Ongoing</button></td>
+                </tr>
+                <tr>
+                    <td>1032</td>
+                    <td>Fati's Agro Allied</td>
+                    <td><i class="fa-solid fa-circle green"></i>Agric</td>
+                    <td>Manual</td>
+                    <td>Nafiu Ishaq</td>
+                    <td> <span class="change-me">SENT TO ENGINEER</span></td>
+                </tr>
+                <tr>
+                    <td>1032</td>
+                    <td>Ahmad Mahmud</td>
+                    <td><i class="fa-solid fa-circle yellow"></i>Bond</td>
+                    <td>Digital</td>
+                    <td>Nafiu Ishaq</td>
+                    <td><button class="change-me-red"><i class="fa-solid fa-xmark red"></i>Link Expired</button></td>
+                </tr>
+                <tr>
+                    <td>1032</td>
+                    <td>Abdulmalik Abdulmalik</td>
+                    <td><i class="fa-solid fa-circle red"></i>Engineering</td>
+                    <td>Digital</td>
+                    <td>Nafiu Ishaq</td>
+                    <td><button class="change-me-grey"><i class="fa-regular fa-arrow-turn-left"></i>Inspection Link</i></button></td>
+                </tr>
+                <tr>
+                    <td>1032</td>
+                    <td>Ahmad Mahmud</td>
+                    <td><i class="fa-solid fa-circle green"></i>Agric</td>
+                    <td>Digital</td>
+                    <td>Nafiu Ishaq</td>
+                    <td><button  class="change-me-green">Completed</button></td>
+                </tr>
+        
+            </table>
+        </div>
+    </main>
+</body>
 </html>
