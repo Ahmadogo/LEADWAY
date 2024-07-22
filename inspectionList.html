@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Inspectio 1</title>
+    <!-- Google fonts library  -->
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap"
+        rel="stylesheet" />
+    <!-- <linkhref="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap"rel="stylesheet"/> -->
+
+    <!-- Font awesome library    -->
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.2/css/all.css" />
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-thin.css" />
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-solid.css" />
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-regular.css" />
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-light.css" />
+
+    <!-- Css link sheet     -->
+    <link rel="stylesheet" href="/css/inspectionList.css">
+</head>
+
+<body>
+    <div class="side-navs">
+        <!-- left side icon section  -->
+        <div class="first-column">
+            <ul nav-links-1>
+                <li><a href="index.html"><i class="fa-duotone fa-objects-column"></i></a></li>
+                <li><a href="#"><i class="fa-duotone fa-calendar-days"></i></a></li>
+                <li><a href="#"><i class="fa-duotone fa-briefcase"></i></a></li>
+                <li><a href="#"><i class="fa-duotone fa-command"></i></a></li>
+                <li><a href="#"><i class="fa-duotone fa-chart-pie"></i></a></li>
+                <li><a href="#"><i class="fa-duotone fa-gear"></i></a></li>
+            </ul>
+        </div>
+
+        <!-- Logo, overview and request section  -->
+        <div class="second-column">
+            <div class="logo">
+                <img src="images/leadway-logo-2.png" alt="leadway_logo" class="leadway-logo" />
+            </div>
+            <p class="TRM">TRM</p>
+
+            <a href="/dashboard.html"><i class="fa-duotone fa-chart-simple"></i> Overview</a>
+            <a href="#" class="requests"><i class="fa-thin fa-table"></i>Requests</a>
+        </div>
+
+    </div>
+    <!-- top nav-bar section  -->
+    <div class="top-nav">
+        <ul class="nav-links-2">
+            <li><a href="#"><i class="fa-duotone fa-bell"></i></a></li>
+            <li><a href="#"><img src="images/am-circle.png" alt="am_circle">
+                    <a href="#">Ahmad<i class="fa-duotone fa-angle-down"></i></a></li>
+        </ul>
+        <span><i class="fa-solid fa-xmark"></i></span>
+        <span><i class="fa-duotone fa-bars"></i></span>
+    </div>
+
+
+    <!-- header section of the body content  -->
+    <main>
+        <div class="content-heading">
+            <div class="content">
+                <h2>Inspection List</h2>
+                <p>See inspections across all business classes</p>
+            </div>
+            <div class="child-content">
+                <button type="button" id="newInspectionBtn"> <a href="/newInspection1.html"><i
+                            class="fa-duotone fa-plus"></i> Create New Inspection</a></button>
+            </div>
+        </div>
+
+
+        <div class="option-bars">
+            <div class="status">
+                <button class="white-background-1" id="active1">All Requests</button> <br>
+                <button class="white-background-2" id="active2">Ongoing</button> <br>
+                <button class="white-background-3" id="active3">Completed</button> <br>
+            </div>
+
+            <div class="right-side">
+                <div class="search">
+                    <a href="#"><i class="fa-duotone fa-magnifying-glass"></i></a>
+                    <input type="search" name="search" placeholder="Search">
+                </div>
+
+                <div class="marine">
+                    <a href="#"><i class="fa-solid fa-circle"></i> Marine<i class="fa-duotone fa-xmark"></i></a>
+                </div>
+
+                <div class="sort-by">
+                    <label>Sort by:</label>
+                    <select name="dropdown">
+                        <option>Class</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <div class="table1-div" id="table1-div">
+            <table>
+                <tr>
+                    <td>ID <i class="fa-duotone fa-caret-down"></i></td>
+                    <td>Date <i class="fa-duotone fa-caret-down"></i></td>
+                    <td>Name<i class="fa-duotone fa-caret-down"></i></td>
+                    <td>Inspection method <i class="fa-duotone fa-caret-down"></i></td>
+                    <td>Officer <i class="fa-duotone fa-caret-down"></i></td>
+                    <td>Status <i class="fa-duotone fa-caret-down"></i></td>
+                </tr>
+                <tr>
+                    <td>10321</td>
+                    <td>15/06/2023</td>
+                    <td>Rovenheights properties</td>
+                    <td>Digital</td>
+                    <td>Ahmaad Abdulkareem</td>
+                    <td><a href="/profile.html"><button class="orange">Ongoing</button></a></td>
+                </tr>
+
+                <tr>
+                    <td>10321</td>
+                    <td>12/06/2023</td>
+                    <td>Shoprite Stores</td>
+                    <td>Manual</td>
+                    <td>Ahmad Abdulkareem</td>
+                    <td> <button class="green">Completed</button></td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="table2-div" id="table2-div">
+            <table>
+                <tr>
+                    <td>ID <i class="fa-duotone fa-caret-down"></i></td>
+                    <td>Date <i class="fa-duotone fa-caret-down"></i></td>
+                    <td>Name<i class="fa-duotone fa-caret-down"></i></td>
+                    <td>Inspection method <i class="fa-duotone fa-caret-down"></i></td>
+                    <td>Officer <i class="fa-duotone fa-caret-down"></i></td>
+                    <td>Status <i class="fa-duotone fa-caret-down"></i></td>
+                </tr>
+                <tr>
+                    <td>10321</td>
+                    <td>15/06/2023</td>
+                    <td>Rovenheights properties</td>
+                    <td>Digital</td>
+                    <td>Ahmaad Abdulkareem</td>
+                    <td><button class="orange">Ongoing</button></td>
+                </tr>
+
+                <tr>
+                    <td>10321</td>
+                    <td>12/06/2023</td>
+                    <td>Shoprite Stores</td>
+                    <td>Manual</td>
+                    <td>Ahmad Abdulkareem</td>
+                    <td> <button class="orange">Ongoing</button></td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="table3-div" id="table3-div">
+            <table>
+                <tr>
+                    <td>ID <i class="fa-duotone fa-caret-down"></i></td>
+                    <td>Date <i class="fa-duotone fa-caret-down"></i></td>
+                    <td>Name<i class="fa-duotone fa-caret-down"></i></td>
+                    <td>Inspection method <i class="fa-duotone fa-caret-down"></i></td>
+                    <td>Officer <i class="fa-duotone fa-caret-down"></i></td>
+                    <td>Status <i class="fa-duotone fa-caret-down"></i></td>
+                </tr>
+                <tr>
+                    <td>10321</td>
+                    <td>15/06/2023</td>
+                    <td>Rovenheights properties</td>
+                    <td>Digital</td>
+                    <td>Ahmaad Abdulkareem</td>
+                    <td><button class="green">Completed</button></td>
+                </tr>
+
+                <tr>
+                    <td>10321</td>
+                    <td>12/06/2023</td>
+                    <td>Shoprite Stores</td>
+                    <td>Manual</td>
+                    <td>Ahmad Abdulkareem</td>
+                    <td> <button class="green">Completed</button></td>
+                </tr>
+            </table>
+        </div>
+    </main>
+
+
+    <script>
+        let active1 = document.getElementById("active1");
+        let active2 = document.getElementById("active2");
+        let active3 = document.getElementById("active3");
+        let all = document.getElementById("table1-div");
+        let ongoing = document.getElementById("table2-div");
+        let completed = document.getElementById("table3-div");
+        let hamburger = document.querySelector(".fa-bars");
+        let navs = document.querySelector(".side-navs");
+        let cancel = document.querySelector(".fa-xmark");
+        let newBtn = document.getElementById("newInspectionBtn");
+
+        active1.addEventListener('click', function () {
+            all.style.display = "block";
+            ongoing.style.display = "none";
+            completed.style.display = "none";
+            active1.style.backgroundColor = "white";
+            active2.style.background = "none";
+            active3.style.background = "none";
+        });
+
+        active2.addEventListener('click', function () {
+            ongoing.style.display = "block";
+            all.style.display = "none";
+            newBtn.style.display = "none"
+            completed.style.display = "none";
+            active1.style.background = "none";
+            active2.style.backgroundColor = "white";
+            active3.style.backgroundColor = "none";
+        });
+
+        active3.addEventListener('click', function () {
+            completed.style.display = "block";
+            all.style.display = "none";
+            ongoing.style.display = "none";
+            newBtn.style.display = "none"
+            active3.style.backgroundColor = "white";
+            active2.style.backgroundColor = "none";
+            active1.style.backgroundColor = "none";
+        });
+
+        hamburger.addEventListener('click', function () {
+            navs.style.display = "block";
+            cancel.style.display = "block";
+            hamburger.style.display = "none";
+        });
+
+        cancel.addEventListener('click', function () {
+            navs.style.display = "none";
+            hamburger.style.display = "block";
+            cancel.style.display = "none";
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Report</title>
+
+    <!-- Google fonts library  -->
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap"
+        rel="stylesheet" />
+
+    <!-- Font awesome library    -->
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.2/css/all.css" />
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-thin.css" />
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-solid.css" />
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-regular.css" />
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-light.css" />
+
+    <link rel="stylesheet" href="/css/surveyReport.css">
+
+</head>
+
+<body>
+    <div class="side-navs">
+        <div class="first-column">
+            <ul nav-links-1>
+                <li><a href="index.html"><i class="fa-duotone fa-objects-column"></i></a></li>
+                <li><a href="#"><i class="fa-duotone fa-calendar-days"></i></a></li>
+                <li><a href="#"><i class="fa-duotone fa-briefcase"></i></a></li>
+                <li><a href="#"><i class="fa-duotone fa-command"></i></a></li>
+                <li><a href="#"><i class="fa-duotone fa-chart-pie"></i></a></li>
+                <li><a href="#"><i class="fa-duotone fa-gear"></i></a></li>
+            </ul>
+        </div>
+
+        <div class="second-column">
+            <div class="logo">
+                <img src="images/leadway-logo-2.png" alt="leadway_logo" class="leadway-logo" />
+            </div>
+            <p class="TRM">TRM</p>
+
+            <a href="/dashboard.html"><i class="fa-duotone fa-chart-simple"></i> Overview</a>
+            <a href="/inspectionList.html" class="requests"><i class="fa-thin fa-table"></i>Requests</a>
+        </div>
+
+    </div>
+    <div class="top-nav">
+        <ul class="nav-links-2">
+            <li><a href="#"><i class="fa-duotone fa-bell"></i></a></li>
+            <li><a href="#"><img src="images/am-circle.png" alt="am_circle"></a></li>
+            <li><a href="#">Ahmad<i class="fa-duotone fa-angle-down"></i></a></li>
+            <i class="fa-duotone fa-bars"></i>
+        </ul>
+    </div>
+    <main>
+        <div class="survey-div">
+            <h4>Survey report</h4>
+            <p>See Inspection across all business classes</p>
+
+            <div class="survey-container">
+                <div class="rovenheights">
+
+                    <div class="tower">
+                        <img src="/images/tower.png" alt="tower_img">
+                        <p><i class="fa-solid fa-circle"></i> Property</p>
+                    </div>
+
+                    <div class="rov-properties">
+                        <h4>Rovenheights Properties LTD.</h4>
+                        <div class="rows">
+                            <div class="row-1">
+                                <span>
+                                    <h5>Policy Number</h5>
+                                    <p>ALR12358493</p>
+                                </span>
+
+                                <span>
+                                    <h5>Loss Type</h5>
+                                    <p>Non-Motor</p>
+                                </span>
+
+                                <span>
+                                    <h5>Policy Terms (Years)</h5>
+                                    <p>5</p>
+                                </span>
+                            </div>
+                            <div class="row-2">
+
+                                <span>
+                                    <h5>Expiry Date</h5>
+                                    <p>19 Dec. 2024</p>
+                                </span>
+
+                                <span>
+                                    <h5>Commencement Date</h5>
+                                    <p>19 Dec. 2019</p>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="policy-progress">
+                    <h4 class="orange">Policy Progress</h4>
+
+                    <div class="progress-container">
+                        <svg class="progress-circle" width="100" height="100" viewBox="0 0 150 150">
+                            <!-- Define the gradient -->
+                            <defs>
+                                <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                                    <stop offset="70%" style="stop-color:#FF7A00; stop-opacity:1" />
+                                    <stop offset="85%" style="stop-color:#FFE5D3; stop-opacity:1" />
+                                </linearGradient>
+                            </defs>
+                            <circle class="bg" cx="75" cy="75" r="70"></circle>
+                            <circle class="progress" cx="75" cy="75" r="70"></circle>
+                        </svg>
+                        <div class="progress-value" id="progress-value">67%</div>
+
+                        <p>3 Days to Expiry</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="insured-div" id="insuredDiv">
+            <h4>Insured Details</h4>
+
+            <div class="details-container">
+                <div class="tabs">
+                    <button class="tab-link1" id="active1">Property Information</button>
+                    <button class="tab-link2" id="active2">Property Description</button>
+                    <button class="tab-link3" id="active3">Supporting Document</button>
+                </div>
+
+                <div class="details">
+                    <div class="row-1">
+
+                        <span>
+                            <h5>Insured For</h5>
+                            <p>Rovenheights Homes</p>
+                        </span>
+
+                        <span>
+                            <h5>Insured Name</h5>
+                            <p>Rovenheights Homes</p>
+                        </span>
+
+                        <span>
+                            <h5>Loss Estimate</h5>
+                            <p>$1,200.000</p>
+                        </span>
+
+                        <span>
+                            <h5>Cause of Loss</h5>
+                            <p>Rovenheights Homes</p>
+                        </span>
+
+                        <span>
+                            <h5>Cause of Loss</h5>
+                            <p>Rovenheights Homes</p>
+                        </span>
+                    </div>
+
+                    <div class="row-2">
+                        <span>
+                            <h5>Property Address</h5>
+                            <p>NO. 16, Rovenheights Homes, Nicon town, Lekki phase 1, Laagos.</p>
+                        </span>
+
+                        <span>
+                            <h5>City</h5>
+                            <p>Lekki</p>
+                        </span>
+
+                        <span>
+                            <h5>State</h5>
+                            <p>Lagos</p>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="property-desc" id="propertyDesc">
+
+            <h4>Insured Details</h4>
+
+            <div class="details-container">
+                <div class="tabs">
+                    <button class="tab-link1" id="active1">Property Information</button>
+                    <button class="tab-link2" id="active2">Property Description</button>
+                    <button class="tab-link3" id="active3">Supporting Document</button>
+                </div>
+                <div class="content">
+                    <p>
+                        Rovenheight homes registered as a LLC building on the 15th of May 2016 is a Grey and White
+                        twelve storey building located at No 12 OGUNSANYA DRIVE, ALCOVE ESTATE, LEKKI PHASE 1, LAGOS
+                        STATE. The property is owned by Mr. Badmus Akinrele who stands as the insurer of the property.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="supporting-doc" id="supportingDoc">
+            <h4>Insured Details</h4>
+
+            <div class="details-container">
+
+                <div class="tabs">
+                    <button class="tab-link1" id="active1">Property Information</button>
+                    <button class="tab-link2" id="active2">Property Description</button>
+                    <button class="tab-link3" id="active3">Supporting Document</button>
+
+                </div>
+                <div table>
+                    <table>
+                        <tr>
+                            <td class="one">Policy document</td>
+                            <td>25 Aug, 2022 9:00AM</td>
+                            <td class="orange"> <i class="fa-regular fa-eye"></i> View</td>
+                            <td class="orange">Download</td>
+                        </tr>
+                        <tr>
+                            <td class="one">Police report</td>
+                            <td>25 Aug, 2022 9:00AM</td>
+                            <td class="orange"> <i class="fa-regular fa-eye"></i> View</td>
+                            <td class="orange">Download</td>
+                        </tr>
+                        <tr>
+                            <td class="one">Attach document1</td>
+                            <td>25 Aug, 2022 9:00AM</td>
+                            <td class="orange"> <i class="fa-regular fa-eye"></i> View</td>
+                            <td class="orange">Download</td>
+                        </tr>
+                    </table>
+                </div>
+    </main>
+
+
+    <script>
+        let insuredDiv = document.getElementById("insuredDiv");
+        let propertyDiv = document.getElementById("propertyDesc");
+        let supportingDiv = document.getElementById("supportingDoc");
+        let firstActive = document.getElementById("active1");
+        let secondActive = document.getElementById("active2");
+        let thirdActive = document.getElementById("active3");
+
+        firstActive.addEventListener('click', function () {
+            insuredDiv.style.display = "block";
+            propertyDiv.style.display = "none";
+            supportingDiv.style.display = "none";
+        });
+
+        secondActive.addEventListener('click', function () {
+            propertyDiv.style.display = "block";
+            insuredDiv.style.display = "none";
+            supportingDiv.style.display = "none";
+        });
+
+        thirdActive.addEventListener('click', function () {
+            supportingDiv.style.display = "block";
+            insuredDiv.style.display = "none";
+            propertyDiv.style.display = "none";
+        });
+
+    </script>
+</body>
+
+</html>

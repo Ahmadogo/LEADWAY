@@ -1,99 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Risk Portal</title>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.2/css/all.css">
-    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-thin.css">
-    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-solid.css">
-    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-regular.css">
-    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-light.css">
-    <link rel="stylesheet" href="/css/index.css"/>
-  </head>
-  <body>
-    <main>
-      <!-- below is the form field  -->
-      <div class="left-container">
-        <img
-          src="images/leadway-log.webp"
-          alt="leadway logo"
-        />
-        <form>
-          <h1>Underwriter Dashboard</h1>
-          <p>Welcome. Login to your portal account</p>
 
-          <div class="login-div">
-            <span><h6>Login ID</h6></span>
-            <span class="profile">
-                <input
-                type="text"
-                name="ID"
-                placeholder="Enter your login ID "
-                class="input"
-                />
-                <i class="fa-thin fa-user" style="color: #B197FC;"></i>
-            </span>
-          </div>
-          <!-- this is the password input field -->
-          <div class="password-div">
-            <span class="show-div">
-              <h6 class="lock">Password</h6>
-              <h6><a href="#">SHOW</a></h6>
-            </span>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Risk Portal</title>
+  <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.2/css/all.css">
+  <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-thin.css">
+  <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-solid.css">
+  <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-regular.css">
+  <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-light.css">
+  <link rel="stylesheet" href="/css/index.css" />
+</head>
 
-            <span class="psswrd">
-                <input type="password" id="password" placeholder="Enter your Password" class="input"/>
-                <i class="fa-thin fa-lock"></i>  
-            </span>
-          </div>
+<body>
+  <main>
+    <div class="left-container">
+      <img src="images/leadway-log.webp" alt="leadway logo" />
+      <form>
+        <h1>Underwriter Dashboard</h1>
+        <p>Welcome. Login to your portal account</p>
 
-          <div class="keep-me">
-            <span>
-              <label for="keep-me-check">
-                <input type="checkbox" name="" id="keep-me-check"> Keep me logged in
-              </label>
-              <!-- <a href="#"><input type="checkbox">Keep me logged in</a> -->
-            </span>
+        <div class="login-div">
+          <span>
+            <h6>Login ID</h6>
+          </span>
+          <span class="profile">
+            <input type="text" name="ID" placeholder="Enter your login ID " class="input" />
+            <i class="fa-thin fa-user" style="color: #B197FC;"></i>
+          </span>
+        </div>
+        <div class="password-div">
+          <span class="show-div">
+            <h6 class="lock">Password</h6>
+            <h6><a href="#">SHOW</a></h6>
+          </span>
 
-            <span>
-              <a href="#">Reset Password</a>
-            </span> 
-          </div>
+          <span class="psswrd">
+            <input type="password" id="password" placeholder="Enter your Password" class="input" />
+            <i class="fa-thin fa-lock"></i>
+          </span>
+        </div>
 
-          <button type="submit"> <a href="dashboard_1.html">Login</a></button>
-        </form>
-      </div>
-      <!-- below  is the laptop image -->
-      <div class="right-container">
-        <span class="help">
-          <label for="help">
-            <a href="#"><i class="fa-regular fa-circle-question help"></i></a>
-          </label>
-          Help
-        </span>
-      </div>
-    </main>
-    <!-- this is the customer management field below the right-container image  -->
-    <div class="bottom-container">
-      <div class="grp_img">
-        <img
-          src="images/group icon.png"
-          alt="group icon"
-          class="bottom_img"
-        />
-      </div>
-      <div class="management">
-        <h5>Customer Management</h5>
-        <p>
-          Manage all customers from individual customers to corporate or group
-          customers
-        </p>
-      </div>
+        <div class="keep-me">
+          <span>
+            <label for="keep-me-check">
+              <input type="checkbox" name="" id="keep-me-check"> Keep me logged in
+            </label>
+          </span>
+
+          <span>
+            <a href="#">Reset Password</a>
+          </span>
+        </div>
+
+        <button type="submit"> <a href="dashboard.html">Login</a></button>
+      </form>
     </div>
-  </body>
+    <div class="right-container">
+      <span class="help">
+        <label for="help">
+          <a href="#"><i class="fa-regular fa-circle-question help"></i></a>
+        </label>
+        Help
+      </span>
+    </div>
+  </main>
+  <div class="bottom-container">
+    <div class="grp_img">
+      <img src="images/group icon.png" alt="group icon" class="bottom_img" />
+    </div>
+    <div class="management">
+      <h5>Customer Management</h5>
+      <p>
+        Manage all customers from individual customers to corporate or group
+        customers
+      </p>
+    </div>
+  </div>
+</body>
+
 </html>
