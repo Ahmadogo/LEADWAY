@@ -1,60 +1,61 @@
-*{
+* {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
     font-family: "Mulish", sans-serif;
 }
 
-:root{
-    --orange:#FF7A00;
-    --black-background:#2F2F2F;
-    ---green:#00B388;
-    ---red:#EE5331;
-    ---grey:#D4D4D4;
-    ---grey-border:#737373;
-    ---font-color-1:#34475E;
-    ---font-color-2:#7A7C87;
+:root {
+    --orange: #FF7A00;
+    --black-background: #2F2F2F;
+    ---green: #00B388;
+    ---red: #EE5331;
+    ---grey: #D4D4D4;
+    ---grey-border: #737373;
+    ---font-color-1: #34475E;
+    ---font-color-2: #7A7C87;
 }
 
-body{
+body {
     width: 100%;
     height: 100vh;
     overflow-x: hidden;
     display: grid;
-    grid-template-areas: 
-    "as hh hh"
-    "as main main"
-    "as main main";
+    grid-template-areas:
+        "as hh hh"
+        "as main main"
+        "as main main";
     grid-template-columns: 235px 1fr 1fr;
     grid-template-rows: 8% 22% 70%;
 }
 
-.side-navs{
+.side-navs {
     display: flex;
     grid-area: as;
 }
 
 
 /* left-side icons styling  */
-.first-column{
+.first-column {
     background: #2F2F2F;
     height: 100vh;
     position: fixed;
     width: 50px;
     padding-top: 120px;
 
-    li{
+    li {
         list-style: none;
     }
-    
-    a{
+
+    a {
         display: flex;
         text-decoration: none;
         color: #FF7A00;
         font-size: 25px;
         padding: 15px 10px;
     }
-    a:hover{
+
+    a:hover {
         background: #ffff;
         transition: 0.7s;
     }
@@ -62,7 +63,7 @@ body{
 
 /* logo, overview and requests section  */
 
-.second-column{
+.second-column {
     height: 100vh;
     display: flex;
     position: fixed;
@@ -74,42 +75,46 @@ body{
     border-right: 1px solid #D4D4D4;
     background: #ffff;
 
-    p{
+    p {
         color: #34475E;
         font-weight: 700;
         letter-spacing: 1px;
     }
 
-    a{
+    a {
         text-decoration: none;
         color: #737373;
         padding: 5px;
         font-size: 12px;
-        &:hover{
+
+        &:hover {
             color: #ff7a00;
-          }
+        }
     }
 
-    .fa-chart-simple{
-        font-size: 20px; 
+    .fa-chart-simple {
+        font-size: 20px;
         padding: 8px;
         color: #737373;
-        &:hover{
+
+        &:hover {
             color: #ff7a00;
-          }
+        }
     }
-    .fa-table{
-        font-size: 20px; 
+
+    .fa-table {
+        font-size: 20px;
         padding: 8px;
-        
+
     }
-    .requests{
+
+    .requests {
         color: #FF7A00;
     }
 }
 
-        /* top nav style  */
-.top-nav{
+/* top nav style  */
+.top-nav {
     width: 83.5%;
     grid-area: hh;
     left: 17.6%;
@@ -118,63 +123,69 @@ body{
     background: #ffff;
     padding: 10px;
     border-bottom: 1px solid #D4D4D4;
-    
-    .nav-links-2{
+
+    .nav-links-2 {
         display: flex;
         gap: 20px;
         justify-content: end;
     }
-    a, li{
+
+    a,
+    li {
         text-decoration: none;
         list-style: none;
         color: #7A7C87;
         font-size: 12px;
 
-        .fa-bell{
+        .fa-bell {
             font-size: 25px;
         }
-        .fa-angle-down{
+
+        .fa-angle-down {
             font-size: 15px;
-            padding:0px 10px;
+            padding: 0px 10px;
         }
     }
-    .fa-bars, .fa-xmark{
+
+    .fa-bars,
+    .fa-xmark {
         display: none;
     }
 }
+
 /* end of nav-bars styling  */
 
 
 /* this styles the contents-heading  */
-main{
+main {
     width: 100%;
     height: fit-content;
     grid-area: main;
     padding: 30px;
 }
 
-.content-heading{
+.content-heading {
     display: flex;
     justify-content: space-between;
     padding-bottom: 40px;
-   
 
-    .child-content{  
-        button{
+
+    .child-content {
+        button {
             padding: 12px 25px;
             background: #ff7a00;
             border: none;
             cursor: pointer;
             border-radius: 3px;
-            
-            a{
+
+            a {
                 font-weight: 600;
                 text-decoration: none;
                 color: #ffff;
 
             }
-            
-            .fa-plus{
+
+            .fa-plus {
                 padding-right: 5px;
                 color: #34475E;
                 font-size: 15px;
@@ -189,13 +200,13 @@ main{
 
 /* option bars (above the table) styling */
 
-.option-bars{
+.option-bars {
     display: flex;
     justify-content: space-between;
     padding-bottom: 30px;
 
 
-    .status{
+    .status {
         display: flex;
         justify-content: space-between;
         gap: 10px;
@@ -203,9 +214,9 @@ main{
         border-radius: 7px;
         font-size: 12px;
         background: #D4D4D4;
-        
-        button{
-            border:none;
+
+        button {
+            border: none;
             text-decoration: none;
             color: var(--font-color);
             margin: auto;
@@ -214,33 +225,34 @@ main{
             /* &:hover{
 
             } */
-            
+
         }
 
-        .white-background-1
-        {
+        .white-background-1 {
             background: none;
             padding: 5px 5px;
             border-radius: 5px;
             border: none;
-            &:hover{
-                background:white;
+
+            &:hover {
+                background: white;
                 padding: 5px 5px;
                 border-radius: 5px;
                 border: none;
                 transition: 0.5s;
-                }
-            
-             
+            }
+
+
         }
 
-        .white-background-2{
+        .white-background-2 {
             background: none;
             padding: 5px 5px;
             border-radius: 5px;
             border: none;
-            &:hover{
-                background:white;
+
+            &:hover {
+                background: white;
                 padding: 5px 5px;
                 border-radius: 5px;
                 border: none;
@@ -248,68 +260,72 @@ main{
             }
         }
 
-        .white-background-3{
-            background:none;
+        .white-background-3 {
+            background: none;
             padding: 5px 5px;
             border-radius: 5px;
             border: none;
-            &:hover{
-                background:white;
+
+            &:hover {
+                background: white;
                 padding: 5px 5px;
                 border-radius: 5px;
                 border: none;
                 transition: 0.5s;
-                }
+            }
 
         }
     }
 }
 
 
-.right-side{
+.right-side {
     display: flex;
     gap: 1.5em;
 
-    .search{
+    .search {
         border: 1px solid #D4D4D4;
         height: 30px;
         padding: 5px;
         margin: auto;
         border-radius: 5px;
-        
-        
-        input{
+
+
+        input {
             border: none;
             outline: none;
+            background: none;
         }
 
     }
 
-    .marine{
+    .marine {
         height: 30px;
         padding: 5px 15px;
         font-size: 12px;
         margin: auto;
+        text-align: center;
         border-radius: 5px;
         background: #D4D4D4;
-        
-        a{
+
+        a {
             text-decoration: none;
             color: var(--font-color);
         }
 
-        .fa-circle{
+        .fa-circle {
             color: purple;
             padding: 2px;
             font-size: 7px;
         }
-        .fa-xmark{
+
+        .fa-xmark {
             font-size: 15px;
             padding: 2px;
         }
     }
 
-    .sort-by{
+    .sort-by {
         height: 30px;
         font-size: 13px;
         padding: 5px 10px;
@@ -317,30 +333,24 @@ main{
         border-radius: 5px;
         color: #7A7C87;
         border: 1px solid #D4D4D4;
-        
-        select{
+
+        select {
             cursor: pointer;
             border: none;
+            background: none;
         }
     }
 }
 
 /* Table section styling  */
-.table1-div.table3-div{
+.table1-div .table3-div {
     width: 100%;
     border: 1px solid #D4D4D4;
     border-radius: 8px;
     height: 30vh;
 }
-.table2-div{
-    width: 100%;
-    border: 1px solid #D4D4D4;
-    border-radius: 8px;
-    height: 30vh; 
-    display: none;
-}
 
-.table3-div{
+.table2-div {
     width: 100%;
     border: 1px solid #D4D4D4;
     border-radius: 8px;
@@ -348,31 +358,42 @@ main{
     display: none;
 }
 
-table{
+.table3-div {
+    width: 100%;
+    border: 1px solid #D4D4D4;
+    border-radius: 8px;
+    height: 30vh;
+    display: none;
+}
+
+table {
     /* width: 100%; */
     font-size: 13px;
     border-collapse: collapse;
 }
-td{
-    padding:15px ;
+
+td {
+    padding: 15px;
     padding-left: 50px;
     border-top: 1px solid #D4D4D4;
 }
-th{
-    padding:15px;
+
+th {
+    padding: 15px;
     padding-left: 50px;
     cursor: pointer;
     color: #7A7C87;
     align-items: center;
 
-    
-    .fa-caret-down{
+
+    .fa-caret-down {
         padding: 2px;
     }
 }
-.orange{
+
+.orange {
     padding: 5px 15px;
-    border:none;
+    border: none;
     border-radius: 5px;
     cursor: pointer;
     font-weight: 500;
@@ -380,8 +401,8 @@ th{
     background: #FFDEBF;
 }
 
-.green{
-    padding:5px 15px;
+.green {
+    padding: 5px 15px;
     border: none;
     border-radius: 5px;
     font-weight: 500;
@@ -393,26 +414,26 @@ th{
 
 @media screen and (max-width:767px) {
 
-    body{
-        grid-template-areas: 
-        "hh hh hh"
-        "main main main"
-        "main main main";
+    body {
+        grid-template-areas:
+            "hh hh hh"
+            "main main main"
+            "main main main";
 
 
-        .side-navs{
+        .side-navs {
             display: none;
             position: absolute;
             left: 0;
             top: 10px;
             z-index: 10;
         }
-    
-        .top-nav{
+
+        .top-nav {
             width: 100%;
             left: 0;
-    
-            .fa-bars{
+
+            .fa-bars {
                 display: block;
                 font-size: 25px;
                 position: absolute;
@@ -420,77 +441,90 @@ th{
                 left: 20px;
                 z-index: 20;
             }
-    
-            .fa-xmark{
+
+            .fa-xmark {
                 font-size: 25px;
                 position: absolute;
                 top: 10px;
                 left: 20px;
                 z-index: 20;
-    
+
             }
         }
-        main{
+
+        main {
             padding: 10px;
-            
-            .content-heading{
-                .content{
-                    h2{
+
+            .content-heading {
+                .content {
+                    h2 {
                         font-size: 20px;
                     }
-                    p{
+
+                    p {
                         font-size: 15px;
                     }
 
-                    .child-content{
-                        button{
+                    .child-content {
+                        button {
                             padding: 0px 12px;
                         }
-                        a{
+
+                        a {
                             font-size: 10px;
                         }
                     }
                 }
             }
 
-            .option-bars{
+            .option-bars {
                 display: block;
 
             }
 
-            .right-side{
+            .right-side {
                 gap: 10px;
                 padding-top: 12px;
-                
-                .search{
+
+                .search {
                     display: flex;
                     width: 33%;
                 }
-            
+
+                .marine {
+                    display: none;
+                }
+
             }
 
-            .table-div{
-                table{
+            .table-div {
+                table {
                     font-size: 10px;
 
                 }
-                th, td{
+
+                th,
+                td {
                     padding-left: 0;
                     padding: 5px;
                     /* border: none; */
                 }
-                .orange, .green{
+
+                .orange,
+                .green {
                     padding: 5px 8px;
                     font-size: 10px;
                 }
             }
 
-            .table1-div,.table2-div,.table3-div{
+            .table1-div,
+            .table2-div,
+            .table3-div {
                 width: 100%;
                 overflow-x: hidden;
 
-                table{
-                    width:600px;
+                table {
+                    width: 600px;
                     overflow-x: scroll;
                 }
             }
@@ -500,41 +534,209 @@ th{
 }
 
 
-@media screen and (min-width:768px) and (max-width:1200px){
-    .top-nav{
+@media screen and (min-width:768px) and (max-width:992px) {
+    .top-nav {
         width: 76%;
         grid-area: hh;
         left: 24%;
     }
-    
-    main{
+
+    main {
         width: 100%;
 
-        .content-heading{
-        }
-        
-        .option-bars{
+        .option-bars {
             padding: 5px;
             display: grid;
-            
+
         }
-        .right-side{
+
+        .right-side {
             padding-top: 20px;
         }
 
-        .table-div{
+        .table-div {
 
-            margin-top:40px;
+            margin-top: 40px;
         }
-        
-        table{
-            font-size:13px;
+
+        table {
+            font-size: 13px;
         }
-        td{
+
+        td {
             padding-left: 0px;
             border-top: none;
             padding: 5px;
             border-bottom: 1px solid #ECFDF3;
+        }
+
+    }
+}
+
+@media screen and (min-width:1450px) {
+    body {
+        grid-template-columns: 300px 1fr 1fr;
+        grid-template-rows: 10% 35% 55%;
+
+        .first-column {
+            width: 200px;
+            padding: 20px;
+            padding-top: 220px;
+
+            a {
+                font-size: 40px;
+            }
+        }
+
+        .second-column {
+            left: 101px;
+            width: 200px;
+            padding-top: 80px;
+            gap: 20px;
+
+            p {
+                font-size: 25px;
+            }
+
+            a {
+                font-size: 20px;
+            }
+
+            .fa-chart-simple,
+            .fa-table {
+                font-size: 40px;
+            }
+        }
+
+        .top-nav {
+            padding: 30px;
+            width: 84.5%;
+            left: 15.6%;
+
+            .nav-links-2 {
+                gap: 40px;
+
+                a,
+                li {
+                    font-size: 25px;
+
+                    .fa-bell {
+                        font-size: 50px;
+                    }
+
+                    .fa-angle-down {
+                        font-size: 30px;
+                        padding: 0px 20px;
+                    }
+
+                    img {
+                        width: 40px;
+                    }
+                }
+            }
+        }
+
+        main {
+            padding: 40px;
+
+            .content-heading {
+                .content h2 {
+                    font-size: 80px;
+                }
+
+                .content p {
+                    font-size: 50px;
+                }
+
+                .child-content {
+                    button {
+                        padding: 25px 50px;
+                    }
+                    a{
+                        font-size: 35px;
+                    }
+                    .fa-plus{
+                        font-size: 30px;
+                    }
+                }
+            }
+
+
+            .option-bars{
+                .status{
+                    gap: 20px;
+                    padding: 20px;
+                    
+                    button{
+                        font-size: 30px;
+                        padding: 15px 0px;
+                    }
+
+                    .white-background-1,
+                    .white-background-2,
+                    .white-background-3{
+                        padding: 10px 0px;
+                        &:hover{
+                            padding: 10px 10px;
+                        }
+                    }
+                }
+            }
+
+            .right-side{
+                .search{
+                    height: 50px;
+                    
+                    input{
+                        font-size: 30px;
+
+                    }
+                }
+
+                .marine{
+                    height: 50px;
+                    padding: 20px 30px;
+                    font-size: 25px;
+                    font-weight: 500;
+
+                    .fa-xmark{
+                        font: size 30px;
+                    }
+                    .fa-circle{
+                        font-size: 14px;
+                    }
+                }
+
+                .sort-by{
+                    height: 50px;
+                    font-size: 25px;
+
+                    select{
+                        font-size: 25px;
+                        /* background: none; */
+                    }
+                }
+            }
+
+            .table1-div,
+            .table2-div,
+            .table3-div{
+                height: 50vh;
+                
+                table{
+                    font-size: 30px;
+                    tr{
+                        td{
+                            .orange, .green{
+                                font-size: 30px;
+                            }
+                        }
+                    }
+                }
+            }
+            
+
+
         }
 
     }

@@ -323,7 +323,7 @@
         padding: 15px;
         margin: auto;
         margin-top: 10%;
-        /* display: none; */
+        display: none;
         
         .fa-xmark{
           font-size: 35px;

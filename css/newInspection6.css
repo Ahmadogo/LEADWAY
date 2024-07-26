@@ -326,7 +326,7 @@ main{
     }
 }
 
-@media screen and (min-width:768px) and (max-width:1200px){
+@media screen and (min-width:768px) and (max-width:1023px){
     .top-nav{
         width: 71%;
         left: 29%;
@@ -356,4 +356,128 @@ main{
             margin-left: 35%;
         }
     }   
+}
+
+@media screen and (min-width:1450px) {
+    body {
+        grid-template-columns: 300px 1fr 1fr;
+        grid-template-rows: 10% 35% 55%;
+
+        .first-column {
+            width: 200px;
+            padding: 20px;
+            padding-top: 220px;
+
+            a {
+                font-size: 40px;
+            }
+        }
+
+        .second-column {
+            left: 101px;
+            width: 200px;
+            padding-top: 80px;
+            gap: 20px;
+
+            p {
+                font-size: 25px;
+            }
+
+            a {
+                font-size: 20px;
+            }
+
+            .fa-chart-simple,
+            .fa-table {
+                font-size: 40px;
+            }
+        }
+
+        .top-nav {
+            padding: 30px;
+            width: 85%;
+            left: 14.9%;
+
+            .nav-links-2 {
+                gap: 40px;
+
+                a,
+                li {
+                    font-size: 25px;
+
+                    .fa-bell {
+                        font-size: 50px;
+                    }
+
+                    .fa-angle-down {
+                        font-size: 30px;
+                        padding: 0px 20px;
+                    }
+
+                    img {
+                        width: 40px;
+                    }
+                }
+            }
+        }
+
+        main {
+            padding: 40px;
+
+            .content-heading {
+                .content-child h2 {
+                    font-size: 50px;
+                    color: #34475E;
+                }
+
+                .content-child p {
+                    font-size: 40px;
+                    color: #737373;
+                }
+
+                .close {
+                    font-size: 40px;
+
+                    .fa-xmark {
+                        font-size: 50px;
+                    }
+                }
+            }
+
+            .main-contents {
+                margin-top: 7%;
+            }
+
+            .inspections {
+                gap: 50px;
+
+                .left-frame, .right-frame{
+                    padding: 100px;
+                }
+            }
+
+            .property{
+                label{
+                    font-size: 30px;
+                    color: #737373;
+                }
+
+                .prop-dropdown{
+                    width: 58%;
+                    padding: 30px;
+                    font-size: 30px;
+                }
+            }
+
+            .create-btn{
+                padding: 25px 100px;
+                font-size: 30px;
+                margin-left: 12%;
+
+                .fa-duotone{
+                    font-size: 30px;
+                }
+            }
+        }
+    }
 }

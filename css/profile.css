@@ -463,7 +463,7 @@ main {
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1150px) {
+@media screen and (min-width: 768px) and (max-width: 1023px) {
   .top-nav {
     left: 25%;
     width: 75%;
@@ -540,4 +540,174 @@ main{
     display: none;
   }
 }
+}
+
+@media screen and (min-width:1450px) {
+  body{
+    grid-template-columns: 300px 1fr 1fr;
+        grid-template-rows: 10% 35% 55%;
+
+        .first-column {
+            width: 200px;
+            padding: 20px;
+            padding-top: 220px;
+
+            a {
+                font-size: 40px;
+            }
+        }
+
+        .second-column {
+          left: 101px;
+          width: 200px;
+          padding-top: 80px;
+          gap: 20px;
+
+          p {
+              font-size: 25px;
+          }
+
+          a {
+              font-size: 20px;
+          }
+
+          .fa-chart-simple,
+          .fa-table {
+              font-size: 40px;
+          }
+      }
+
+      .top-nav {
+        padding: 30px;
+        width: 85%;
+        left: 14.9%;
+
+        .nav-links-2 {
+            gap: 40px;
+
+            a,
+            li {
+                font-size: 25px;
+
+                .fa-bell {
+                    font-size: 50px;
+                }
+
+                .fa-angle-down {
+                    font-size: 30px;
+                    padding: 0px 20px;
+                }
+
+                img {
+                    width: 40px;
+                }
+            }
+        }
+    }
+
+    main{
+      padding: 60px;
+
+      .body-content-heading{
+        padding-bottom: 30px;
+        h3{
+          font-size: 40px;
+        }
+        p{
+          font-size: 25px;
+        }
+      }
+
+      .body-content{
+
+        .line{
+          height: 500px;
+        }
+
+        .profile-section{
+          font-size: 25px;
+          padding: 30px;
+          width: 30%;
+
+          .profile-image p{
+            font-size: 30px;
+          }
+
+          .status{
+            font-size: 25px;
+          }
+        }
+
+        .profile-section-contents{
+          .small-texts{
+            font-size: 25px;
+          }
+        }
+      }
+
+      .slides-contents{
+        font-size: 35px;
+        margin-bottom: 20px;
+
+        .top-slide {
+          width: 800px;
+          padding: 20px;
+          margin-left: 90px;
+
+          .top-slide-child .file-icon{
+            font-size: 50px;
+          }
+          .top-slide-child .fa-circle{
+            font-size: 30px;
+          }
+
+          .top-slide-second-child h3{
+            font-size: 25px;
+          }
+          .top-slide-second-child p{
+            font-size: 20px;
+          }
+          .top-slide-second-child span{
+            font-size: 18px;
+          }
+
+          .top-slide-third-child{
+            button{
+              font-size: 20px;
+            }
+          }
+        }
+
+        .bottom-slide {
+          width: 800px;
+          padding: 20px;
+          margin-left: 1%;
+
+          .bottom-slide-child .file-icon{
+            font-size: 50px;
+          }
+          .bottom-slide-child .fa-circle{
+            font-size: 30px;
+          }
+
+          .bottom-slide-second-child h3{
+            font-size: 25px;
+          }
+          .bottom-slide-second-child p{
+            font-size: 20px;
+          }
+          .bottom-slide-second-child span{
+            font-size: 18px;
+          }
+
+          .bottom-slide-third-child{
+            button{
+              font-size: 20px;
+            }
+          }
+        }
+       
+      }
+    }
+  }
 }

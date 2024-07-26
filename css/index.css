@@ -1,317 +1,489 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  body {
-    width: 100%;
-    height: 100vh;
-    margin: auto;
-    background: gray;
-    overflow-x: hidden;
-  }
-  /* this is the bedrock of the left-container and the right-container  */
-  main {
-    width: 100%;
-    height: 100vh;
-    margin-left: 14%;
-    display: flex;
-    margin-top: 3%;
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  /* margin: auto; */
+  background: rgb(240, 234, 234);
+  overflow-x: hidden;
+}
+
+/* this is the bedrock of the left-container and the right-container  */
+main {
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  margin-top: 3%;
+  margin-left: 10%;
+}
+
 /* this container comprises of all the works in the left container  */
-  .left-container {
-    width: 35%;
-    height: 90%;
-    padding: 10px 30px;
+.left-container {
+  width: 40%;
+  height: 95%;
+  padding: 10px 40px;
+  color: #585858;
+  font-family: "Mulish", sans-serif;
+  background: rgb(255, 251, 246);
+}
+
+/* this is the styles of the form in the left  container   */
+form {
+
+  h1 {
+    font-size: 30px;
+    font-weight: 600;
+  }
+
+  p {
+    margin-bottom: 30px;
+    font-size: 15px;
+    font-weight: 500;
     color: #585858;
+    padding-top: 5px;
     font-family: "Mulish", sans-serif;
-    background: rgb(255, 251, 246);
+
   }
-  /* this is the styles of the form in the left  container   */
-  form{
-  
-    h1 {
-      font-size: 30px;
-      font-weight: 600;
-    }
-    p {
-      margin-bottom: 30px; 
-      font-size: 15px;
-      font-weight: 500;
-      color: #585858;
-      padding-top:5px;
-      font-family: "Mulish", sans-serif;
-    
-    }
-    /* this styles the divs that contains my inputs  */
-  } 
-  .login-div, .password-div{
-      background: white;
-      width: 100%;
-      margin-top: 20px;
-      padding: 10px;
-    } 
-     /* this styles the icons used inside the input fields  */
-  .fa-user, .fa-lock{
-    font-size: 14px;
-  } 
-    /* this styles my login input header  */
-    .login-div{
-      h6{
-        font-size: 15px;
-        padding-bottom: 20px;
-      }
-    }
 
-    .login-div span{
-      display: flex;
-      gap: 5px;
-      justify-content: space-between;
-      align-items: center;
-    }
-  
-    /* this styles  the input fields of both login ID and Password  */
-    .input {
-      border: none;
-      outline: 0px;
-      font-size: 12px;
-      font-weight: 300;
-      width: 100%;
-      font-family: "Mulish", sans-serif;
-    }
-    /* this styles the headers of my password input field  */
-    .password-div{
-      .lock{
-        font-size: 15px;
-      }
-      .show-div{
-        padding-bottom: 20px;
-        gap: 5px;
+  /* this styles the divs that contains my inputs  */
+}
 
-      }
+.login-div,
+.password-div {
+  background: white;
+  width: 100%;
+  margin-top: 20px;
+  padding: 10px;
+}
 
-      a{
-        text-decoration: none;
-        color:  rgb(255, 122, 0);
-      }
-      span{
-        display: flex;
-        justify-content: space-between;
-        gap: 5px;
-      }
-    }
-    
-   /* keep me paragraph style   */
-    .keep-me{
-      display: flex;
-      /* gap: 240px; */
-      align-items: center;
-      justify-content: space-between;
-      padding-top: 15px;
-      padding-bottom: 15px;
-      font-size: 12px;
-          a{
-            text-decoration: none;
-            color:  #585858;
-          }
+/* this styles the icons used inside the input fields  */
+.fa-user,
+.fa-lock {
+  font-size: 14px;
+}
 
-          span label:first-child{
-            /* background: red; */
-            display: flex;
-            align-items: center;
-            gap: 5px;
-            cursor: pointer;
-          }
-    }
-    /* this styles the login button  */
-    button {
-      width: 100%;
-      padding: 14px;
-      margin-top: 50px;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-      color: white;
-      font-family: "Mulish", sans-serif;
-      font-weight: 600;
-      background: rgb(255, 122, 0);
-
-      a{
-        text-decoration: none;
-        color: #f3f5f6;
-      }
-    }
-
-
- /* This styles the right container  */
-  .right-container {
-    width: 35%;
-    height: 90%;
-    position: relative;
-    background-image: url(/images/mask-group.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-
-    .help{
-      font-size: 15px;
-      margin-left: 35%;
-      cursor: pointer;
-      margin-top: 6%;
-      color: beige;
-      padding: 5px;
-
-    }
+/* this styles my login input header  */
+.login-div {
+  h6 {
+    font-size: 15px;
+    padding-bottom: 20px;
   }
-  /* style the image in the right container  */
-  .right-image {
-    width: 100%;
-    height: 100%;
+}
+
+.login-div span {
+  display: flex;
+  gap: 5px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* this styles  the input fields of both login ID and Password  */
+.input {
+  border: none;
+  outline: none;
+  font-size: 12px;
+  font-weight: 300;
+  width: 100%;
+  font-family: "Mulish", sans-serif;
+}
+
+/* this styles the headers of my password input field  */
+.password-div {
+  .lock {
+    font-size: 15px;
   }
-  
-  /* This styles the bottom container (customer management)  */
-  .bottom-container{
-    width: 25%;
-    height: 11%;
-    padding: 0 5px ;
+
+  .show-div {
+    padding-bottom: 20px;
+    gap: 5px;
+
+  }
+
+  a {
+    text-decoration: none;
+    color: rgb(255, 122, 0);
+  }
+
+  span {
     display: flex;
-    gap: 10px;
-    position: absolute;
+    justify-content: space-between;
+    gap: 5px;
+  }
+}
+
+/* keep me paragraph style   */
+.keep-me {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  font-size: 12px;
+
+  a {
+    text-decoration: none;
     color: #585858;
-    background:white;
-    border-radius:5px;
-    margin-left: 53%;
-    margin-top:-11% ;
-    font-family: "Mulish", sans-serif;
   }
+
+  span label:first-child {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+  }
+}
+
+/* this styles the login button  */
+button {
+  width: 100%;
+  padding: 14px;
+  margin-top: 50px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  color: white;
+  font-family: "Mulish", sans-serif;
+  font-weight: 600;
+  background: rgb(255, 122, 0);
+
+  a {
+    text-decoration: none;
+    color: #f3f5f6;
+  }
+}
+
+
+/* This styles the right container  */
+.right-container {
+  width: 40%;
+  height: 95%;
+  position: relative;
+  background-image: url(/images/mask-group.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  .help {
+    font-size: 15px;
+    margin-left: 85%;
+    cursor: pointer;
+    color: beige;
+    padding: 5px;
+    margin-top: 5%;
+    position: absolute;
+
+    a {
+      text-decoration: none;
+      color: #fff;
+      align-items: center;
+    }
+  }
+}
+
+/* style the image in the right container  */
+.right-image {
+  width: 100%;
+  height: 100%;
+}
+
+/* This styles the bottom container (customer management)  */
+.bottom-container {
+  width: 35%;
+  height: 12%;
+  padding: 0 5px;
+  display: flex;
+  gap: 10px;
+  position: absolute;
+  color: #585858;
+  background: white;
+  border-radius: 5px;
+  margin-left: 53%;
+  margin-top: -9%;
+  font-family: "Mulish", sans-serif;
+}
+
 /* this styles the image on the bottom-container  */
-  .bottom_img{
-    height: 100%;
-    padding: 10px;
-    background: #f3f5f6;
-    margin-inline-start: -5px;
-    border-radius:5px 0px 0px 5px;
+.bottom_img {
+  height: 100%;
+  padding: 10px;
+  background: #f3f5f6;
+  margin-inline-start: -5px;
+  border-radius: 5px 0px 0px 5px;
+}
+
+/* this styles the content in the bottom container  */
+.management {
+  h5 {
+    font-size: 15px;
+    padding-top: 10px;
+    color: #585858;
+    font-weight: 700;
+
   }
-  /* this styles the content in the bottom container  */
-  .management{
-    h5{
-        font-size: 15px;
-        padding-top: 10px;
-        color: #585858;
-        font-weight: 700;
-        
-    }
-    p{
-        padding-top: 10px;
-        font-size: 12px;
-        color: #585858;
-       
-    }
+
+  p {
+    padding-top: 10px;
+    font-size: 12px;
+    color: #585858;
+
   }
+}
+
 /* This  styles the responsive of a mobile phone size  */
-@media only screen and (max-width:767px)  {
-  main{
+@media only screen and (max-width:767px) {
+  main {
     margin: auto;
   }
+
   .left-container {
     width: 100%;
     height: 100vh;
     margin: auto;
     position: relative;
-    
-    
+
+
   }
-  form{
+
+  form {
     padding: 5px;
-  h1 {
+
+    h1 {
       font-size: 25px;
       font-weight: 600;
     }
+
     p {
-      margin-bottom: 30px; 
+      margin-bottom: 30px;
       font-size: 15px;
     }
   }
-    .right-container{
-      display: none;
 
-    }
-      /* .help{
+  .right-container {
+    display: none;
+
+  }
+
+  /* .help{
         position: absolute;
         background:  red;
       } */
-    .show-div{
-      gap: 300px;
+  .show-div {
+    gap: 300px;
+  }
+
+
+  button {
+    margin-top: 20px;
+  }
+
+  .bottom-container {
+    position: absolute;
+    background: rgb(225, 219, 213);
+    width: 90%;
+    height: 10%;
+    color: white;
+    right: 6%;
+    bottom: 25px;
+  }
+
+
+  .management {
+    h5 {
+      font-size: 15px;
     }
-    
-    
-button{
-  margin-top: 20px;
+
+    p {
+      font-size: 10px;
+    }
+  }
 }
 
-.bottom-container{
-      position: absolute;
-      background: rgb(225, 219, 213);
-      width: 90%;
-      height: 10%; 
-      color: white;
-      right: 6%;
-      bottom: 25px;
-    }
-    
-  
-.management{
-  h5{
-      font-size: 15px;
-  }
-  p{
-      font-size: 10px;  
-  }
-}
-}
 /* this styles the responsive of a tablet size  */
-@media screen and (min-width:768px) and (max-width:1200px) {
-  body{
+@media screen and (min-width:768px) and (max-width:1023px) {
+  body {
     background-image: url(/images/mask-group.png);
     background-size: cover;
     background-repeat: no-repeat;
   }
-  main{
+
+  main {
     margin: auto;
     margin-top: 10%;
-    margin-left: 10%;  
+    margin-left: 10%;
   }
-  form{
-    padding-top:15% ;
+
+  form {
+    padding-top: 15%;
   }
-  .left-container{
+
+  .left-container {
     width: 80%;
     height: 90vh;
     left: -80px;
     /* position: relative; */
   }
-  .keep-me{
-    p{
+
+  .keep-me {
+    p {
       font-size: 15px;
     }
   }
+
+  .right-container {
+    display: none;
+  }
+
+  .bottom-container {
+    background: rgb(231, 227, 222);
+    width: 70%;
+    height: 10%;
+    color: black;
+    right: 15%;
+    bottom: 15%;
+  }
+
+  .management {
+    h5 {
+      font-size: 20px;
+    }
+
+    p {
+      font-size: 15px;
+    }
+  }
+}
+
+
+@media screen and (min-width:1450px) {
+
+  body{
+    grid-template-columns: 300px 1fr 1fr;
+        grid-template-rows: 10% 35% 55%;
+    main {
+      margin-top: 0%;
+      margin-left: 0;
+      height: 100vh;
+      padding: 50px;
   
-  .right-container{
-      display: none;
-  }
-  .bottom-container{
-      background: rgb(231, 227, 222);
-      width: 70%;
-      height: 10%;
-      color:black;
-      right: 15%;
-      bottom: 15%;
-    }
-    .management{
-      h5{
-          font-size: 20px;
+      .left-container {
+        width: 50%;
+        height: 100%;
+        padding: 10px 30px;
+  
+        img {
+          width: 15%;
+        }
+  
       }
-      p{
-          font-size: 15px;
+  
+  
+      form {
+        padding: 50px;
+  
+        h1 {
+          font-size: 50px;
+          font-weight: 800;
+        }
+  
+        p {
+          font-size: 30px;
+          margin-bottom: 0px;
+        }
       }
+  
+      .login-div,
+      .password-div {
+        /* margin-top: 50px; */
+        padding: 20px;
+      }
+  
+      .fa-user,
+      .fa-lock {
+        font-size: 40px;
+        font-weight: 900;
+      }
+  
+      .login-div {
+        h6 {
+          font-size: 40px;
+          font-weight: 800;
+          padding-bottom: 40px;
+        }
+      }
+  
+      .input {
+        font-size: 30px;
+        background: none;
+      }
+  
+      .password-div {
+        .lock {
+          font-size: 40px;
+          font-weight: 800;
+        }
+  
+        .show-div {
+          padding-bottom: 30px;
+  
+          a {
+            font-size: 30px;
+          }
+        }
+      }
+  
+      .keep-me {
+        margin-top: 30px;
+        font-size: 25px;
+      }
+  
+      button {
+        padding: 20px;
+        margin-top: 10%;
+  
+  
+        a {
+          font-size: 50px;
+        }
+      }
+  
+      .right-container {
+        width: 50%;
+        height: 100%;
+  
+        .help {
+          font-size: 30px;
+          margin-left: 70%;
+          position: absolute;
+        }
+      }
+  
+      .bottom-container {
+        margin-top: -9%;
+        width: 35%;
+        margin-left: 57.5%;
+      } 
+        .management {
+          padding: 10px;
+          
+          h5 {
+            font-size: 50px;
+            color: #585858;
+            font-weight: 700;
+            padding-top: 5px;
+            
+          }
+          
+          p {
+            font-size: 30px;
+            color: #585858;
+            
+          }
+        }
+      }
+  
     }
-  }
+  
+}

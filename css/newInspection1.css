@@ -1,64 +1,65 @@
-*{
+* {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
 }
 
-:root{
-    --orange:#FF7A00;
-    --black-background:#2F2F2F;
-    ---green:#00B388;
-    ---red:#EE5331;
-    ---grey:#D4D4D4;
-    ---grey-border:#737373;
-    ---font-color-1:#34475E;
-    ---font-color-2:#7A7C87;
+:root {
+    --orange: #FF7A00;
+    --black-background: #2F2F2F;
+    ---green: #00B388;
+    ---red: #EE5331;
+    ---grey: #D4D4D4;
+    ---grey-border: #737373;
+    ---font-color-1: #34475E;
+    ---font-color-2: #7A7C87;
 }
 
-body{
+body {
     width: 100%;
     height: 100vh;
     display: grid;
     overflow-x: hidden;
     font-family: "Mulish", sans-serif;
-    grid-template-areas: 
-    "As hh hh"
-    "As main main"
-    "As main main";
+    grid-template-areas:
+        "As hh hh"
+        "As main main"
+        "As main main";
     grid-template-columns: 235px 1fr 1fr;
     grid-template-rows: 8% 22% 70%;
 }
 
-.side-navs{
+.side-navs {
     grid-area: As;
     display: flex;
 }
 
-.first-column{
+.first-column {
     background: #2F2F2F;
     height: 100vh;
     padding-top: 120px;
     position: fixed;
     width: 50px;
 
-    li{
+    li {
         list-style: none;
     }
-    
-    a{
+
+    a {
         display: flex;
         text-decoration: none;
         color: #FF7A00;
         font-size: 25px;
         padding: 15px 10px;
     }
-    a:hover{
+
+    a:hover {
         background: #ffff;
         transition: 0.7s;
     }
 }
 
-.second-column{
+.second-column {
     left: 50px;
     height: 100vh;
     display: flex;
@@ -70,41 +71,45 @@ body{
     background: #ffff;
     position: fixed;
 
-    p{
+    p {
         color: #34475E;
         font-weight: 700;
         letter-spacing: 1px;
     }
 
-    a{
+    a {
         text-decoration: none;
         color: #737373;
         padding: 5px;
         font-size: 12px;
-        &:hover{
+
+        &:hover {
             color: #FF7A00;
         }
     }
 
-    .fa-chart-simple{
-        font-size: 20px; 
+    .fa-chart-simple {
+        font-size: 20px;
         padding: 8px;
         color: #737373;
-        &:hover{
+
+        &:hover {
             color: #FF7A00;
         }
     }
-    .fa-table{
-        font-size: 20px; 
+
+    .fa-table {
+        font-size: 20px;
         padding: 8px;
-        
+
     }
-    .requests{
+
+    .requests {
         color: #FF7A00;
     }
 }
 
-.top-nav{
+.top-nav {
     grid-area: hh;
     padding: 15px;
     position: fixed;
@@ -114,157 +119,170 @@ body{
     background: #ffff;
     border-bottom: 1px solid #D4D4D4;
 }
-    .nav-links-2{
-        display: flex;
-        gap: 20px;
-        justify-content: end;
+
+.nav-links-2 {
+    display: flex;
+    gap: 20px;
+    justify-content: end;
+}
+
+a,
+li {
+    text-decoration: none;
+    list-style: none;
+    color: #7A7C87;
+    font-size: 12px;
+
+    .fa-bell {
+        font-size: 25px;
     }
 
-    a, li{
-        text-decoration: none;
-        list-style: none;
-        color: #7A7C87;
-        font-size: 12px;
-
-        .fa-bell{
-            font-size: 25px;
-        }
-        .fa-angle-down{
-            font-size: 15px;
-            padding:0px 10px;
-        }
+    .fa-angle-down {
+        font-size: 15px;
+        padding: 0px 10px;
     }
-    .fa-bars, .fa-xmark{
-        display: none;
-    }
+}
 
-main{
+.fa-bars,
+.fa-xmark {
+    display: none;
+}
+
+main {
     width: 100%;
     grid-area: main;
     padding: 10px;
 
- .content-heading{
-    display: flex;
-    justify-content: space-between;
+    .content-heading {
+        display: flex;
+        justify-content: space-between;
 
-    .content-child h2{
-        font-size: 20px;
-    }
-    .content-child p{
-        font-size: 12px;
-    }
-
-    .close{
-        font-size: 10px;
-        .fa-xmark{
-            font-size: 40px;
-        }
-    }
-}
-
-.main-contents{
-    padding-top: 50px;
-    margin-left: 20%;
-    justify-content: center;
-}
-
-.inspections{
-    display: flex;
-    gap: 30px;
-    
-    .left-frame{
-        border: 1px solid #D4D4D4;
-        padding: 40px;
-        background: #fff9f9;
-        &:hover{
-            border-color: #FF7A00;
-        } 
-        a{
-            font-size: 18px;
+        .content-child h2 {
+            font-size: 20px;
         }
 
-        .left-frame-child{
-            border: 1px solid #b9b4b4;
+        .content-child p {
+            font-size: 12px;
+        }
+
+        .close {
+            font-size: 10px;
+
+            .fa-xmark {
+                font-size: 40px;
+            }
+        }
+    }
+
+    .main-contents {
+        padding-top: 50px;
+        margin-left: 20%;
+        justify-content: center;
+    }
+
+    .inspections {
+        display: flex;
+        gap: 30px;
+
+        .left-frame {
+            border: 1px solid #D4D4D4;
             padding: 40px;
-            border-radius: 150px;
+            background: #fff9f9;
 
+            &:hover {
+                border-color: #FF7A00;
+            }
+
+            a {
+                font-size: 18px;
+            }
+
+            .left-frame-child {
+                border: 1px solid #b9b4b4;
+                padding: 40px;
+                border-radius: 150px;
+
+            }
         }
-    }    
-    .right-frame{
-        border: 1px solid #D4D4D4;
-        padding: 40px;
-        background: #fff9f9;
-        &:hover{
-            border-color: #FF7A00;
-        } 
 
-        a{
-            font-size:18px ;
-            color: #b9b4b4;
-        }
-
-        .right-frame-child{
-            border: 1px solid #b9b4b4;
+        .right-frame {
+            border: 1px solid #D4D4D4;
             padding: 40px;
-            font-size: 15px;
-            border-radius: 150px;
+            background: #fff9f9;
+
+            &:hover {
+                border-color: #FF7A00;
+            }
+
+            a {
+                font-size: 18px;
+                color: #b9b4b4;
+            }
+
+            .right-frame-child {
+                border: 1px solid #b9b4b4;
+                padding: 40px;
+                font-size: 15px;
+                border-radius: 150px;
+            }
         }
+
+        .right-arrow {
+            display: none;
+        }
+
     }
 
-    .right-arrow{
-        display: none;
-    }
-
-}
-    .property{
+    .property {
         display: flex;
         flex-flow: column;
-       
 
-        label{
+
+        label {
             padding-bottom: 15px;
         }
 
-        .prop-dropdown{
+        .prop-dropdown {
             width: 60%;
             outline: none;
             padding: 11px;
             border-color: #D4D4D4;
             font-family: "Mulish", sans-serif;
-            
+
         }
     }
-    
-    .create-btn{
+
+    .create-btn {
         padding: 12px 40px;
-        border-radius: 5px; 
+        border-radius: 5px;
         background: #b9b4b4;
         border: none;
         justify-content: center;
         margin-top: 5%;
-        color:#34475E;
+        color: #34475E;
         font-weight: 700;
         cursor: pointer;
         margin-left: 20%;
- 
-        .fa-duotone{
-             font-size: 15px;
-             padding-right: 5px;  
-             color: #2f2f2f;
+
+        .fa-duotone {
+            font-size: 15px;
+            padding-right: 5px;
+            color: #2f2f2f;
         }
-     }
+    }
 
 }
 
 @media screen and (max-width:767px) {
 
-    body{
-        grid-template-areas: 
-        "hh hh hh"
-        "main main main"
-        "main main main";
+    body {
+        grid-template-areas:
+            "hh hh hh"
+            "main main main"
+            "main main main";
     }
-    .side-navs{
+
+    .side-navs {
         display: none;
         position: absolute;
         left: 0;
@@ -272,11 +290,11 @@ main{
         z-index: 10;
     }
 
-    .top-nav{
+    .top-nav {
         width: 100%;
         left: 0;
 
-        .fa-bars{
+        .fa-bars {
             display: block;
             font-size: 25px;
             position: absolute;
@@ -285,7 +303,7 @@ main{
             z-index: 11;
         }
 
-        .fa-xmark{
+        .fa-xmark {
             font-size: 25px;
             position: absolute;
             top: 10px;
@@ -295,61 +313,189 @@ main{
 
         }
     }
-    main{
+
+    main {
         padding-top: 80px;
-        
-        .content-heading{
+
+        .content-heading {
             gap: 10px;
         }
-        
-        .main-contents{
+
+        .main-contents {
             padding-top: 20px;
             padding-bottom: 50px;
             margin-left: 0;
             width: fit-content;
 
-            .inspections{
+            .inspections {
                 flex-flow: column;
                 margin-left: 58px;
 
             }
         }
 
-        .prop-dropdown, label{
+        .prop-dropdown,
+        label {
             margin: auto;
         }
 
     }
 }
 
-@media screen and (min-width:768px) and (max-width:1200px){
-    .top-nav{
+@media screen and (min-width:768px) and (max-width:1023px) {
+    .top-nav {
         width: 71%;
         left: 29%;
     }
 
-    main{
+    main {
         padding: 0px;
 
-        .content-heading{
+        .content-heading {
             padding: 10px;
         }
-        .main-contents{
+
+        .main-contents {
             margin-left: 30px;
             padding: 0;
             margin-top: 20%;
         }
 
-        .right-arrow{
+        .right-arrow {
             display: none;
         }
 
-        .prop-dropdown, label{
+        .prop-dropdown,
+        label {
             margin: auto;
         }
 
-        .create-btn{
+        .create-btn {
             margin-left: 35%;
         }
-    }   
+    }
+}
+
+@media screen and (min-width:1450px) {
+    body {
+        grid-template-columns: 300px 1fr 1fr;
+        grid-template-rows: 10% 35% 55%;
+
+        .first-column {
+            width: 200px;
+            padding: 20px;
+            padding-top: 220px;
+
+            a {
+                font-size: 40px;
+            }
+        }
+
+        .second-column {
+            left: 101px;
+            width: 200px;
+            padding-top: 80px;
+            gap: 20px;
+
+            p {
+                font-size: 25px;
+            }
+
+            a {
+                font-size: 20px;
+            }
+
+            .fa-chart-simple,
+            .fa-table {
+                font-size: 40px;
+            }
+        }
+
+        .top-nav {
+            padding: 30px;
+            width: 85%;
+            left: 14.7%;
+
+            .nav-links-2 {
+                gap: 40px;
+
+                a,
+                li {
+                    font-size: 25px;
+
+                    .fa-bell {
+                        font-size: 50px;
+                    }
+
+                    .fa-angle-down {
+                        font-size: 30px;
+                        padding: 0px 20px;
+                    }
+
+                    img {
+                        width: 40px;
+                    }
+                }
+            }
+        }
+
+        main {
+            padding: 40px;
+
+            .content-heading {
+                .content-child h2 {
+                    font-size: 50px;
+                    color: #34475E;
+                }
+
+                .content-child p {
+                    font-size: 40px;
+                    color: #737373;
+                }
+
+                .close {
+                    font-size: 40px;
+
+                    .fa-xmark {
+                        font-size: 50px;
+                    }
+                }
+            }
+
+            .main-contents {
+                margin-top: 7%;
+            }
+
+            .inspections {
+                gap: 50px;
+
+                .left-frame, .right-frame{
+                    padding: 100px;
+                }
+            }
+
+            .property{
+                label{
+                    font-size: 30px;
+                    color: #737373;
+                }
+
+                .prop-dropdown{
+                    width: 58%;
+                    padding: 30px;
+                    font-size: 30px;
+                }
+            }
+
+            .create-btn{
+                padding: 25px 100px;
+                font-size: 30px;
+                margin-left: 12%;
+
+                .fa-duotone{
+                    font-size: 30px;
+                }
+            }
+        }
+    }
 }
